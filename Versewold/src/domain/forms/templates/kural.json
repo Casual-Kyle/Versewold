@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "kural",
+  "name": "Kural",
+  "language": "ta",
+  "origin": "Classical Tamil veṇpā prosody",
+  "summary": "A compact Tamil couplet with four metrical feet followed by three.",
+  "tags": ["form", "ta", "fixed", "kural venpa", "kuṟaḷ", "cīr"],
+  "notes": [
+    "Cīr are metrical units and must not be simplified into four and three ordinary whitespace words. Veṇpā rules govern the permitted units, joins, and final foot."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Kural (poetic form)",
+      "url": "https://en.wikipedia.org/wiki/Kural_(poetic_form)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1380592472"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Four-foot line and three-foot line",
+        "lines": [{}, {}]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": ["Kural (poetic form)", "kural venpa", "kuṟaḷ", "cīr"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 579319,
+    "sourceRevisionId": 1380592472,
+    "limitations": [
+      "Only the two-line canvas is represented; Tamil prosody needs a dedicated constraint model."
+    ]
+  }
+}

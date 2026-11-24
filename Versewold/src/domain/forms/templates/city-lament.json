@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "city-lament",
+  "name": "City Lament",
+  "language": "sux",
+  "origin": "Ancient Near Eastern lament traditions",
+  "summary": "A lament that gives voice to the loss, destruction, or abandonment of a city.",
+  "tags": ["tradition", "sux", "free"],
+  "notes": [
+    "Consider communal voice, places, ritual mourning, and a city’s before-and-after. Different works have different structures; no universal stanza count is imposed."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — City Lament",
+      "url": "https://en.wikipedia.org/wiki/City_Lament"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1368846142"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 69916664,
+    "sourceRevisionId": 1368846142,
+    "limitations": []
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "simple-4-line",
+  "name": "Simple 4-line",
+  "language": "en",
+  "origin": "Popular verse and song practice",
+  "summary": "A repeatable quatrain connects its second and fourth lines by rhyme.",
+  "tags": ["form", "en", "repeating", "simple four-line", "ABCB quatrain"],
+  "notes": [
+    "ABCB is a conventional description; this template leaves the odd lines unconstrained rather than requiring them to differ. No particular meter is imposed."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Simple 4-line",
+      "url": "https://en.wikipedia.org/wiki/Simple_4-line"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1356102854"
+    }
+  ],
+  "structure": {
+    "kind": "repeating",
+    "rhymeScope": "stanza",
+    "stanzas": [
+      {
+        "label": "Repeatable stanza",
+        "lines": [
+          {},
+          {
+            "rhyme": "A"
+          },
+          {},
+          {
+            "rhyme": "A"
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["simple four-line", "ABCB quatrain"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 10250635,
+    "sourceRevisionId": 1356102854,
+    "limitations": []
+  }
+}

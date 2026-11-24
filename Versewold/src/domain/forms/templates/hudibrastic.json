@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "hudibrastic",
+  "name": "Hudibrastic",
+  "language": "en",
+  "origin": "English mock-heroic and satirical verse",
+  "summary": "Rhyming tetrameter couplets make room for comic or deliberately strained endings.",
+  "tags": ["form", "en", "repeating", "hudibrastics"],
+  "notes": [
+    "AA BB couplets and an underlying iambic four-beat line are the model. Feminine and surprising rhymes often form part of the satire."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Hudibrastic",
+      "url": "https://en.wikipedia.org/wiki/Hudibrastic"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1371650305"
+    }
+  ],
+  "structure": {
+    "kind": "repeating",
+    "rhymeScope": "stanza",
+    "stanzas": [
+      {
+        "label": "Satirical couplet",
+        "lines": [
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 4,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 4,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["hudibrastics"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 2180675,
+    "sourceRevisionId": 1371650305,
+    "limitations": []
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "cipai",
+  "name": "Cipai",
+  "language": "zh",
+  "origin": "Classical Chinese ci poetry",
+  "summary": "A named tune pattern governing a particular Chinese ci lyric.",
+  "tags": ["concept", "zh", "free", "ci tune pattern", "詞牌", "词牌"],
+  "notes": [
+    "Each cipai has its own line lengths, tonal pattern, rhyme placements, and sometimes variants. A named tune is needed before a usable structural template can be created."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Cipai",
+      "url": "https://en.wikipedia.org/wiki/Cipai"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1381801496"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "concept",
+    "status": "reference",
+    "aliases": ["ci tune pattern", "詞牌", "词牌"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 40402316,
+    "sourceRevisionId": 1381801496,
+    "limitations": []
+  }
+}

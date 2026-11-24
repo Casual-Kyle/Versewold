@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "haiku",
+  "name": "Haiku",
+  "language": "ja",
+  "origin": "Japanese haiku and international adaptations",
+  "summary": "Focus a brief poem through a moment, juxtaposition, and often a seasonal reference.",
+  "tags": ["form", "ja", "free", "hokku", "haijin"],
+  "notes": [
+    "Traditional Japanese 5–7–5 counts morae, not English syllables. Contemporary work and printed line arrangements vary; use the separately labeled 5–7–5 practice template for that English exercise."
+  ],
+  "sources": [
+    {
+      "title": "The Haiku Foundation — Line and syllable count",
+      "url": "https://thehaikufoundation.org/some-thoughts-on-line-and-syllable-count-in-english-language-haiku/"
+    },
+    {
+      "title": "Wikipedia — Haiku",
+      "url": "https://en.wikipedia.org/wiki/Haiku"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1386622202"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": ["hokku", "haijin"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 13217,
+    "sourceRevisionId": 1386622202,
+    "limitations": [],
+    "variants": ["haiku-575"]
+  }
+}

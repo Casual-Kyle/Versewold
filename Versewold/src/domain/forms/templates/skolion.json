@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "skolion",
+  "name": "Skolion",
+  "language": "grc",
+  "origin": "Ancient Greek banquet song",
+  "summary": "An occasional song that can answer or cap the contribution of another singer.",
+  "tags": ["tradition", "grc", "free", "scolion", "skolia", "scolia"],
+  "notes": [
+    "Improvisation, wit, and the shared performance shape the composition. A particular ancient metrical model is needed for quantitative constraints."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Skolion",
+      "url": "https://en.wikipedia.org/wiki/Skolion"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383252446"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["scolion", "skolia", "scolia"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 11934952,
+    "sourceRevisionId": 1383252446,
+    "limitations": []
+  }
+}

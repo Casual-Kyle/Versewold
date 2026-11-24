@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "pentameter",
+  "name": "Pentameter",
+  "language": "und",
+  "origin": "Cross-tradition terminology",
+  "summary": "A metrical designation involving five feet, with different meanings in different prosodies.",
+  "tags": ["concept", "und", "free"],
+  "notes": [
+    "English iambic pentameter uses stress; classical quantitative pentameter uses syllable quantity and a particular divided design. The term alone is not a complete poem template."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Pentameter",
+      "url": "https://en.wikipedia.org/wiki/Pentameter"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1368362502"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "concept",
+    "status": "reference",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 211952,
+    "sourceRevisionId": 1368362502,
+    "limitations": []
+  }
+}

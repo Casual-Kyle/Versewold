@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "anacreontics",
+  "name": "Anacreontics",
+  "language": "grc",
+  "origin": "Ancient Greek lyric and later adaptations",
+  "summary": "Light lyric verse associated with Anacreon, often treating pleasure, love, or wine.",
+  "tags": ["form", "grc", "free", "Anacreontic verse"],
+  "notes": [
+    "Classical Anacreontic meter and later poems on Anacreontic themes are different specifications. Choose a period and model before treating meter as compulsory."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Anacreontics",
+      "url": "https://en.wikipedia.org/wiki/Anacreontics"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1374260762"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": ["Anacreontic verse"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 2885687,
+    "sourceRevisionId": 1374260762,
+    "limitations": []
+  }
+}

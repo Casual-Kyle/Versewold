@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "gasa",
+  "name": "Gasa",
+  "language": "ko",
+  "origin": "Korean song and verse",
+  "summary": "An extended Korean sung or recited form organized through patterned phrase movement.",
+  "tags": ["tradition", "ko", "free", "kasa"],
+  "notes": [
+    "Historical rhythmic units and performance matter. Descriptions of four-unit phrasing should not be flattened into one universal English syllable total."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Gasa (poetry)",
+      "url": "https://en.wikipedia.org/wiki/Gasa_(poetry)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1315503011"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["Gasa (poetry)", "kasa"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 3933557,
+    "sourceRevisionId": 1315503011,
+    "limitations": []
+  }
+}

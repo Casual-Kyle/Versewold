@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "stichic",
+  "name": "Stichic",
+  "language": "und",
+  "origin": "Cross-tradition terminology",
+  "summary": "Verse that proceeds line after line without stanza divisions.",
+  "tags": ["concept", "und", "free"],
+  "notes": [
+    "The term describes arrangement and continuity, not one specific meter or total length. Blank verse is often stichic."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Stichic",
+      "url": "https://en.wikipedia.org/wiki/Stichic"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1347754826"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "concept",
+    "status": "reference",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 13681493,
+    "sourceRevisionId": 1347754826,
+    "limitations": []
+  }
+}

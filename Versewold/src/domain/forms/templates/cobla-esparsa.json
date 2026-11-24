@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "cobla-esparsa",
+  "name": "Cobla esparsa",
+  "language": "oc",
+  "origin": "Occitan troubadour lyric",
+  "summary": "A single self-contained stanza that can stand alone or answer another poet.",
+  "tags": ["form", "oc", "free", "cobla exchange"],
+  "notes": [
+    "Choose a particular cobla’s line and rhyme design; the genre requires a standalone stanza but not one universal number of lines."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Cobla esparsa",
+      "url": "https://en.wikipedia.org/wiki/Cobla_esparsa"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1273397160"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": ["cobla exchange"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 14469762,
+    "sourceRevisionId": 1273397160,
+    "limitations": []
+  }
+}

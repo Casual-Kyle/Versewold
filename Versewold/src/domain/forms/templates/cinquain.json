@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "cinquain",
+  "name": "Cinquain",
+  "language": "und",
+  "origin": "Five-line stanza family",
+  "summary": "A five-line poem or stanza, with many more specific variants.",
+  "tags": ["form", "und", "fixed", "five-line poem"],
+  "notes": [
+    "This general template prescribes only five lines. The familiar American 2–4–6–8–2 syllable arrangement is a particular variant, not the definition of every cinquain."
+  ],
+  "sources": [
+    {
+      "title": "Academy of American Poets — Cinquain",
+      "url": "https://poets.org/glossary/cinquain"
+    },
+    {
+      "title": "Wikipedia — Cinquain",
+      "url": "https://en.wikipedia.org/wiki/Cinquain"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1358941937"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [{}, {}, {}, {}, {}]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["five-line poem"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 7066,
+    "sourceRevisionId": 1358941937,
+    "limitations": []
+  }
+}

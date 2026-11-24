@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "sentimental-ballad",
+  "name": "Sentimental ballad",
+  "language": "en",
+  "origin": "Popular song traditions",
+  "summary": "A song-centered lyric shaped around an emotional or intimate subject.",
+  "tags": ["tradition", "en", "free"],
+  "notes": [
+    "The musical genre does not require the traditional literary ballad quatrain. Choose a song structure deliberately rather than inheriting ABCB automatically."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Sentimental ballad",
+      "url": "https://en.wikipedia.org/wiki/Sentimental_ballad"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1375830728"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 46443001,
+    "sourceRevisionId": 1375830728,
+    "limitations": []
+  }
+}

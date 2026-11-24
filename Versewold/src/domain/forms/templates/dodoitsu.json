@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "dodoitsu",
+  "name": "Dodoitsu",
+  "language": "ja",
+  "origin": "Japanese song-derived poetry",
+  "summary": "A four-phrase Japanese form with a conventional 7–7–7–5 mora movement.",
+  "tags": ["form", "ja", "fixed"],
+  "notes": [
+    "Love, work, and humor are common subjects. These are Japanese mora targets, not English syllable counts; printed line arrangements can vary."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Dodoitsu",
+      "url": "https://en.wikipedia.org/wiki/Dodoitsu"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1385962682"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Four-phrase teaching layout",
+        "lines": [
+          {
+            "meter": {
+              "system": "moraic",
+              "morae": 7,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "moraic",
+              "morae": 7,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "moraic",
+              "morae": 7,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "moraic",
+              "morae": 5,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 3052761,
+    "sourceRevisionId": 1385962682,
+    "limitations": ["Mora targets are displayed only; language-aware counting is not implemented."]
+  }
+}

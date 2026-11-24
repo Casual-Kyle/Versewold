@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "synchysis",
+  "name": "Synchysis",
+  "language": "und",
+  "origin": "Used in multiple literary traditions",
+  "summary": "Interweave or scatter sentence elements to make their relationships felt.",
+  "tags": ["technique", "und", "free"],
+  "notes": [
+    "Plan how corresponding words cross or interrupt each other. This rhetorical technique does not prescribe a poem’s stanza count or meter."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Synchysis",
+      "url": "https://en.wikipedia.org/wiki/Synchysis"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1387033062"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "technique",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 1555390,
+    "sourceRevisionId": 1387033062,
+    "limitations": []
+  }
+}

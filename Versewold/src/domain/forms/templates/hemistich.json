@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "hemistich",
+  "name": "Hemistich",
+  "language": "und",
+  "origin": "Cross-tradition terminology",
+  "summary": "A half-line or major portion of a metrical line, often marked by a caesura.",
+  "tags": ["concept", "und", "free"],
+  "notes": [
+    "Definitions and uses differ across languages. Two visible half-lines do not necessarily constitute a two-line poem."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Hemistich",
+      "url": "https://en.wikipedia.org/wiki/Hemistich"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1339257077"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "concept",
+    "status": "reference",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 7486902,
+    "sourceRevisionId": 1339257077,
+    "limitations": []
+  }
+}

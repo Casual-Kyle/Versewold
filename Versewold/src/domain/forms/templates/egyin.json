@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "egyin",
+  "name": "Égyin",
+  "language": "my",
+  "origin": "Burmese court poetry",
+  "summary": "A royal address celebrating the ancestry and standing of a young prince or princess.",
+  "tags": ["form", "my", "free", "egyin", "eigyin"],
+  "notes": [
+    "Distinguish the historical praise-song tradition from an ordinary child’s lullaby. The present record does not prescribe an unverified rhyme lattice."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Égyin",
+      "url": "https://en.wikipedia.org/wiki/%C3%89gyin"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1292771304"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": ["egyin", "eigyin"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 65994619,
+    "sourceRevisionId": 1292771304,
+    "limitations": []
+  }
+}

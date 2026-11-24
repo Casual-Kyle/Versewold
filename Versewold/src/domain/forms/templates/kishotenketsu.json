@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "kishotenketsu",
+  "name": "Kishōtenketsu",
+  "language": "und",
+  "origin": "East Asian narrative and rhetorical traditions",
+  "summary": "Develop a subject through introduction, development, a turn, and connection or resolution.",
+  "tags": ["technique", "und", "free", "Kishotenketsu", "ki sho ten ketsu"],
+  "notes": [
+    "These are rhetorical movements rather than four mandatory physical lines. The structure can organize poetry and other narratives; conflict is neither required nor forbidden."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Kishōtenketsu",
+      "url": "https://en.wikipedia.org/wiki/Kish%C5%8Dtenketsu"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1386965998"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "technique",
+    "status": "guided",
+    "aliases": ["Kishotenketsu", "ki sho ten ketsu"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 12854042,
+    "sourceRevisionId": 1386965998,
+    "limitations": []
+  }
+}

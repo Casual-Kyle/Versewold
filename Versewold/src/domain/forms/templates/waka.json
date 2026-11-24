@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "waka",
+  "name": "Waka",
+  "language": "ja",
+  "origin": "Classical Japanese poetry",
+  "summary": "A historical family of Japanese verse forms, later often associated with tanka.",
+  "tags": ["tradition", "ja", "free", "yamato uta", "和歌"],
+  "notes": [
+    "Waka encompasses more than one historical form. A specific type is needed before prescribing mora counts or a five-line layout."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Waka (poetry)",
+      "url": "https://en.wikipedia.org/wiki/Waka_(poetry)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1386094082"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["Waka (poetry)", "yamato uta", "和歌"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 34999845,
+    "sourceRevisionId": 1386094082,
+    "limitations": []
+  }
+}

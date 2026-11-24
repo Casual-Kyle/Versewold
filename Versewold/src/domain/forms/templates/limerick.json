@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "limerick",
+  "name": "Limerick",
+  "language": "en",
+  "origin": "English-language comic verse",
+  "summary": "Five bouncing lines return to an AABBA rhyme.",
+  "tags": ["form", "en", "fixed"],
+  "notes": [
+    "Lines 1, 2, and 5 conventionally carry three strong beats; 3 and 4 carry two. Upbeats and unstressed endings vary, so a single rigid syllable total is not imposed."
+  ],
+  "sources": [
+    {
+      "title": "Academy of American Poets — Limerick",
+      "url": "https://poets.org/glossary/limerick"
+    },
+    {
+      "title": "Wikipedia — Limerick (poetry)",
+      "url": "https://en.wikipedia.org/wiki/Limerick_(poetry)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383812563"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual",
+              "beats": 3,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual",
+              "beats": 3,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "B",
+            "meter": {
+              "system": "accentual",
+              "beats": 2,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "B",
+            "meter": {
+              "system": "accentual",
+              "beats": 2,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual",
+              "beats": 3,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["Limerick (poetry)"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 48994,
+    "sourceRevisionId": 1383812563,
+    "limitations": []
+  }
+}

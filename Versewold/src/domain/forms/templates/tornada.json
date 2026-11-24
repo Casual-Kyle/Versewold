@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "tornada",
+  "name": "Tornada",
+  "language": "oc",
+  "origin": "Occitan troubadour lyric",
+  "summary": "A shorter closing stanza used to send, dedicate, or turn a lyric.",
+  "tags": ["concept", "oc", "free", "congedo", "finda", "envoi"],
+  "notes": [
+    "Its size and sound pattern depend on the larger poem. Related terms include envoi, congedo, and finda; this entry does not impose a universal three-line ending."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Tornada (Occitan literary term)",
+      "url": "https://en.wikipedia.org/wiki/Tornada_(Occitan_literary_term)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1352705574"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "concept",
+    "status": "reference",
+    "aliases": ["Tornada (Occitan literary term)", "congedo", "finda", "envoi"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 14778341,
+    "sourceRevisionId": 1352705574,
+    "limitations": []
+  }
+}

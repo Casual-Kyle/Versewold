@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "cantiga-de-amor",
+  "name": "Cantiga de amor",
+  "language": "gl",
+  "origin": "Medieval Galician-Portuguese lyric",
+  "summary": "A courtly love song voiced through longing, service, and emotional distance.",
+  "tags": ["form", "gl", "free", "cantiga d’amor"],
+  "notes": [
+    "Refrains are common, but individual songs use different stanza arrangements. Choose an attested song as a structural model."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Cantiga de amor",
+      "url": "https://en.wikipedia.org/wiki/Cantiga_de_amor"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1385573273"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": ["cantiga d’amor"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 71573775,
+    "sourceRevisionId": 1385573273,
+    "limitations": []
+  }
+}

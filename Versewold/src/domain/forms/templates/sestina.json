@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "id": "sestina",
+  "name": "Sestina",
+  "language": "en",
+  "origin": "Occitan troubadour tradition · associated with Arnaut Daniel",
+  "summary": "Six end-words rotate through six sestets, then meet again in a three-line envoi. Repetition takes the place of rhyme.",
+  "tags": ["fixed", "end-word", "advanced"],
+  "notes": [
+    "End-word groups are identities, not rhyme labels. Rotation: ABCDEF / FAEBDC / CFDABE / ECBFAD / DEACFB / BDFECA.",
+    "This template chooses envoi line-end words E, C, A, with B, D, F appearing inside those lines. Other pairings are possible.",
+    "No universal syllable count or meter is required."
+  ],
+  "sources": [
+    {
+      "title": "Academy of American Poets — Sestina",
+      "url": "https://poets.org/glossary/sestina"
+    },
+    {
+      "title": "Wikipedia — Sestina",
+      "url": "https://en.wikipedia.org/wiki/Sestina"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383651602"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Sestet 1",
+        "lines": [
+          {
+            "endWord": "A"
+          },
+          {
+            "endWord": "B"
+          },
+          {
+            "endWord": "C"
+          },
+          {
+            "endWord": "D"
+          },
+          {
+            "endWord": "E"
+          },
+          {
+            "endWord": "F"
+          }
+        ]
+      },
+      {
+        "label": "Sestet 2",
+        "lines": [
+          {
+            "endWord": "F"
+          },
+          {
+            "endWord": "A"
+          },
+          {
+            "endWord": "E"
+          },
+          {
+            "endWord": "B"
+          },
+          {
+            "endWord": "D"
+          },
+          {
+            "endWord": "C"
+          }
+        ]
+      },
+      {
+        "label": "Sestet 3",
+        "lines": [
+          {
+            "endWord": "C"
+          },
+          {
+            "endWord": "F"
+          },
+          {
+            "endWord": "D"
+          },
+          {
+            "endWord": "A"
+          },
+          {
+            "endWord": "B"
+          },
+          {
+            "endWord": "E"
+          }
+        ]
+      },
+      {
+        "label": "Sestet 4",
+        "lines": [
+          {
+            "endWord": "E"
+          },
+          {
+            "endWord": "C"
+          },
+          {
+            "endWord": "B"
+          },
+          {
+            "endWord": "F"
+          },
+          {
+            "endWord": "A"
+          },
+          {
+            "endWord": "D"
+          }
+        ]
+      },
+      {
+        "label": "Sestet 5",
+        "lines": [
+          {
+            "endWord": "D"
+          },
+          {
+            "endWord": "E"
+          },
+          {
+            "endWord": "A"
+          },
+          {
+            "endWord": "C"
+          },
+          {
+            "endWord": "F"
+          },
+          {
+            "endWord": "B"
+          }
+        ]
+      },
+      {
+        "label": "Sestet 6",
+        "lines": [
+          {
+            "endWord": "B"
+          },
+          {
+            "endWord": "D"
+          },
+          {
+            "endWord": "F"
+          },
+          {
+            "endWord": "E"
+          },
+          {
+            "endWord": "C"
+          },
+          {
+            "endWord": "A"
+          }
+        ]
+      },
+      {
+        "label": "Envoi",
+        "lines": [
+          {
+            "endWord": "E",
+            "containsEndWords": ["B"]
+          },
+          {
+            "endWord": "C",
+            "containsEndWords": ["D"]
+          },
+          {
+            "endWord": "A",
+            "containsEndWords": ["F"]
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["sestine", "sextine", "sextain"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 28829,
+    "sourceRevisionId": 1383651602,
+    "limitations": []
+  }
+}

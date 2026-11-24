@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "arlabecca",
+  "name": "Arlabecca",
+  "language": "oc",
+  "origin": "Medieval Occitan lyric",
+  "summary": "A historically attested Occitan lyric genre whose precise classification remains uncertain.",
+  "tags": ["form", "oc", "free"],
+  "notes": [
+    "The surviving terminology has been interpreted in different ways. Study a particular attested work instead of assuming a modern fixed rhyme scheme."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Arlabecca",
+      "url": "https://en.wikipedia.org/wiki/Arlabecca"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1305251919"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 19111418,
+    "sourceRevisionId": 1305251919,
+    "limitations": [
+      "Historical definition requires specialist corroboration before a structural template is prescribed."
+    ]
+  }
+}

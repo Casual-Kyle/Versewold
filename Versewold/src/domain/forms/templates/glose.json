@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "glose",
+  "name": "Glose",
+  "language": "es",
+  "origin": "Spanish glosa and later adaptations",
+  "summary": "Answer a borrowed quatrain in stanzas that return its lines in sequence.",
+  "tags": ["form", "es", "fixed", "glosa", "gloss"],
+  "notes": [
+    "A common design places four ten-line stanzas after a quoted quatrain, each ending with the corresponding borrowed line. Supply and credit your source text before writing; its reuse is not automatically checked."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Glose",
+      "url": "https://en.wikipedia.org/wiki/Glose"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1375128065"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Borrowed epigraph · four source lines",
+        "lines": [
+          {
+            "refrain": {
+              "id": "Q1",
+              "role": "define"
+            }
+          },
+          {
+            "refrain": {
+              "id": "Q2",
+              "role": "define"
+            }
+          },
+          {
+            "refrain": {
+              "id": "Q3",
+              "role": "define"
+            }
+          },
+          {
+            "refrain": {
+              "id": "Q4",
+              "role": "define"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Answering stanza 1",
+        "lines": [
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {
+            "refrain": {
+              "id": "Q1",
+              "role": "repeat"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Answering stanza 2",
+        "lines": [
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {
+            "refrain": {
+              "id": "Q2",
+              "role": "repeat"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Answering stanza 3",
+        "lines": [
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {
+            "refrain": {
+              "id": "Q3",
+              "role": "repeat"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Answering stanza 4",
+        "lines": [
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {
+            "refrain": {
+              "id": "Q4",
+              "role": "repeat"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": ["glosa", "gloss"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 70582822,
+    "sourceRevisionId": 1375128065,
+    "limitations": [
+      "This particular layout includes the four-line epigraph in addition to forty new lines. Rhyme and source-text reuse need manual review."
+    ]
+  }
+}

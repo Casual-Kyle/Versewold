@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "ragale",
+  "name": "Ragale",
+  "language": "kn",
+  "origin": "Kannada prosody",
+  "summary": "A Kannada metrical family organized through patterned mātrā groups.",
+  "tags": ["form", "kn", "free", "Ragaḷe", "ragala"],
+  "notes": [
+    "Lalita, Mandānila, and Utsāha ragale are distinct variants. A line’s weight groups should not be flattened into a fixed count of English syllables."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Ragale",
+      "url": "https://en.wikipedia.org/wiki/Ragale"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1358651413"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": ["Ragaḷe", "ragala"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 21943682,
+    "sourceRevisionId": 1358651413,
+    "limitations": []
+  }
+}

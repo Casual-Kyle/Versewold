@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "ibitekerezo",
+  "name": "Ibitekerezo",
+  "language": "rw",
+  "origin": "Rwandan royal oral literature",
+  "summary": "Epic heroic narratives carrying histories of dynasties and public memory.",
+  "tags": ["tradition", "rw", "free"],
+  "notes": [
+    "Select and study an attested performance before assigning verse constraints. This is a culturally specific oral tradition, not a generic heroic couplet exercise."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Ibitekerezo",
+      "url": "https://en.wikipedia.org/wiki/Ibitekerezo"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1371324573"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 40249997,
+    "sourceRevisionId": 1371324573,
+    "limitations": []
+  }
+}

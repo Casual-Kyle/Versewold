@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "oriki",
+  "name": "Oríkì",
+  "language": "yo",
+  "origin": "Yoruba praise and naming traditions",
+  "summary": "Poetic naming and characterization that evoke persons, lineages, places, or powers.",
+  "tags": ["tradition", "yo", "free", "Oriki", "oriki praise"],
+  "notes": [
+    "Listen to a particular tradition and performance. Praise, identity, allusion, and cultural knowledge are not captured by one fixed line count."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Oríkì",
+      "url": "https://en.wikipedia.org/wiki/Or%C3%ADk%C3%AC"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1377503525"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["Oriki", "oriki praise"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 7521063,
+    "sourceRevisionId": 1377503525,
+    "limitations": []
+  }
+}

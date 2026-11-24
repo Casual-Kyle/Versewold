@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "poetic-meter-and-poetic-form",
+  "name": "Poetic Meter and Poetic Form",
+  "language": "en",
+  "origin": "Paul Fussell · literary criticism",
+  "summary": "Paul Fussell’s critical reference book on prosody and form.",
+  "tags": ["reference", "en", "free"],
+  "notes": [
+    "This category member is a book. It is retained as a reading reference, not converted into a writing template."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Poetic Meter and Poetic Form",
+      "url": "https://en.wikipedia.org/wiki/Poetic_Meter_and_Poetic_Form"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1384255412"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "reference",
+    "status": "reference",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 3646575,
+    "sourceRevisionId": 1384255412,
+    "limitations": []
+  }
+}

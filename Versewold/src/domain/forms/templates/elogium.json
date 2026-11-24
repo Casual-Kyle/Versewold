@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "elogium",
+  "name": "Elogium",
+  "language": "la",
+  "origin": "Ancient Roman commemorative writing",
+  "summary": "An honorific inscription or concise literary memorial for a person who has died.",
+  "tags": ["tradition", "la", "free"],
+  "notes": [
+    "Historical examples use different meters or prose. Naming, public identity, and commemoration are more stable than a single verse design."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Elogium (literary genre)",
+      "url": "https://en.wikipedia.org/wiki/Elogium_(literary_genre)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1299855569"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["Elogium (literary genre)"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 73395545,
+    "sourceRevisionId": 1299855569,
+    "limitations": []
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "kidung",
+  "name": "Kidung",
+  "language": "jv",
+  "origin": "Old and Middle Javanese literary song",
+  "summary": "Narrative poetry using Javanese meters rather than the Sanskrit-derived kakawin system.",
+  "tags": ["tradition", "jv", "free"],
+  "notes": [
+    "Historical romance and Panji narratives are important contexts. A particular metrical pattern is needed before creating a strict template."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Kidung",
+      "url": "https://en.wikipedia.org/wiki/Kidung"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1363774180"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 12446841,
+    "sourceRevisionId": 1363774180,
+    "limitations": []
+  }
+}

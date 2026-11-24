@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "canto",
+  "name": "Canto",
+  "language": "und",
+  "origin": "Cross-tradition terminology",
+  "summary": "A large division in a long poem, comparable to a chapter.",
+  "tags": ["concept", "und", "free"],
+  "notes": [
+    "A canto can contain many stanza forms. The term does not prescribe its own line count or rhyme scheme."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Canto",
+      "url": "https://en.wikipedia.org/wiki/Canto"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1340476298"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "concept",
+    "status": "reference",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 893850,
+    "sourceRevisionId": 1340476298,
+    "limitations": []
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "ubwiiru",
+  "name": "Ubwiiru",
+  "language": "rw",
+  "origin": "Rwandan royal traditions",
+  "summary": "A sacred royal code encompassing ritual knowledge, songs, and customary practice.",
+  "tags": ["reference", "rw", "free", "ubwiru"],
+  "notes": [
+    "The category contains this cultural topic, but it does not define one standalone poem template. It is retained as a contextual reference."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Ubwiiru",
+      "url": "https://en.wikipedia.org/wiki/Ubwiiru"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1338973214"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "reference",
+    "status": "reference",
+    "aliases": ["ubwiru"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 81819949,
+    "sourceRevisionId": 1338973214,
+    "limitations": []
+  }
+}

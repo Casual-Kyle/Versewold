@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "tanka-in-english",
+  "name": "Tanka in English",
+  "language": "en",
+  "origin": "English-language adaptations of Japanese tanka",
+  "summary": "A five-line lyric that can turn between image and personal response.",
+  "tags": ["form", "en", "fixed", "English tanka"],
+  "notes": [
+    "English-language tanka need not use 5–7–5–7–7 English syllables. Japanese mora counts and English syllables are not equivalent."
+  ],
+  "sources": [
+    {
+      "title": "Poetry Archive — Tanka",
+      "url": "https://poetryarchive.org/glossary/tanka/"
+    },
+    {
+      "title": "Wikipedia — Tanka in English",
+      "url": "https://en.wikipedia.org/wiki/Tanka_in_English"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303283614"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [{}, {}, {}, {}, {}]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["English tanka"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 37032555,
+    "sourceRevisionId": 1303283614,
+    "limitations": []
+  }
+}

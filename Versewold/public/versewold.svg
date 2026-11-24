@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <title>Versewold botanical quill</title>
+  <rect width="256" height="256" rx="48" fill="#24211F"/>
+  <g stroke="#B5A0C7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M128 193C74 158 52 95 69 46c24 1 46 10 59 24 13-14 35-23 59-24 17 49-5 112-59 147Z"/>
+    <path d="M128 230V72m0 121c-24-35-25-75 0-111 25 36 24 76 0 111ZM128 153l-39-45m39 16 40-38m-40 91-20-24M97 230h62"/>
+  </g>
+</svg>

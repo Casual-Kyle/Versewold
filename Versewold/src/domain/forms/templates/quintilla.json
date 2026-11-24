@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "quintilla",
+  "name": "Quintilla · ABAAB",
+  "language": "es",
+  "origin": "Spanish stanza · ABAAB variant",
+  "summary": "Five octosyllabic lines use two rhymes and a balanced closing movement.",
+  "tags": ["form", "es", "repeating"],
+  "notes": [
+    "This template selects ABAAB. Other accepted schemes differ; avoid three identical consecutive rhymes and a final rhyming couplet. Spanish poetic counting includes conventions beyond English syllable counting."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Quintilla (poetry)",
+      "url": "https://en.wikipedia.org/wiki/Quintilla_(poetry)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1142988511"
+    }
+  ],
+  "structure": {
+    "kind": "repeating",
+    "rhymeScope": "stanza",
+    "stanzas": [
+      {
+        "label": "Repeatable stanza",
+        "lines": [
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "syllabic",
+              "syllables": 8,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "B",
+            "meter": {
+              "system": "syllabic",
+              "syllables": 8,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "syllabic",
+              "syllables": 8,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "syllabic",
+              "syllables": 8,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "B",
+            "meter": {
+              "system": "syllabic",
+              "syllables": 8,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["Quintilla (poetry)"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 63577878,
+    "sourceRevisionId": 1142988511,
+    "limitations": []
+  }
+}

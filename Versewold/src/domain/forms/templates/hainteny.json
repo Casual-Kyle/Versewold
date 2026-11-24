@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "hainteny",
+  "name": "Hainteny",
+  "language": "mg",
+  "origin": "Merina and wider Malagasy oral literature",
+  "summary": "Work through metaphor, allusion, proverbs, and the exchange of verbal insight.",
+  "tags": ["tradition", "mg", "free"],
+  "notes": [
+    "The oral and social setting is part of the practice. Do not infer a universal line count from a translated example."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Hainteny",
+      "url": "https://en.wikipedia.org/wiki/Hainteny"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1352006611"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 15231165,
+    "sourceRevisionId": 1352006611,
+    "limitations": []
+  }
+}

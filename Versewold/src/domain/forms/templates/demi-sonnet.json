@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "demi-sonnet",
+  "name": "Demi-sonnet",
+  "language": "en",
+  "origin": "Modern short-form practice",
+  "summary": "A seven-line miniature that often turns toward an aphoristic close.",
+  "tags": ["form", "en", "fixed"],
+  "notes": [
+    "Vary the line lengths deliberately. The final internal full or approximate rhyme described in the surveyed source is not an end-rhyme label."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Demi-sonnet",
+      "url": "https://en.wikipedia.org/wiki/Demi-sonnet"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1280637904"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [{}, {}, {}, {}, {}, {}, {}]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 37339495,
+    "sourceRevisionId": 1280637904,
+    "limitations": ["Internal-rhyme placement requires manual review."]
+  }
+}

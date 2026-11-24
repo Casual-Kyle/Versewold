@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "lutherstrophe",
+  "name": "Lutherstrophe",
+  "language": "de",
+  "origin": "Occitan, Minnesang, and German hymn traditions",
+  "summary": "A seven-line song stanza combining alternating rhyme with a couplet and closing line.",
+  "tags": ["form", "de", "repeating"],
+  "notes": [
+    "This teaching variant uses ABABCCB. The last line can instead remain unrhymed; historical syllable lengths and iambic endings vary between songs."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Lutherstrophe",
+      "url": "https://en.wikipedia.org/wiki/Lutherstrophe"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1301030369"
+    }
+  ],
+  "structure": {
+    "kind": "repeating",
+    "rhymeScope": "stanza",
+    "stanzas": [
+      {
+        "label": "Seven-line rhyme variant",
+        "lines": [
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "C"
+          },
+          {
+            "rhyme": "C"
+          },
+          {
+            "rhyme": "B"
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 77309596,
+    "sourceRevisionId": 1301030369,
+    "limitations": ["Select the exact hymn or lyric before assigning line lengths."]
+  }
+}

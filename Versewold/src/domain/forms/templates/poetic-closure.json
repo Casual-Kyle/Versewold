@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "poetic-closure",
+  "name": "Poetic closure",
+  "language": "und",
+  "origin": "Cross-tradition terminology",
+  "summary": "The sense of ending created by a poem’s structure, sound, or subject.",
+  "tags": ["concept", "und", "free"],
+  "notes": [
+    "Closure may complete a pattern, alter it, or deliberately resist finality. It is a craft concept, not a fixed stanza form."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Poetic closure",
+      "url": "https://en.wikipedia.org/wiki/Poetic_closure"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1364825198"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "concept",
+    "status": "reference",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 3395586,
+    "sourceRevisionId": 1364825198,
+    "limitations": []
+  }
+}

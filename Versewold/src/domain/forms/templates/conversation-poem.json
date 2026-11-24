@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "conversation-poem",
+  "name": "Conversation poem",
+  "language": "en",
+  "origin": "English Romantic poetry",
+  "summary": "An intimate, reflective address that grows from a particular scene or occasion.",
+  "tags": ["form", "en", "free"],
+  "notes": [
+    "Use a clearly imagined listener and allow observation to lead into thought. The genre is not simply alternating dialogue and does not require one fixed layout."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Conversation poem",
+      "url": "https://en.wikipedia.org/wiki/Conversation_poem"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1124102886"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 39650108,
+    "sourceRevisionId": 1124102886,
+    "limitations": []
+  }
+}

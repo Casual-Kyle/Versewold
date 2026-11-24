@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "tercet",
+  "name": "Tercet",
+  "language": "und",
+  "origin": "Three-line verse unit",
+  "summary": "A three-line stanza or short poem with no single compulsory sound pattern.",
+  "tags": ["form", "und", "fixed", "triplet"],
+  "notes": [
+    "Terza rima, haiku practice, and other three-line designs add their own constraints. This generic canvas prescribes only line count."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Tercet",
+      "url": "https://en.wikipedia.org/wiki/Tercet"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1301041668"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [{}, {}, {}]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["triplet"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 51758,
+    "sourceRevisionId": 1301041668,
+    "limitations": []
+  }
+}

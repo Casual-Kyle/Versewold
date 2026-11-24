@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "epode",
+  "name": "Epode",
+  "language": "grc",
+  "origin": "Ancient Greek and Latin verse",
+  "summary": "A concluding movement of a choral ode; also a term used for certain paired-line forms.",
+  "tags": ["concept", "grc", "free"],
+  "notes": [
+    "The term has multiple historical senses. Select the specific choral or epodic model before creating a structural writing template."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Epode",
+      "url": "https://en.wikipedia.org/wiki/Epode"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1314766320"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "concept",
+    "status": "reference",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 78902,
+    "sourceRevisionId": 1314766320,
+    "limitations": []
+  }
+}

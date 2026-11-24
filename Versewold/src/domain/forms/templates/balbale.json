@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "balbale",
+  "name": "Balbale",
+  "language": "sux",
+  "origin": "Ancient Sumer",
+  "summary": "Sumerian songs marked by changing repetitions and, in some examples, dialogue.",
+  "tags": ["form", "sux", "free"],
+  "notes": [
+    "Ancient compositions bearing this label do not yield one securely unified modern stanza pattern. Use variation and recurring phrases as an exploratory guide."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Balbale",
+      "url": "https://en.wikipedia.org/wiki/Balbale"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1374418248"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 28139649,
+    "sourceRevisionId": 1374418248,
+    "limitations": []
+  }
+}

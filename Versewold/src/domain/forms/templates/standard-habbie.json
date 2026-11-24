@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "id": "standard-habbie",
+  "name": "Standard Habbie",
+  "language": "en-GB",
+  "origin": "Scotland · also called the Burns stanza",
+  "summary": "A lilting six-line stanza: four longer lines, two shorter ones, and a returning AAABAB rhyme.",
+  "tags": ["Scottish", "repeating", "rhymed"],
+  "notes": [
+    "Lines 1, 2, 3, and 5 conventionally have four iambic feet; lines 4 and 6 have two.",
+    "8/8/8/4/8/4 is a base syllable expectation, not an absolute: feminine endings and substitutions occur.",
+    "Rhyme letters reset in each stanza. A later stanza can choose new rhyme sounds."
+  ],
+  "sources": [
+    {
+      "title": "Scottish Poetry Library — To a Mouse",
+      "url": "https://www.scottishpoetrylibrary.org.uk/poem/mouse/"
+    }
+  ],
+  "structure": {
+    "kind": "repeating",
+    "rhymeScope": "stanza",
+    "stanzas": [
+      {
+        "label": "Repeatable six-line stanza",
+        "lines": [
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 4,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 4,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 4,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "B",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 2,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 4,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "B",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 2,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "limitations": []
+  }
+}

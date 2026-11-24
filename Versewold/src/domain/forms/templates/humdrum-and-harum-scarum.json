@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "humdrum-and-harum-scarum",
+  "name": "Humdrum and Harum-Scarum",
+  "language": "en",
+  "origin": "Robert Bridges · 1922 criticism",
+  "summary": "Robert Bridges’s essay on free verse and poetic constraint.",
+  "tags": ["reference", "en", "free"],
+  "notes": [
+    "This is a critical essay, not a poem form. It remains searchable as a research reference."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Humdrum and Harum-Scarum",
+      "url": "https://en.wikipedia.org/wiki/Humdrum_and_Harum-Scarum"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1308120284"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "reference",
+    "status": "reference",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 3600183,
+    "sourceRevisionId": 1308120284,
+    "limitations": []
+  }
+}

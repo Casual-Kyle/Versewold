@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "javanese-poetry",
+  "name": "Javanese poetry",
+  "language": "jv",
+  "origin": "Java · sung literary traditions",
+  "summary": "A family of sung poetic systems including large, middle, and macapat forms.",
+  "tags": ["tradition", "jv", "free", "tembang", "sekar", "macapat"],
+  "notes": [
+    "Individual meters govern line counts, syllables, and ending vowels. The umbrella label is not one template; specific macapat and other patterns need separate research."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Javanese poetry",
+      "url": "https://en.wikipedia.org/wiki/Javanese_poetry"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1364729454"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["tembang", "sekar", "macapat"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 6417151,
+    "sourceRevisionId": 1364729454,
+    "limitations": []
+  }
+}

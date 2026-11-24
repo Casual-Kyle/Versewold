@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "ballad",
+  "name": "Ballad · common quatrain",
+  "language": "en",
+  "origin": "European narrative song · English-language practice variant",
+  "summary": "Tell a story in quatrains with a four-beat/three-beat movement.",
+  "tags": ["form", "en", "repeating"],
+  "notes": [
+    "This common practice variant uses four, three, four, three stresses; the second and fourth lines rhyme. Ballads as a whole have other stanza, rhyme, and musical arrangements."
+  ],
+  "sources": [
+    {
+      "title": "Poetry Foundation — Ballad",
+      "url": "https://www.poetryfoundation.org/education/glossary/ballad"
+    },
+    {
+      "title": "Wikipedia — Ballad",
+      "url": "https://en.wikipedia.org/wiki/Ballad"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1386962653"
+    }
+  ],
+  "structure": {
+    "kind": "repeating",
+    "rhymeScope": "stanza",
+    "stanzas": [
+      {
+        "label": "Repeatable stanza",
+        "lines": [
+          {
+            "meter": {
+              "system": "accentual",
+              "beats": 4,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual",
+              "beats": 3,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "accentual",
+              "beats": 4,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual",
+              "beats": 3,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["Ballad"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 4575,
+    "sourceRevisionId": 1386962653,
+    "limitations": []
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "luc-bat",
+  "name": "Lục bát",
+  "language": "vi",
+  "origin": "Vietnamese vernacular verse",
+  "summary": "Alternating six- and eight-syllable lines connect through internal rhyme and tonal pattern.",
+  "tags": ["form", "vi", "repeating", "luc bat", "six eight"],
+  "notes": [
+    "The six-syllable line ending rhymes with syllable six of the following eight-syllable line; that line’s ending links onward. Bằng/trắc tone positions and Vietnamese syllables need language-aware review."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Lục bát",
+      "url": "https://en.wikipedia.org/wiki/L%E1%BB%A5c_b%C3%A1t"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1379502358"
+    }
+  ],
+  "structure": {
+    "kind": "repeating",
+    "rhymeScope": "stanza",
+    "stanzas": [
+      {
+        "label": "Six–eight pair",
+        "lines": [
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 6,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 8,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": ["luc bat", "six eight"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 1858789,
+    "sourceRevisionId": 1379502358,
+    "limitations": [
+      "Line lengths are modeled; cross-pair internal-rhyme chains and tonal rules are described, not validated."
+    ]
+  }
+}

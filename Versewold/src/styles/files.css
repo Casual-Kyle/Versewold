@@ -1,0 +1,155 @@
+/* Portable-file workflows live outside the editor so writing stays uncluttered. */
+.sidebar-file-actions {
+  margin-top: auto;
+  padding-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.sidebar-file-actions .text-button {
+  font-size: calc(10px * var(--ui-scale));
+  gap: 6px;
+  padding: 8px;
+}
+.project-sidebar .settings-link {
+  margin-top: 8px;
+}
+.project-files-dialog {
+  position: relative;
+  width: min(840px, calc(100vw - 50px));
+  max-height: calc(100dvh - 60px);
+  overflow-y: auto;
+  border: 1px solid var(--bark);
+  border-radius: 14px;
+  background: var(--earth);
+  color: var(--parchment);
+  padding: 32px;
+}
+.project-files-dialog::backdrop {
+  background: color-mix(in srgb, var(--earth) 75%, transparent);
+  backdrop-filter: blur(4px);
+}
+.project-files-dialog h2 {
+  font-size: calc(31px * var(--ui-scale));
+  margin: 9px 0 12px;
+}
+.files-intro,
+.files-footnote {
+  color: var(--linen);
+  font-size: calc(11px * var(--ui-scale));
+  line-height: 1.8;
+}
+.files-save-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+.files-save-bar .button {
+  gap: 10px;
+}
+.files-save-bar > span {
+  flex: 1;
+  min-width: 180px;
+  color: var(--text-faint);
+  font-size: calc(9px * var(--ui-scale));
+}
+.files-save-bar code {
+  display: block;
+  overflow-wrap: anywhere;
+  margin-top: 4px;
+  font: inherit;
+}
+.files-save-bar kbd {
+  font: calc(9px * var(--ui-scale)) var(--font-ui);
+  opacity: 0.7;
+}
+.files-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.files-sections > section {
+  min-width: 0;
+  border-radius: 10px;
+  padding: 18px;
+  background: var(--walnut);
+}
+.files-sections h3 {
+  color: var(--lavender);
+  font-size: calc(11px * var(--ui-scale));
+  margin: 0;
+}
+.files-current {
+  color: var(--text-faint);
+  font-size: calc(10px * var(--ui-scale));
+  margin: 6px 0 18px;
+  overflow-wrap: anywhere;
+}
+.file-action {
+  display: flex;
+  gap: 11px;
+  text-align: left;
+  align-items: flex-start;
+  width: 100%;
+  padding: 11px;
+  border-radius: 7px;
+  margin-top: 6px;
+  background: var(--earth);
+}
+.file-action > svg {
+  flex-shrink: 0;
+  color: var(--lavender);
+  margin-top: 3px;
+}
+.file-action strong {
+  display: block;
+  font-size: calc(11px * var(--ui-scale));
+  font-weight: 500;
+}
+.file-action small {
+  display: block;
+  color: var(--linen);
+  font-size: calc(9px * var(--ui-scale));
+  line-height: 1.7;
+  margin-top: 4px;
+}
+.file-action:not(:disabled):hover {
+  background: var(--surface-raised);
+}
+.files-footnote {
+  font-size: calc(9px * var(--ui-scale));
+  margin: 18px 0;
+}
+.file-feedback {
+  border-radius: 8px;
+  background: var(--walnut);
+  color: var(--sage);
+  padding: 12px;
+  margin-bottom: 16px;
+  font-size: calc(11px * var(--ui-scale));
+}
+.file-feedback p {
+  margin: 0;
+}
+.file-feedback code {
+  display: block;
+  margin-top: 7px;
+  color: var(--linen);
+  font-size: calc(10px * var(--ui-scale));
+  overflow-wrap: anywhere;
+  user-select: text;
+}
+.file-feedback.failed {
+  color: var(--clay);
+}
+.project-files-dialog > footer {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 760px) {
+  .files-sections {
+    grid-template-columns: 1fr;
+  }
+}

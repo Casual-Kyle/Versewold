@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "paradelle",
+  "name": "Paradelle",
+  "language": "en",
+  "origin": "Billy Collins · modern invented form",
+  "summary": "Repeated lines become a word bank that later stanzas rearrange.",
+  "tags": ["form", "en", "fixed"],
+  "notes": [
+    "Four six-line stanzas form the canvas. In the first three, line 2 repeats 1 and line 4 repeats 3; lines 5–6 rearrange the source words. The final stanza reuses the poem’s earlier vocabulary. The supposed medieval origin was part of Collins’s parody."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Paradelle",
+      "url": "https://en.wikipedia.org/wiki/Paradelle"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1374562053"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Source stanza 1",
+        "lines": [
+          {
+            "refrain": {
+              "id": "S1A",
+              "role": "define"
+            }
+          },
+          {
+            "refrain": {
+              "id": "S1A",
+              "role": "repeat"
+            }
+          },
+          {
+            "refrain": {
+              "id": "S1B",
+              "role": "define"
+            }
+          },
+          {
+            "refrain": {
+              "id": "S1B",
+              "role": "repeat"
+            }
+          },
+          {},
+          {}
+        ]
+      },
+      {
+        "label": "Source stanza 2",
+        "lines": [
+          {
+            "refrain": {
+              "id": "S2A",
+              "role": "define"
+            }
+          },
+          {
+            "refrain": {
+              "id": "S2A",
+              "role": "repeat"
+            }
+          },
+          {
+            "refrain": {
+              "id": "S2B",
+              "role": "define"
+            }
+          },
+          {
+            "refrain": {
+              "id": "S2B",
+              "role": "repeat"
+            }
+          },
+          {},
+          {}
+        ]
+      },
+      {
+        "label": "Source stanza 3",
+        "lines": [
+          {
+            "refrain": {
+              "id": "S3A",
+              "role": "define"
+            }
+          },
+          {
+            "refrain": {
+              "id": "S3A",
+              "role": "repeat"
+            }
+          },
+          {
+            "refrain": {
+              "id": "S3B",
+              "role": "define"
+            }
+          },
+          {
+            "refrain": {
+              "id": "S3B",
+              "role": "repeat"
+            }
+          },
+          {},
+          {}
+        ]
+      },
+      {
+        "label": "Final rearrangement",
+        "lines": [{}, {}, {}, {}, {}, {}]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 23039082,
+    "sourceRevisionId": 1374562053,
+    "limitations": [
+      "The core word-multiset constraints are not serialized or checked automatically."
+    ]
+  }
+}

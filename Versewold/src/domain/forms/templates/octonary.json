@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "octonary",
+  "name": "Octonary",
+  "language": "und",
+  "origin": "Eight-line verse unit",
+  "summary": "An eight-line section or poem, including historical song and psalm arrangements.",
+  "tags": ["form", "und", "fixed", "octonaire"],
+  "notes": [
+    "The line count alone does not dictate meter or rhyme. Specific French octonaire song patterns require a separate named variant."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Octonary",
+      "url": "https://en.wikipedia.org/wiki/Octonary"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1241982518"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [{}, {}, {}, {}, {}, {}, {}, {}]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["octonaire"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 31591447,
+    "sourceRevisionId": 1241982518,
+    "limitations": []
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "roundel",
+  "name": "Roundel",
+  "language": "en",
+  "origin": "Swinburne’s English roundel",
+  "summary": "Nine full lines and two shorter refrains form an eleven-line whole.",
+  "tags": ["form", "en", "fixed"],
+  "notes": [
+    "The pattern is ABA plus refrain / BAB / ABA plus refrain. The refrain repeats the opening fragment of line 1 and rhymes with B. Unlike a rondel, it is not a thirteen-line form."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Roundel (poetry)",
+      "url": "https://en.wikipedia.org/wiki/Roundel_(poetry)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1379453273"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Opening with short refrain",
+        "lines": [
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B",
+            "refrain": {
+              "id": "R",
+              "role": "define"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Middle tercet",
+        "lines": [
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          }
+        ]
+      },
+      {
+        "label": "Closing with short refrain",
+        "lines": [
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B",
+            "refrain": {
+              "id": "R",
+              "role": "repeat"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["Roundel (poetry)"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 15598108,
+    "sourceRevisionId": 1379453273,
+    "limitations": [
+      "The refrain’s relationship to the opening fragment needs manual review; it is not a whole-line repeat of line 1."
+    ]
+  }
+}

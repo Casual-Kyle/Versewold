@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "dialogue-sonnet",
+  "name": "Dialogue sonnet",
+  "language": "und",
+  "origin": "Italian sonnet tradition and later adaptations",
+  "summary": "Let a sonnet unfold as a conversation between distinct voices.",
+  "tags": ["form", "und", "fixed"],
+  "notes": [
+    "Choose an underlying sonnet variant separately. Speakers may divide a line, so physical line count can differ from metrical line count."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Dialogue sonnet",
+      "url": "https://en.wikipedia.org/wiki/Dialogue_sonnet"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1376651776"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Fourteen-line teaching canvas",
+        "lines": [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 80092834,
+    "sourceRevisionId": 1376651776,
+    "limitations": [
+      "This is a visual line-count scaffold; shared lines and the chosen sonnet’s rhyme plan need manual handling."
+    ]
+  }
+}

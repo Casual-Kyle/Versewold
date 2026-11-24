@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "antilabe",
+  "name": "Antilabe",
+  "language": "und",
+  "origin": "Used in multiple literary traditions",
+  "summary": "Share one metrical verse line between two or more dramatic speakers.",
+  "tags": ["technique", "und", "free"],
+  "notes": [
+    "Indent the continuation to show that the voices complete one underlying line. The editor currently counts physical lines, so dramatic line sharing requires manual review."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Antilabe",
+      "url": "https://en.wikipedia.org/wiki/Antilabe"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1366107584"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "technique",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 17702049,
+    "sourceRevisionId": 1366107584,
+    "limitations": []
+  }
+}

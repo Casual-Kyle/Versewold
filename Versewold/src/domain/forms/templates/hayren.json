@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "hayren",
+  "name": "Hayren",
+  "language": "hy",
+  "origin": "Armenian folk and literary poetry",
+  "summary": "A quatrain commonly described as four fifteen-syllable lines.",
+  "tags": ["form", "hy", "fixed"],
+  "notes": [
+    "Each line is conventionally divided 7 + 8. The internal division and Armenian performance require manual review; subject matter may range beyond love."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Hayren",
+      "url": "https://en.wikipedia.org/wiki/Hayren"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1369629883"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 15,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 15,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 15,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 15,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 73747364,
+    "sourceRevisionId": 1369629883,
+    "limitations": [
+      "Only whole-line syllable targets are serialized; 7 + 8 divisions remain descriptive."
+    ]
+  }
+}

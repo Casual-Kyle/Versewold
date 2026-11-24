@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "sesotho-poetry",
+  "name": "Sesotho poetry",
+  "language": "st",
+  "origin": "Basotho oral and written literature",
+  "summary": "Poetry in Sesotho, encompassing both longstanding oral practices and written forms.",
+  "tags": ["tradition", "st", "free"],
+  "notes": [
+    "The language or tradition is not itself a single form. Use a particular poet, performance, or genre to establish the intended structure."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Sesotho poetry",
+      "url": "https://en.wikipedia.org/wiki/Sesotho_poetry"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1286184887"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 58574913,
+    "sourceRevisionId": 1286184887,
+    "limitations": []
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "id": "chant-royal",
+  "name": "Chant royal",
+  "language": "fr",
+  "origin": "Medieval France · five-line envoi variant",
+  "summary": "Five eleven-line stanzas return to the same refrain, followed by a shorter envoi.",
+  "tags": ["form", "fr", "fixed"],
+  "notes": [
+    "The chosen stanza scheme is ABABCCDDEDE, with the final E line repeated verbatim. The selected envoi is DDEDE; a seven-line envoi is another variant. Repeated rhyme words outside the refrain require manual review."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Chant royal",
+      "url": "https://en.wikipedia.org/wiki/Chant_royal"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1361245396"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Stanza 1",
+        "lines": [
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "C"
+          },
+          {
+            "rhyme": "C"
+          },
+          {
+            "rhyme": "D"
+          },
+          {
+            "rhyme": "D"
+          },
+          {
+            "rhyme": "E"
+          },
+          {
+            "rhyme": "D"
+          },
+          {
+            "rhyme": "E",
+            "refrain": {
+              "id": "R",
+              "role": "define"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Stanza 2",
+        "lines": [
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "C"
+          },
+          {
+            "rhyme": "C"
+          },
+          {
+            "rhyme": "D"
+          },
+          {
+            "rhyme": "D"
+          },
+          {
+            "rhyme": "E"
+          },
+          {
+            "rhyme": "D"
+          },
+          {
+            "rhyme": "E",
+            "refrain": {
+              "id": "R",
+              "role": "repeat"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Stanza 3",
+        "lines": [
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "C"
+          },
+          {
+            "rhyme": "C"
+          },
+          {
+            "rhyme": "D"
+          },
+          {
+            "rhyme": "D"
+          },
+          {
+            "rhyme": "E"
+          },
+          {
+            "rhyme": "D"
+          },
+          {
+            "rhyme": "E",
+            "refrain": {
+              "id": "R",
+              "role": "repeat"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Stanza 4",
+        "lines": [
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "C"
+          },
+          {
+            "rhyme": "C"
+          },
+          {
+            "rhyme": "D"
+          },
+          {
+            "rhyme": "D"
+          },
+          {
+            "rhyme": "E"
+          },
+          {
+            "rhyme": "D"
+          },
+          {
+            "rhyme": "E",
+            "refrain": {
+              "id": "R",
+              "role": "repeat"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Stanza 5",
+        "lines": [
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "C"
+          },
+          {
+            "rhyme": "C"
+          },
+          {
+            "rhyme": "D"
+          },
+          {
+            "rhyme": "D"
+          },
+          {
+            "rhyme": "E"
+          },
+          {
+            "rhyme": "D"
+          },
+          {
+            "rhyme": "E",
+            "refrain": {
+              "id": "R",
+              "role": "repeat"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Five-line envoi",
+        "lines": [
+          {
+            "rhyme": "D"
+          },
+          {
+            "rhyme": "D"
+          },
+          {
+            "rhyme": "E"
+          },
+          {
+            "rhyme": "D"
+          },
+          {
+            "rhyme": "E",
+            "refrain": {
+              "id": "R",
+              "role": "repeat"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 453173,
+    "sourceRevisionId": 1361245396,
+    "limitations": [
+      "Layout and refrain positions are modeled; lexical rhyme-word reuse is not automatically checked."
+    ]
+  }
+}

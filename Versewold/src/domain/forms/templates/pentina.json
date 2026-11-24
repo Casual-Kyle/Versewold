@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "pentina",
+  "name": "Pentina",
+  "language": "en",
+  "origin": "Leigh Harrison · modern sestina-related form",
+  "summary": "Five end-words rotate through five quintains and a two-line envoi.",
+  "tags": ["form", "en", "fixed"],
+  "notes": [
+    "End-word orders are ABCDE / EADBC / CEBAD / DCAEB / BDECA. This envoi variant places A and B within its first line ending C, then D inside the second ending E."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Pentina",
+      "url": "https://en.wikipedia.org/wiki/Pentina"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1235581342"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Quintain 1",
+        "lines": [
+          {
+            "endWord": "A"
+          },
+          {
+            "endWord": "B"
+          },
+          {
+            "endWord": "C"
+          },
+          {
+            "endWord": "D"
+          },
+          {
+            "endWord": "E"
+          }
+        ]
+      },
+      {
+        "label": "Quintain 2",
+        "lines": [
+          {
+            "endWord": "E"
+          },
+          {
+            "endWord": "A"
+          },
+          {
+            "endWord": "D"
+          },
+          {
+            "endWord": "B"
+          },
+          {
+            "endWord": "C"
+          }
+        ]
+      },
+      {
+        "label": "Quintain 3",
+        "lines": [
+          {
+            "endWord": "C"
+          },
+          {
+            "endWord": "E"
+          },
+          {
+            "endWord": "B"
+          },
+          {
+            "endWord": "A"
+          },
+          {
+            "endWord": "D"
+          }
+        ]
+      },
+      {
+        "label": "Quintain 4",
+        "lines": [
+          {
+            "endWord": "D"
+          },
+          {
+            "endWord": "C"
+          },
+          {
+            "endWord": "A"
+          },
+          {
+            "endWord": "E"
+          },
+          {
+            "endWord": "B"
+          }
+        ]
+      },
+      {
+        "label": "Quintain 5",
+        "lines": [
+          {
+            "endWord": "B"
+          },
+          {
+            "endWord": "D"
+          },
+          {
+            "endWord": "E"
+          },
+          {
+            "endWord": "C"
+          },
+          {
+            "endWord": "A"
+          }
+        ]
+      },
+      {
+        "label": "Two-line envoi · one pairing variant",
+        "lines": [
+          {
+            "endWord": "C",
+            "containsEndWords": ["A", "B"]
+          },
+          {
+            "endWord": "E",
+            "containsEndWords": ["D"]
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 9397509,
+    "sourceRevisionId": 1235581342,
+    "limitations": [
+      "The source’s prose contains a second/third-line typo; its two-line diagram is used here. Meter is not imposed without stronger specification."
+    ]
+  }
+}

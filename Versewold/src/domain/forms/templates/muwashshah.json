@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "muwashshah",
+  "name": "Muwashshah",
+  "language": "ar",
+  "origin": "Al-Andalus · Arabic and Hebrew strophic song",
+  "summary": "A strophic lyric intertwining changing sections, returning material, and a final kharja.",
+  "tags": ["tradition", "ar", "free", "muwaššaḥ", "muwashshaha", "muwashahat"],
+  "notes": [
+    "Arabic and Hebrew examples and musical traditions differ. Select a particular model before fixing the divisions, metrical scheme, and rhyme pattern."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Muwashshah",
+      "url": "https://en.wikipedia.org/wiki/Muwashshah"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1361888845"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["muwaššaḥ", "muwashshaha", "muwashahat"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 1463988,
+    "sourceRevisionId": 1361888845,
+    "limitations": []
+  }
+}

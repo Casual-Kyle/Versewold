@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "kanshi",
+  "name": "Kanshi",
+  "language": "zh",
+  "origin": "Chinese-language poetry composed in Japan",
+  "summary": "Chinese poetic forms written or received in a Japanese literary setting.",
+  "tags": ["tradition", "zh", "free", "漢詩"],
+  "notes": [
+    "Kanshi includes several forms. Select the Chinese metrical and tonal pattern first rather than treating all kanshi as a haiku-like count."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Kanshi (poetry)",
+      "url": "https://en.wikipedia.org/wiki/Kanshi_(poetry)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1360783593"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["Kanshi (poetry)", "漢詩"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 10925796,
+    "sourceRevisionId": 1360783593,
+    "limitations": []
+  }
+}

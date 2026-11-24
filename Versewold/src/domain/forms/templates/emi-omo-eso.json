@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "emi-omo-eso",
+  "name": "Emi Omo Eso",
+  "language": "yo",
+  "origin": "Yoruba cultural history",
+  "summary": "A Yoruba warrior ethical code associated with the Eso Ikoyi tradition.",
+  "tags": ["reference", "yo", "free"],
+  "notes": [
+    "The category includes this cultural topic, but the article does not establish a standalone metrical poem form. It is retained for research completeness without a compose action."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Emi Omo Eso",
+      "url": "https://en.wikipedia.org/wiki/Emi_Omo_Eso"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1379719775"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "reference",
+    "status": "reference",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 63525105,
+    "sourceRevisionId": 1379719775,
+    "limitations": []
+  }
+}

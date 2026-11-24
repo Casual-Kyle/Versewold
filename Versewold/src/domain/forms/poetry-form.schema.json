@@ -1,0 +1,219 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:versewold:poetry-form:v1",
+  "title": "Versewold poetry form, version 1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "name",
+    "language",
+    "origin",
+    "summary",
+    "tags",
+    "notes",
+    "sources",
+    "structure"
+  ],
+  "properties": {
+    "catalog": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "status", "aliases", "researchedOn", "limitations"],
+      "properties": {
+        "kind": { "enum": ["form", "tradition", "technique", "concept", "reference"] },
+        "status": { "enum": ["structured", "guided", "reference"] },
+        "variants": {
+          "type": "array",
+          "maxItems": 10,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 80 }
+        },
+        "aliases": {
+          "type": "array",
+          "maxItems": 30,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1, "maxLength": 120 }
+        },
+        "researchedOn": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "sourcePageId": { "type": "integer", "minimum": 1 },
+        "sourceRevisionId": { "type": "integer", "minimum": 1 },
+        "limitations": {
+          "type": "array",
+          "maxItems": 20,
+          "items": { "type": "string", "maxLength": 2000 }
+        }
+      }
+    },
+    "schemaVersion": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 80 },
+    "name": { "type": "string", "minLength": 1, "maxLength": 120 },
+    "language": { "type": "string", "minLength": 2, "maxLength": 35 },
+    "origin": { "type": "string", "minLength": 1, "maxLength": 500 },
+    "summary": { "type": "string", "minLength": 1, "maxLength": 2000 },
+    "tags": {
+      "type": "array",
+      "maxItems": 20,
+      "uniqueItems": true,
+      "items": { "type": "string", "maxLength": 80 }
+    },
+    "notes": { "type": "array", "maxItems": 30, "items": { "type": "string", "maxLength": 2000 } },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "url"],
+        "properties": {
+          "title": { "type": "string", "minLength": 1 },
+          "url": { "type": "string", "pattern": "^https://[^\\s]+$" }
+        }
+      }
+    },
+    "structure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "rhymeScope", "stanzas"],
+      "properties": {
+        "kind": { "enum": ["fixed", "repeating", "free"] },
+        "unit": { "enum": ["stanza", "line"] },
+        "lineMapping": { "enum": ["stanza", "poem"] },
+        "maxStanzas": { "type": "integer", "minimum": 1, "maximum": 100 },
+        "rhymeScope": { "enum": ["poem", "stanza"] },
+        "stanzas": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["label", "lines"],
+            "properties": {
+              "label": { "type": "string", "minLength": 1 },
+              "lines": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 100,
+                "items": { "$ref": "#/definitions/line" }
+              }
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "kind": { "const": "free" } } },
+          "then": { "properties": { "stanzas": { "type": "array", "maxItems": 0 } } },
+          "else": { "properties": { "stanzas": { "type": "array", "minItems": 1 } } }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "repeating" } } },
+          "then": { "properties": { "stanzas": { "type": "array", "maxItems": 1 } } }
+        }
+      ]
+    }
+  },
+  "definitions": {
+    "line": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "wordCount": { "type": "integer", "minimum": 1, "maximum": 100 },
+        "internalRhymes": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 20,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["group", "syllable"],
+            "properties": {
+              "group": { "type": "string", "pattern": "^[A-Z][A-Z0-9]*$", "maxLength": 12 },
+              "syllable": { "type": "integer", "minimum": 1, "maximum": 100 }
+            }
+          }
+        },
+        "rhyme": { "type": "string", "pattern": "^[A-Z][A-Z0-9]*$", "maxLength": 12 },
+        "endWord": { "type": "string", "pattern": "^[A-Z][A-Z0-9]*$", "maxLength": 12 },
+        "containsEndWords": {
+          "type": "array",
+          "uniqueItems": true,
+          "maxItems": 10,
+          "items": { "type": "string", "pattern": "^[A-Z][A-Z0-9]*$" }
+        },
+        "refrain": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id", "role"],
+          "properties": {
+            "id": { "type": "string", "pattern": "^[A-Z][A-Z0-9]*$", "maxLength": 12 },
+            "role": { "enum": ["define", "repeat"] }
+          }
+        },
+        "meter": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["system", "strength"],
+          "properties": {
+            "system": {
+              "enum": [
+                "accentual-syllabic",
+                "syllabic",
+                "accentual",
+                "quantitative",
+                "moraic",
+                "free"
+              ]
+            },
+            "strength": { "enum": ["required", "conventional", "optional"] },
+            "pattern": { "type": "string", "pattern": "^[u/x]{1,4}$" },
+            "feet": { "type": "integer", "minimum": 1, "maximum": 20 },
+            "syllables": { "type": "integer", "minimum": 1, "maximum": 100 },
+            "beats": { "type": "integer", "minimum": 1, "maximum": 30 },
+            "morae": { "type": "integer", "minimum": 1, "maximum": 100 },
+            "quantityPattern": { "type": "string", "pattern": "^[ux-]{1,60}$" }
+          },
+          "allOf": [
+            {
+              "if": { "properties": { "system": { "const": "accentual" } } },
+              "then": { "required": ["beats"] }
+            },
+            {
+              "if": { "properties": { "system": { "const": "moraic" } } },
+              "then": { "required": ["morae"] }
+            },
+            {
+              "if": { "properties": { "system": { "const": "quantitative" } } },
+              "then": { "required": ["quantityPattern"] }
+            },
+            {
+              "if": { "properties": { "system": { "const": "accentual-syllabic" } } },
+              "then": { "required": ["pattern", "feet"] }
+            },
+            {
+              "if": { "properties": { "system": { "const": "syllabic" } } },
+              "then": { "required": ["syllables"] }
+            },
+            {
+              "if": { "properties": { "system": { "const": "free" } } },
+              "then": {
+                "not": {
+                  "anyOf": [
+                    { "required": ["pattern"] },
+                    { "required": ["feet"] },
+                    { "required": ["syllables"] },
+                    { "required": ["beats"] },
+                    { "required": ["morae"] },
+                    { "required": ["quantityPattern"] }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

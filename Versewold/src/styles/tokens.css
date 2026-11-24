@@ -1,0 +1,28 @@
+:root {
+  color-scheme: dark;
+  --earth: #24211f;
+  --walnut: #302b27;
+  --bark: #453b34;
+  --lavender: #b5a0c7;
+  --heather: #8d78a3;
+  --sage: #8b9a83;
+  --parchment: #e9e0d3;
+  --linen: #b1a69b;
+  --ochre: #c3a16e;
+  --slate: #8daab8;
+  --clay: #c28d87;
+  --surface-deep: #211e1c;
+  --surface-raised: #37302b;
+  --line: #3a332e;
+  --text-faint: #a2968b;
+  --font-ui: 'Inter', 'Segoe UI', sans-serif;
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-poem: 'EB Garamond', Georgia, serif;
+  --font-mono: 'IBM Plex Mono', Consolas, monospace;
+  --sidebar-width: 252px;
+  --inspector-width: 310px;
+  --ui-scale: 1;
+  --editor-font-size: 21px;
+  --editor-line-height: 1.9;
+  --editor-max-width: 720px;
+}

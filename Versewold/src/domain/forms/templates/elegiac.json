@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "elegiac",
+  "name": "Elegiac",
+  "language": "und",
+  "origin": "Cross-tradition terminology",
+  "summary": "A term that can indicate a mournful mode or the use of classical elegiac couplets.",
+  "tags": ["concept", "und", "free"],
+  "notes": [
+    "An elegy and an elegiac metrical pattern are not interchangeable definitions. Choose the specific genre or meter you intend."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Elegiac",
+      "url": "https://en.wikipedia.org/wiki/Elegiac"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1371477624"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "concept",
+    "status": "reference",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 989367,
+    "sourceRevisionId": 1371477624,
+    "limitations": []
+  }
+}

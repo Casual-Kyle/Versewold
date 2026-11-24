@@ -1,0 +1,20 @@
+{
+  "paper": "letter",
+  "orientation": "portrait",
+  "customWidthMm": 215.9,
+  "customHeightMm": 279.4,
+  "margins": { "top": 25.4, "bottom": 25.4, "left": 25.4, "right": 25.4 },
+  "fontFamily": "Times New Roman",
+  "fontSize": 12,
+  "lineSpacing": 1.5,
+  "titleSize": 18,
+  "titlePage": true,
+  "titleWordCount": true,
+  "countTitles": false,
+  "titleDate": "none",
+  "showPoemAuthor": false,
+  "poemDate": "none",
+  "sectionPages": true,
+  "poemNewPage": true,
+  "pageNumbers": true
+}

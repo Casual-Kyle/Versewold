@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "buraanbur",
+  "name": "Buraanbur",
+  "language": "so",
+  "origin": "Somali oral poetry",
+  "summary": "A Somali verse-and-performance tradition strongly associated with women, celebration, and community.",
+  "tags": ["tradition", "so", "free"],
+  "notes": [
+    "Recitation, rhythm, dance, and occasion are part of the tradition. A specialist Somali metrical model is needed before adding automatic sound constraints."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Buraanbur",
+      "url": "https://en.wikipedia.org/wiki/Buraanbur"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1364504550"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 43793230,
+    "sourceRevisionId": 1364504550,
+    "limitations": []
+  }
+}

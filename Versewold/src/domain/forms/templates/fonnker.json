@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "fonnker",
+  "name": "Fonnkèr",
+  "language": "rcf",
+  "origin": "Réunion Creole poetry and performance",
+  "summary": "Give voice to an inward emotional state through spoken, written, or sung Creole poetry.",
+  "tags": ["tradition", "rcf", "free", "Fonnker"],
+  "notes": [
+    "Natural speech movement and performance can shape the work. Avoid replacing this living tradition with an invented fixed rhyme scheme."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Fonnkèr",
+      "url": "https://en.wikipedia.org/wiki/Fonnk%C3%A8r"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1347356037"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["Fonnker"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 79487456,
+    "sourceRevisionId": 1347356037,
+    "limitations": []
+  }
+}

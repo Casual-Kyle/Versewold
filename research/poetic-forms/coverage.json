@@ -1,0 +1,2240 @@
+{
+  "schemaVersion": 1,
+  "researchedOn": "2026-11-23",
+  "sourceCount": 149,
+  "categoryUrl": "https://en.wikipedia.org/wiki/Category:Poetic_forms",
+  "counts": {
+    "structured": 45,
+    "guided": 85,
+    "reference": 19
+  },
+  "entries": [
+    {
+      "sourceTitle": "Poetry",
+      "templateId": "poetry",
+      "kind": "reference",
+      "status": "reference",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 22926,
+      "sourceRevisionId": 1387050133,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Poetry",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1387050133"
+    },
+    {
+      "sourceTitle": "Acehnese poetry",
+      "templateId": "acehnese-poetry",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 84829229,
+      "sourceRevisionId": 1387060306,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Acehnese_poetry",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1387060306"
+    },
+    {
+      "sourceTitle": "Acrostic",
+      "templateId": "acrostic",
+      "kind": "technique",
+      "status": "guided",
+      "aliases": [
+        "acrostich",
+        "telestich",
+        "double acrostic"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 219730,
+      "sourceRevisionId": 1386429199,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Acrostic",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1386429199"
+    },
+    {
+      "sourceTitle": "Ainggyin",
+      "templateId": "ainggyin",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 65992815,
+      "sourceRevisionId": 1270449317,
+      "limitations": [
+        "Guidance only; no generic Burmese syllable or rhyme rule is invented."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ainggyin",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1270449317"
+    },
+    {
+      "sourceTitle": "Anacreontics",
+      "templateId": "anacreontics",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [
+        "Anacreontic verse"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 2885687,
+      "sourceRevisionId": 1374260762,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Anacreontics",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1374260762"
+    },
+    {
+      "sourceTitle": "Antilabe",
+      "templateId": "antilabe",
+      "kind": "technique",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 17702049,
+      "sourceRevisionId": 1366107584,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Antilabe",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1366107584"
+    },
+    {
+      "sourceTitle": "Antistrophe",
+      "templateId": "antistrophe",
+      "kind": "concept",
+      "status": "reference",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 78908,
+      "sourceRevisionId": 1316997895,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Antistrophe",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1316997895"
+    },
+    {
+      "sourceTitle": "Arlabecca",
+      "templateId": "arlabecca",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 19111418,
+      "sourceRevisionId": 1305251919,
+      "limitations": [
+        "Historical definition requires specialist corroboration before a structural template is prescribed."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Arlabecca",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1305251919"
+    },
+    {
+      "sourceTitle": "Asefru",
+      "templateId": "asefru",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 42210935,
+      "sourceRevisionId": 1381463155,
+      "limitations": [
+        "Counts and rhyme are a surveyed description awaiting a stronger source."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Asefru",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1381463155"
+    },
+    {
+      "sourceTitle": "Balbale",
+      "templateId": "balbale",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 28139649,
+      "sourceRevisionId": 1374418248,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Balbale",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1374418248"
+    },
+    {
+      "sourceTitle": "Ballad",
+      "templateId": "ballad",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "Ballad"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 4575,
+      "sourceRevisionId": 1386962653,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ballad",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1386962653"
+    },
+    {
+      "sourceTitle": "Balliol rhyme",
+      "templateId": "balliol-rhyme",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 24494570,
+      "sourceRevisionId": 1331056714,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Balliol_rhyme",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1331056714"
+    },
+    {
+      "sourceTitle": "Balwo",
+      "templateId": "balwo",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 20873773,
+      "sourceRevisionId": 1380757023,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Balwo",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1380757023"
+    },
+    {
+      "sourceTitle": "Bitextual work",
+      "templateId": "bitextual-work",
+      "kind": "technique",
+      "status": "guided",
+      "aliases": [
+        "bi-textual poetry",
+        "slesa",
+        "śleṣa"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 77284812,
+      "sourceRevisionId": 1358385763,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bitextual_work",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1358385763"
+    },
+    {
+      "sourceTitle": "Blank verse",
+      "templateId": "blank-verse",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 265893,
+      "sourceRevisionId": 1383622209,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Blank_verse",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1383622209"
+    },
+    {
+      "sourceTitle": "Book rhyme",
+      "templateId": "book-rhyme",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 6555036,
+      "sourceRevisionId": 1295936049,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Book_rhyme",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1295936049"
+    },
+    {
+      "sourceTitle": "Bosinada",
+      "templateId": "bosinada",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "bosinata",
+        "bosinade"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 32600138,
+      "sourceRevisionId": 1380711187,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bosinada",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1380711187"
+    },
+    {
+      "sourceTitle": "Bouts-Rimés",
+      "templateId": "bouts-rimes",
+      "kind": "technique",
+      "status": "guided",
+      "aliases": [
+        "bouts rimes",
+        "rhymed ends"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 2440498,
+      "sourceRevisionId": 1381648477,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bouts-Rim%C3%A9s",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1381648477"
+    },
+    {
+      "sourceTitle": "Bref double",
+      "templateId": "bref-double",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 17047613,
+      "sourceRevisionId": 1303196951,
+      "limitations": [
+        "One explicitly selected variant; disagreement about the rhyme scheme is documented in the source."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bref_double",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1303196951"
+    },
+    {
+      "sourceTitle": "Buraanbur",
+      "templateId": "buraanbur",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 43793230,
+      "sourceRevisionId": 1364504550,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Buraanbur",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1364504550"
+    },
+    {
+      "sourceTitle": "Büttenrede",
+      "templateId": "buttenrede",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "Buttenrede",
+        "carnival speech"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 72696789,
+      "sourceRevisionId": 1360623840,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/B%C3%BCttenrede",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1360623840"
+    },
+    {
+      "sourceTitle": "Cadence (poetry)",
+      "templateId": "cadence",
+      "kind": "concept",
+      "status": "reference",
+      "aliases": [
+        "Cadence (poetry)"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 38811890,
+      "sourceRevisionId": 1343343494,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cadence_(poetry)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1343343494"
+    },
+    {
+      "sourceTitle": "Cantiga de amor",
+      "templateId": "cantiga-de-amor",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [
+        "cantiga d’amor"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 71573775,
+      "sourceRevisionId": 1385573273,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cantiga_de_amor",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1385573273"
+    },
+    {
+      "sourceTitle": "Cantigas de escárnio e maldizer",
+      "templateId": "cantigas-de-escarnio-e-maldizer",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "cantigas de escarnio",
+        "cantigas de maldizer"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 71574028,
+      "sourceRevisionId": 1385649545,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cantigas_de_esc%C3%A1rnio_e_maldizer",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1385649545"
+    },
+    {
+      "sourceTitle": "Canto",
+      "templateId": "canto",
+      "kind": "concept",
+      "status": "reference",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 893850,
+      "sourceRevisionId": 1340476298,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Canto",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1340476298"
+    },
+    {
+      "sourceTitle": "Carmen (verse)",
+      "templateId": "carmen",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "Carmen (verse)"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 5341431,
+      "sourceRevisionId": 1345086034,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Carmen_(verse)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1345086034"
+    },
+    {
+      "sourceTitle": "Chant royal",
+      "templateId": "chant-royal",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 453173,
+      "sourceRevisionId": 1361245396,
+      "limitations": [
+        "Layout and refrain positions are modeled; lexical rhyme-word reuse is not automatically checked."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chant_royal",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1361245396"
+    },
+    {
+      "sourceTitle": "Cinquain",
+      "templateId": "cinquain",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "five-line poem"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 7066,
+      "sourceRevisionId": 1358941937,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cinquain",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1358941937"
+    },
+    {
+      "sourceTitle": "Cipai",
+      "templateId": "cipai",
+      "kind": "concept",
+      "status": "reference",
+      "aliases": [
+        "ci tune pattern",
+        "詞牌",
+        "词牌"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 40402316,
+      "sourceRevisionId": 1381801496,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cipai",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1381801496"
+    },
+    {
+      "sourceTitle": "City Lament",
+      "templateId": "city-lament",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 69916664,
+      "sourceRevisionId": 1368846142,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/City_Lament",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1368846142"
+    },
+    {
+      "sourceTitle": "Clerihew",
+      "templateId": "clerihew",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 7081,
+      "sourceRevisionId": 1335722007,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Clerihew",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1335722007"
+    },
+    {
+      "sourceTitle": "Cobla esparsa",
+      "templateId": "cobla-esparsa",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [
+        "cobla exchange"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 14469762,
+      "sourceRevisionId": 1273397160,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cobla_esparsa",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1273397160"
+    },
+    {
+      "sourceTitle": "Conversation poem",
+      "templateId": "conversation-poem",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 39650108,
+      "sourceRevisionId": 1124102886,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Conversation_poem",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1124102886"
+    },
+    {
+      "sourceTitle": "Copla (poetry)",
+      "templateId": "copla",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [
+        "Copla (poetry)"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 27169082,
+      "sourceRevisionId": 1358391832,
+      "limitations": [
+        "The displayed counts choose one common variant; assonance and alternative copla meters remain in the notes."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Copla_(poetry)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1358391832"
+    },
+    {
+      "sourceTitle": "Couplet",
+      "templateId": "couplet",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "distich"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 6530,
+      "sourceRevisionId": 1368555851,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Couplet",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1368555851"
+    },
+    {
+      "sourceTitle": "Cumulative song",
+      "templateId": "cumulative-song",
+      "kind": "technique",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 603864,
+      "sourceRevisionId": 1383107396,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cumulative_song",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1383107396"
+    },
+    {
+      "sourceTitle": "Cumulative tale",
+      "templateId": "cumulative-tale",
+      "kind": "technique",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 16480472,
+      "sourceRevisionId": 1371696990,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cumulative_tale",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1371696990"
+    },
+    {
+      "sourceTitle": "Demi-sonnet",
+      "templateId": "demi-sonnet",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 37339495,
+      "sourceRevisionId": 1280637904,
+      "limitations": [
+        "Internal-rhyme placement requires manual review."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Demi-sonnet",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1280637904"
+    },
+    {
+      "sourceTitle": "Dialogue sonnet",
+      "templateId": "dialogue-sonnet",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 80092834,
+      "sourceRevisionId": 1376651776,
+      "limitations": [
+        "This is a visual line-count scaffold; shared lines and the chosen sonnet’s rhyme plan need manual handling."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dialogue_sonnet",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1376651776"
+    },
+    {
+      "sourceTitle": "Dinggedicht",
+      "templateId": "dinggedicht",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [
+        "thing poem",
+        "object poem"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 36499558,
+      "sourceRevisionId": 1370564663,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dinggedicht",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1370564663"
+    },
+    {
+      "sourceTitle": "Dodoitsu",
+      "templateId": "dodoitsu",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 3052761,
+      "sourceRevisionId": 1385962682,
+      "limitations": [
+        "Mora targets are displayed only; language-aware counting is not implemented."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dodoitsu",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1385962682"
+    },
+    {
+      "sourceTitle": "Đường luật",
+      "templateId": "duong-luat",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "Duong luat",
+        "tho duong luat",
+        "regulated Tang verse"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 37020864,
+      "sourceRevisionId": 1383413991,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C4%90%C6%B0%E1%BB%9Dng_lu%E1%BA%ADt",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1383413991"
+    },
+    {
+      "sourceTitle": "Égyin",
+      "templateId": "egyin",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [
+        "egyin",
+        "eigyin"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 65994619,
+      "sourceRevisionId": 1292771304,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C3%89gyin",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1292771304"
+    },
+    {
+      "sourceTitle": "Elegiac",
+      "templateId": "elegiac",
+      "kind": "concept",
+      "status": "reference",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 989367,
+      "sourceRevisionId": 1371477624,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Elegiac",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1371477624"
+    },
+    {
+      "sourceTitle": "Elegiac couplet",
+      "templateId": "elegiac-couplet",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 9755,
+      "sourceRevisionId": 1381055149,
+      "limitations": [
+        "Quantity is not English stress. Base sequences omit alternatives and explicit caesura positions."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Elegiac_couplet",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1381055149"
+    },
+    {
+      "sourceTitle": "Elegy",
+      "templateId": "elegy",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 153459,
+      "sourceRevisionId": 1386543471,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Elegy",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1386543471"
+    },
+    {
+      "sourceTitle": "Elevenie",
+      "templateId": "elevenie",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "Elfchen",
+        "eleven-word poem"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 47343763,
+      "sourceRevisionId": 1209166332,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Elevenie",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1209166332"
+    },
+    {
+      "sourceTitle": "Elogium (literary genre)",
+      "templateId": "elogium",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "Elogium (literary genre)"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 73395545,
+      "sourceRevisionId": 1299855569,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Elogium_(literary_genre)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1299855569"
+    },
+    {
+      "sourceTitle": "Emi Omo Eso",
+      "templateId": "emi-omo-eso",
+      "kind": "reference",
+      "status": "reference",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 63525105,
+      "sourceRevisionId": 1379719775,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Emi_Omo_Eso",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1379719775"
+    },
+    {
+      "sourceTitle": "Epode",
+      "templateId": "epode",
+      "kind": "concept",
+      "status": "reference",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 78902,
+      "sourceRevisionId": 1314766320,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Epode",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1314766320"
+    },
+    {
+      "sourceTitle": "Fonnkèr",
+      "templateId": "fonnker",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "Fonnker"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 79487456,
+      "sourceRevisionId": 1347356037,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fonnk%C3%A8r",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1347356037"
+    },
+    {
+      "sourceTitle": "Free verse",
+      "templateId": "free-verse",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [
+        "open form"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 11478,
+      "sourceRevisionId": 1371622893,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Free_verse",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1371622893"
+    },
+    {
+      "sourceTitle": "Gasa (poetry)",
+      "templateId": "gasa",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "Gasa (poetry)",
+        "kasa"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 3933557,
+      "sourceRevisionId": 1315503011,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gasa_(poetry)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1315503011"
+    },
+    {
+      "sourceTitle": "Glose",
+      "templateId": "glose",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [
+        "glosa",
+        "gloss"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 70582822,
+      "sourceRevisionId": 1375128065,
+      "limitations": [
+        "This particular layout includes the four-line epigraph in addition to forty new lines. Rhyme and source-text reuse need manual review."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Glose",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1375128065"
+    },
+    {
+      "sourceTitle": "Gogyōshi",
+      "templateId": "gogyoshi",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "Gogyoshi"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 58203775,
+      "sourceRevisionId": 1311458686,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gogy%C5%8Dshi",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1311458686"
+    },
+    {
+      "sourceTitle": "Golden shovel",
+      "templateId": "golden-shovel",
+      "kind": "technique",
+      "status": "guided",
+      "aliases": [
+        "golden-shovel poem"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 63120183,
+      "sourceRevisionId": 1319673239,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Golden_shovel",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1319673239"
+    },
+    {
+      "sourceTitle": "Haiku",
+      "templateId": "haiku",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [
+        "hokku",
+        "haijin"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 13217,
+      "sourceRevisionId": 1386622202,
+      "limitations": [],
+      "variants": [
+        "haiku-575"
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Haiku",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1386622202"
+    },
+    {
+      "sourceTitle": "Hainteny",
+      "templateId": "hainteny",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 15231165,
+      "sourceRevisionId": 1352006611,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hainteny",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1352006611"
+    },
+    {
+      "sourceTitle": "Hayren",
+      "templateId": "hayren",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 73747364,
+      "sourceRevisionId": 1369629883,
+      "limitations": [
+        "Only whole-line syllable targets are serialized; 7 + 8 divisions remain descriptive."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hayren",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1369629883"
+    },
+    {
+      "sourceTitle": "Hemistich",
+      "templateId": "hemistich",
+      "kind": "concept",
+      "status": "reference",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 7486902,
+      "sourceRevisionId": 1339257077,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hemistich",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1339257077"
+    },
+    {
+      "sourceTitle": "Heroic couplet",
+      "templateId": "heroic-couplet",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 14123,
+      "sourceRevisionId": 1226705653,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Heroic_couplet",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1226705653"
+    },
+    {
+      "sourceTitle": "Hudibrastic",
+      "templateId": "hudibrastic",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "hudibrastics"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 2180675,
+      "sourceRevisionId": 1371650305,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hudibrastic",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1371650305"
+    },
+    {
+      "sourceTitle": "Humdrum and Harum-Scarum",
+      "templateId": "humdrum-and-harum-scarum",
+      "kind": "reference",
+      "status": "reference",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 3600183,
+      "sourceRevisionId": 1308120284,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Humdrum_and_Harum-Scarum",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1308120284"
+    },
+    {
+      "sourceTitle": "Ibitekerezo",
+      "templateId": "ibitekerezo",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 40249997,
+      "sourceRevisionId": 1371324573,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ibitekerezo",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1371324573"
+    },
+    {
+      "sourceTitle": "Ìjálá",
+      "templateId": "ijala",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "Ijala",
+        "Ìjálá chant"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 84367114,
+      "sourceRevisionId": 1384979335,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C3%8Cj%C3%A1l%C3%A1",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1384979335"
+    },
+    {
+      "sourceTitle": "Izibongo",
+      "templateId": "izibongo",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "praise poetry"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 14780600,
+      "sourceRevisionId": 1338086275,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Izibongo",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1338086275"
+    },
+    {
+      "sourceTitle": "Jangnama",
+      "templateId": "jangnama",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "jang nama",
+        "jangnamah"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 21965725,
+      "sourceRevisionId": 1372733016,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jangnama",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1372733016"
+    },
+    {
+      "sourceTitle": "Javanese poetry",
+      "templateId": "javanese-poetry",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "tembang",
+        "sekar",
+        "macapat"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 6417151,
+      "sourceRevisionId": 1364729454,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Javanese_poetry",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1364729454"
+    },
+    {
+      "sourceTitle": "Kagyin",
+      "templateId": "kagyin",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 66057099,
+      "sourceRevisionId": 1355271339,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kagyin",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1355271339"
+    },
+    {
+      "sourceTitle": "Kanshi (poetry)",
+      "templateId": "kanshi",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "Kanshi (poetry)",
+        "漢詩"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 10925796,
+      "sourceRevisionId": 1360783593,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kanshi_(poetry)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1360783593"
+    },
+    {
+      "sourceTitle": "Kantan Chamorrita",
+      "templateId": "kantan-chamorrita",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "Chamorrita"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 6697398,
+      "sourceRevisionId": 1281630684,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kantan_Chamorrita",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1281630684"
+    },
+    {
+      "sourceTitle": "Kidung",
+      "templateId": "kidung",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 12446841,
+      "sourceRevisionId": 1363774180,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kidung",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1363774180"
+    },
+    {
+      "sourceTitle": "Kishōtenketsu",
+      "templateId": "kishotenketsu",
+      "kind": "technique",
+      "status": "guided",
+      "aliases": [
+        "Kishotenketsu",
+        "ki sho ten ketsu"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 12854042,
+      "sourceRevisionId": 1386965998,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kish%C5%8Dtenketsu",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1386965998"
+    },
+    {
+      "sourceTitle": "Kural (poetic form)",
+      "templateId": "kural",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [
+        "Kural (poetic form)",
+        "kural venpa",
+        "kuṟaḷ",
+        "cīr"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 579319,
+      "sourceRevisionId": 1380592472,
+      "limitations": [
+        "Only the two-line canvas is represented; Tamil prosody needs a dedicated constraint model."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kural_(poetic_form)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1380592472"
+    },
+    {
+      "sourceTitle": "Landay (poetry)",
+      "templateId": "landay",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "Landay (poetry)"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 17689840,
+      "sourceRevisionId": 1261679539,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Landay_(poetry)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1261679539"
+    },
+    {
+      "sourceTitle": "Lanterne (poem)",
+      "templateId": "lanterne",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "Lanterne (poem)",
+        "lantern poem"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 15245037,
+      "sourceRevisionId": 1361712758,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lanterne_(poem)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1361712758"
+    },
+    {
+      "sourceTitle": "Limerick (poetry)",
+      "templateId": "limerick",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "Limerick (poetry)"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 48994,
+      "sourceRevisionId": 1383812563,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Limerick_(poetry)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1383812563"
+    },
+    {
+      "sourceTitle": "Lục bát",
+      "templateId": "luc-bat",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [
+        "luc bat",
+        "six eight"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 1858789,
+      "sourceRevisionId": 1379502358,
+      "limitations": [
+        "Line lengths are modeled; cross-pair internal-rhyme chains and tonal rules are described, not validated."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/L%E1%BB%A5c_b%C3%A1t",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1379502358"
+    },
+    {
+      "sourceTitle": "Lutherstrophe",
+      "templateId": "lutherstrophe",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 77309596,
+      "sourceRevisionId": 1301030369,
+      "limitations": [
+        "Select the exact hymn or lyric before assigning line lengths."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lutherstrophe",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1301030369"
+    },
+    {
+      "sourceTitle": "Mawgun",
+      "templateId": "mawgun",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 66117538,
+      "sourceRevisionId": 1325462813,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mawgun",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1325462813"
+    },
+    {
+      "sourceTitle": "Modernist poetry",
+      "templateId": "modernist-poetry",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 1134475,
+      "sourceRevisionId": 1384723186,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Modernist_poetry",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1384723186"
+    },
+    {
+      "sourceTitle": "Monostich",
+      "templateId": "monostich",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 2915858,
+      "sourceRevisionId": 1340993886,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Monostich",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1340993886"
+    },
+    {
+      "sourceTitle": "Muwashshah",
+      "templateId": "muwashshah",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "muwaššaḥ",
+        "muwashshaha",
+        "muwashahat"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 1463988,
+      "sourceRevisionId": 1361888845,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Muwashshah",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1361888845"
+    },
+    {
+      "sourceTitle": "Octonary",
+      "templateId": "octonary",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "octonaire"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 31591447,
+      "sourceRevisionId": 1241982518,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Octonary",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1241982518"
+    },
+    {
+      "sourceTitle": "Ode",
+      "templateId": "ode",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 22172,
+      "sourceRevisionId": 1377205785,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ode",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1377205785"
+    },
+    {
+      "sourceTitle": "Oríkì",
+      "templateId": "oriki",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "Oriki",
+        "oriki praise"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 7521063,
+      "sourceRevisionId": 1377503525,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Or%C3%ADk%C3%AC",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1377503525"
+    },
+    {
+      "sourceTitle": "Palinode",
+      "templateId": "palinode",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [
+        "palinody",
+        "recantation poem"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 3601369,
+      "sourceRevisionId": 1360841942,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Palinode",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1360841942"
+    },
+    {
+      "sourceTitle": "Pantoum",
+      "templateId": "pantoum",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "Pantoum",
+        "linked quatrains"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 24613,
+      "sourceRevisionId": 1370145864,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Pantoum",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1370145864"
+    },
+    {
+      "sourceTitle": "Paradelle",
+      "templateId": "paradelle",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 23039082,
+      "sourceRevisionId": 1374562053,
+      "limitations": [
+        "The core word-multiset constraints are not serialized or checked automatically."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Paradelle",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1374562053"
+    },
+    {
+      "sourceTitle": "Pathya Vat",
+      "templateId": "pathya-vat",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 3607461,
+      "sourceRevisionId": 1332980636,
+      "limitations": [
+        "The inter-stanza link is described rather than replaced with an incorrect end-rhyme-only scheme."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Pathya_Vat",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1332980636"
+    },
+    {
+      "sourceTitle": "Pentameter",
+      "templateId": "pentameter",
+      "kind": "concept",
+      "status": "reference",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 211952,
+      "sourceRevisionId": 1368362502,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Pentameter",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1368362502"
+    },
+    {
+      "sourceTitle": "Pentina",
+      "templateId": "pentina",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 9397509,
+      "sourceRevisionId": 1235581342,
+      "limitations": [
+        "The source’s prose contains a second/third-line typo; its two-line diagram is used here. Meter is not imposed without stronger specification."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Pentina",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1235581342"
+    },
+    {
+      "sourceTitle": "Persona poetry",
+      "templateId": "persona-poetry",
+      "kind": "technique",
+      "status": "guided",
+      "aliases": [
+        "persona poem",
+        "dramatic monologue"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 63107148,
+      "sourceRevisionId": 1345373580,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Persona_poetry",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1345373580"
+    },
+    {
+      "sourceTitle": "Poetic closure",
+      "templateId": "poetic-closure",
+      "kind": "concept",
+      "status": "reference",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 3395586,
+      "sourceRevisionId": 1364825198,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Poetic_closure",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1364825198"
+    },
+    {
+      "sourceTitle": "Poetic Meter and Poetic Form",
+      "templateId": "poetic-meter-and-poetic-form",
+      "kind": "reference",
+      "status": "reference",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 3646575,
+      "sourceRevisionId": 1384255412,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Poetic_Meter_and_Poetic_Form",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1384255412"
+    },
+    {
+      "sourceTitle": "Pyo",
+      "templateId": "pyo",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 58376882,
+      "sourceRevisionId": 1381992585,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Pyo",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1381992585"
+    },
+    {
+      "sourceTitle": "Quaternion (poetry)",
+      "templateId": "quaternion",
+      "kind": "technique",
+      "status": "guided",
+      "aliases": [
+        "Quaternion (poetry)"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 28278639,
+      "sourceRevisionId": 1194470051,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Quaternion_(poetry)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1194470051"
+    },
+    {
+      "sourceTitle": "Quatorzain",
+      "templateId": "quatorzain",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "fourteen-line poem"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 51671,
+      "sourceRevisionId": 1303588727,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Quatorzain",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1303588727"
+    },
+    {
+      "sourceTitle": "Quintain (poetry)",
+      "templateId": "quintain",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "Quintain (poetry)",
+        "pentastich",
+        "quintet"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 32019908,
+      "sourceRevisionId": 1306001028,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Quintain_(poetry)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1306001028"
+    },
+    {
+      "sourceTitle": "Quintilla (poetry)",
+      "templateId": "quintilla",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "Quintilla (poetry)"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 63577878,
+      "sourceRevisionId": 1142988511,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Quintilla_(poetry)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1142988511"
+    },
+    {
+      "sourceTitle": "Ragale",
+      "templateId": "ragale",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [
+        "Ragaḷe",
+        "ragala"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 21943682,
+      "sourceRevisionId": 1358651413,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ragale",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1358651413"
+    },
+    {
+      "sourceTitle": "Retrograde verse",
+      "templateId": "retrograde-verse",
+      "kind": "technique",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 78392873,
+      "sourceRevisionId": 1278082637,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Retrograde_verse",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1278082637"
+    },
+    {
+      "sourceTitle": "Reversible poem",
+      "templateId": "reversible-poem",
+      "kind": "technique",
+      "status": "guided",
+      "aliases": [
+        "reverso",
+        "reverse poem",
+        "palindrome poem"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 76755404,
+      "sourceRevisionId": 1304072390,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Reversible_poem",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1304072390"
+    },
+    {
+      "sourceTitle": "Rhyme royal",
+      "templateId": "rhyme-royal",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "rime royal",
+        "rime royale"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 246167,
+      "sourceRevisionId": 1366772205,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Rhyme_royal",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1366772205"
+    },
+    {
+      "sourceTitle": "Rondel (poem)",
+      "templateId": "rondel",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "Rondel (poem)"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 4795706,
+      "sourceRevisionId": 1379797405,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Rondel_(poem)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1379797405"
+    },
+    {
+      "sourceTitle": "Roundel (poetry)",
+      "templateId": "roundel",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "Roundel (poetry)"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 15598108,
+      "sourceRevisionId": 1379453273,
+      "limitations": [
+        "The refrain’s relationship to the opening fragment needs manual review; it is not a whole-line repeat of line 1."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Roundel_(poetry)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1379453273"
+    },
+    {
+      "sourceTitle": "Rune poem",
+      "templateId": "rune-poem",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 1256208,
+      "sourceRevisionId": 1387032247,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Rune_poem",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1387032247"
+    },
+    {
+      "sourceTitle": "Sentimental ballad",
+      "templateId": "sentimental-ballad",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 46443001,
+      "sourceRevisionId": 1375830728,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sentimental_ballad",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1375830728"
+    },
+    {
+      "sourceTitle": "Sesotho poetry",
+      "templateId": "sesotho-poetry",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 58574913,
+      "sourceRevisionId": 1286184887,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sesotho_poetry",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1286184887"
+    },
+    {
+      "sourceTitle": "Sestet",
+      "templateId": "sestet",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 1590887,
+      "sourceRevisionId": 1342140485,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sestet",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1342140485"
+    },
+    {
+      "sourceTitle": "Sestina",
+      "templateId": "sestina",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "sestine",
+        "sextine",
+        "sextain"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 28829,
+      "sourceRevisionId": 1383651602,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sestina",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1383651602"
+    },
+    {
+      "sourceTitle": "Shadorma",
+      "templateId": "shadorma",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 38412771,
+      "sourceRevisionId": 1212565924,
+      "limitations": [
+        "The syllable pattern is usable as a practice definition; provenance remains uncertain."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Shadorma",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1212565924"
+    },
+    {
+      "sourceTitle": "Shahr Ashob",
+      "templateId": "shahr-ashob",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "Shahr-i Ashob",
+        "Shahrashub",
+        "Shahar-i Ashub"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 64161745,
+      "sourceRevisionId": 1369512636,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Shahr_Ashob",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1369512636"
+    },
+    {
+      "sourceTitle": "Shairi",
+      "templateId": "shairi",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "Rustavelian quatrain"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 18629957,
+      "sourceRevisionId": 1347697677,
+      "limitations": [
+        "The internal division and subtype rhythms remain descriptive."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Shairi",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1347697677"
+    },
+    {
+      "sourceTitle": "Sigweya",
+      "templateId": "sigweya",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 81425848,
+      "sourceRevisionId": 1330856590,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sigweya",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1330856590"
+    },
+    {
+      "sourceTitle": "Silva (poetry)",
+      "templateId": "silva",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [
+        "Silva (poetry)"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 3651665,
+      "sourceRevisionId": 1363056507,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Silva_(poetry)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1363056507"
+    },
+    {
+      "sourceTitle": "Simple 4-line",
+      "templateId": "simple-4-line",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "simple four-line",
+        "ABCB quatrain"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 10250635,
+      "sourceRevisionId": 1356102854,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Simple_4-line",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1356102854"
+    },
+    {
+      "sourceTitle": "Sisindiran",
+      "templateId": "sisindiran",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "susualan",
+        "paparikan",
+        "cangkang eusi"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 17225718,
+      "sourceRevisionId": 1119284227,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sisindiran",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1119284227"
+    },
+    {
+      "sourceTitle": "Skolion",
+      "templateId": "skolion",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "scolion",
+        "skolia",
+        "scolia"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 11934952,
+      "sourceRevisionId": 1383252446,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Skolion",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1383252446"
+    },
+    {
+      "sourceTitle": "Slavic antithesis",
+      "templateId": "slavic-antithesis",
+      "kind": "technique",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 5230744,
+      "sourceRevisionId": 1369192816,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Slavic_antithesis",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1369192816"
+    },
+    {
+      "sourceTitle": "Song thất lục bát",
+      "templateId": "song-that-luc-bat",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [
+        "song that luc bat",
+        "double seven six eight"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 3607701,
+      "sourceRevisionId": 1379502469,
+      "limitations": [
+        "Line lengths are modeled; internal rhyme, tonal positions, and cross-stanza connections require manual review."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Song_th%E1%BA%A5t_l%E1%BB%A5c_b%C3%A1t",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1379502469"
+    },
+    {
+      "sourceTitle": "Sonnet",
+      "templateId": "sonnet",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 28260,
+      "sourceRevisionId": 1383157089,
+      "limitations": [],
+      "variants": [
+        "shakespearean-sonnet"
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sonnet",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1383157089"
+    },
+    {
+      "sourceTitle": "Stanza",
+      "templateId": "stanza",
+      "kind": "concept",
+      "status": "reference",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 28263,
+      "sourceRevisionId": 1376384029,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Stanza",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1376384029"
+    },
+    {
+      "sourceTitle": "Stichic",
+      "templateId": "stichic",
+      "kind": "concept",
+      "status": "reference",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 13681493,
+      "sourceRevisionId": 1347754826,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Stichic",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1347754826"
+    },
+    {
+      "sourceTitle": "Stichomythia",
+      "templateId": "stichomythia",
+      "kind": "technique",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 581695,
+      "sourceRevisionId": 1368581210,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Stichomythia",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1368581210"
+    },
+    {
+      "sourceTitle": "Strophe",
+      "templateId": "strophe",
+      "kind": "concept",
+      "status": "reference",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 78900,
+      "sourceRevisionId": 1372006072,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Strophe",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1372006072"
+    },
+    {
+      "sourceTitle": "Synchysis",
+      "templateId": "synchysis",
+      "kind": "technique",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 1555390,
+      "sourceRevisionId": 1387033062,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Synchysis",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1387033062"
+    },
+    {
+      "sourceTitle": "Tail rhyme",
+      "templateId": "tail-rhyme",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 1676869,
+      "sourceRevisionId": 1329735137,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tail_rhyme",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1329735137"
+    },
+    {
+      "sourceTitle": "Tanaga",
+      "templateId": "tanaga",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 666704,
+      "sourceRevisionId": 1384060240,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tanaga",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1384060240"
+    },
+    {
+      "sourceTitle": "Tanka in English",
+      "templateId": "tanka-in-english",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "English tanka"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 37032555,
+      "sourceRevisionId": 1303283614,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tanka_in_English",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1303283614"
+    },
+    {
+      "sourceTitle": "Tercet",
+      "templateId": "tercet",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "triplet"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 51758,
+      "sourceRevisionId": 1301041668,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tercet",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1301041668"
+    },
+    {
+      "sourceTitle": "Terzanelle",
+      "templateId": "terzanelle",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 1553210,
+      "sourceRevisionId": 1154257721,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Terzanelle",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1154257721"
+    },
+    {
+      "sourceTitle": "Tetractys",
+      "templateId": "tetractys",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "Tetractys"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 1570530,
+      "sourceRevisionId": 1366298924,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tetractys",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1366298924"
+    },
+    {
+      "sourceTitle": "Thai poetry",
+      "templateId": "thai-poetry",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "khlong",
+        "chan",
+        "kap",
+        "klon",
+        "rai"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 7306409,
+      "sourceRevisionId": 1381648964,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Thai_poetry",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1381648964"
+    },
+    {
+      "sourceTitle": "Thanbauk (poetic form)",
+      "templateId": "thanbauk",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "Thanbauk (poetic form)",
+        "thanbauk",
+        "thanbauk epigram"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 3603071,
+      "sourceRevisionId": 1326390804,
+      "limitations": [
+        "Internal-rhyme targets are serialized and displayed; phonetic matching is not implemented."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Thanbauk_(poetic_form)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1326390804"
+    },
+    {
+      "sourceTitle": "Tornada (Occitan literary term)",
+      "templateId": "tornada",
+      "kind": "concept",
+      "status": "reference",
+      "aliases": [
+        "Tornada (Occitan literary term)",
+        "congedo",
+        "finda",
+        "envoi"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 14778341,
+      "sourceRevisionId": 1352705574,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tornada_(Occitan_literary_term)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1352705574"
+    },
+    {
+      "sourceTitle": "Trova (poetry)",
+      "templateId": "trova",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "Trova (poetry)"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 63077265,
+      "sourceRevisionId": 1364169176,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Trova_(poetry)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1364169176"
+    },
+    {
+      "sourceTitle": "Tuyugh",
+      "templateId": "tuyugh",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [
+        "tuyug",
+        "tuyuk"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 55907989,
+      "sourceRevisionId": 1297524508,
+      "limitations": [
+        "Source coverage is too thin for a strict stanza and meter prescription."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tuyugh",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1297524508"
+    },
+    {
+      "sourceTitle": "Tweede Asem",
+      "templateId": "tweede-asem",
+      "kind": "tradition",
+      "status": "reference",
+      "aliases": [
+        "Twintigers",
+        "Second Breath"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 9591228,
+      "sourceRevisionId": 1096392257,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tweede_Asem",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1096392257"
+    },
+    {
+      "sourceTitle": "Ubwiiru",
+      "templateId": "ubwiiru",
+      "kind": "reference",
+      "status": "reference",
+      "aliases": [
+        "ubwiru"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 81819949,
+      "sourceRevisionId": 1338973214,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ubwiiru",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1338973214"
+    },
+    {
+      "sourceTitle": "Verbless poetry",
+      "templateId": "verbless-poetry",
+      "kind": "technique",
+      "status": "guided",
+      "aliases": [
+        "verbless poem"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 48931145,
+      "sourceRevisionId": 1376927521,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Verbless_poetry",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1376927521"
+    },
+    {
+      "sourceTitle": "Vers libre",
+      "templateId": "vers-libre",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [
+        "free verse",
+        "vers-libre"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 11478,
+      "sourceRevisionId": 1371622893,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Vers_libre",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1371622893"
+    },
+    {
+      "sourceTitle": "Verso sciolto",
+      "templateId": "verso-sciolto",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "versi sciolti"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 5386146,
+      "sourceRevisionId": 1358929061,
+      "limitations": [
+        "The syllable target is displayed; Italian accent placement is not automatically checked."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Verso_sciolto",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1358929061"
+    },
+    {
+      "sourceTitle": "Villanelle",
+      "templateId": "villanelle",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "villanesque"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 32683,
+      "sourceRevisionId": 1384588271,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Villanelle",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1384588271"
+    },
+    {
+      "sourceTitle": "Waka (poetry)",
+      "templateId": "waka",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "Waka (poetry)",
+        "yamato uta",
+        "和歌"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 34999845,
+      "sourceRevisionId": 1386094082,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Waka_(poetry)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1386094082"
+    },
+    {
+      "sourceTitle": "Yadu (poetry)",
+      "templateId": "yadu",
+      "kind": "form",
+      "status": "structured",
+      "aliases": [
+        "Yadu (poetry)",
+        "ya du",
+        "yatu"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 3603380,
+      "sourceRevisionId": 1376047430,
+      "limitations": [
+        "Rhyme positions are targets; seasonal meaning and actual sound matches remain manual."
+      ],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Yadu_(poetry)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1376047430"
+    },
+    {
+      "sourceTitle": "Yagan (poetic form)",
+      "templateId": "yagan",
+      "kind": "form",
+      "status": "guided",
+      "aliases": [
+        "Yagan (poetic form)"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 66055758,
+      "sourceRevisionId": 1327177441,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Yagan_(poetic_form)",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1327177441"
+    },
+    {
+      "sourceTitle": "Yemenite Jewish poetry",
+      "templateId": "yemenite-jewish-poetry",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 49015936,
+      "sourceRevisionId": 1364379108,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Yemenite_Jewish_poetry",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1364379108"
+    },
+    {
+      "sourceTitle": "Zajal",
+      "templateId": "zajal",
+      "kind": "tradition",
+      "status": "guided",
+      "aliases": [
+        "zajjal",
+        "زجل"
+      ],
+      "researchedOn": "2026-11-23",
+      "sourcePageId": 7880901,
+      "sourceRevisionId": 1360600746,
+      "limitations": [],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Zajal",
+      "revisionUrl": "https://en.wikipedia.org/w/index.php?oldid=1360600746"
+    }
+  ]
+}

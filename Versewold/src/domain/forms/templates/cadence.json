@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "cadence",
+  "name": "Cadence",
+  "language": "und",
+  "origin": "Cross-tradition terminology",
+  "summary": "The inflection and movement of a spoken line, especially as it falls or resolves.",
+  "tags": ["concept", "und", "free"],
+  "notes": [
+    "Cadence is an aspect of delivery and rhythm, not a standalone poem with a fixed number of lines."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Cadence (poetry)",
+      "url": "https://en.wikipedia.org/wiki/Cadence_(poetry)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1343343494"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "concept",
+    "status": "reference",
+    "aliases": ["Cadence (poetry)"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 38811890,
+    "sourceRevisionId": 1343343494,
+    "limitations": []
+  }
+}

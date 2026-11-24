@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "pathya-vat",
+  "name": "Pathya Vat",
+  "language": "km",
+  "origin": "Khmer verse and recitation",
+  "summary": "Quatrains of four-syllable lines connect through both local and cross-stanza rhyme.",
+  "tags": ["form", "km", "repeating"],
+  "notes": [
+    "Within a stanza, lines 2 and 3 rhyme. In a longer poem, the previous stanza’s last line supplies their rhyme. Performance styles vary."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Pathya Vat",
+      "url": "https://en.wikipedia.org/wiki/Pathya_Vat"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1332980636"
+    }
+  ],
+  "structure": {
+    "kind": "repeating",
+    "rhymeScope": "stanza",
+    "stanzas": [
+      {
+        "label": "Four-syllable quatrain",
+        "lines": [
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 4,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 4,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 4,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 4,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 3607461,
+    "sourceRevisionId": 1332980636,
+    "limitations": [
+      "The inter-stanza link is described rather than replaced with an incorrect end-rhyme-only scheme."
+    ]
+  }
+}

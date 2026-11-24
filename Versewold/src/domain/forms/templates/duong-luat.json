@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "duong-luat",
+  "name": "Đường luật",
+  "language": "vi",
+  "origin": "Vietnamese regulated verse with Tang antecedents",
+  "summary": "A family of regulated forms coordinating line length, tone, rhyme, parallelism, and composition.",
+  "tags": ["tradition", "vi", "free", "Duong luat", "tho duong luat", "regulated Tang verse"],
+  "notes": [
+    "The familiar seven-syllable octave is only one variant; five-syllable forms and quatrains also occur. A full template needs a specified variant and Vietnamese tonal constraints."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Đường luật",
+      "url": "https://en.wikipedia.org/wiki/%C4%90%C6%B0%E1%BB%9Dng_lu%E1%BA%ADt"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383413991"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["Duong luat", "tho duong luat", "regulated Tang verse"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 37020864,
+    "sourceRevisionId": 1383413991,
+    "limitations": []
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "clerihew",
+  "name": "Clerihew",
+  "language": "en",
+  "origin": "English comic biography",
+  "summary": "Give a person a mischievous four-line biography in AABB rhyme.",
+  "tags": ["form", "en", "fixed"],
+  "notes": [
+    "Name or identify the subject early. Uneven lengths and deliberately awkward rhymes can contribute to the joke; regular meter is not required."
+  ],
+  "sources": [
+    {
+      "title": "Academy of American Poets — Clerihew",
+      "url": "https://poets.org/glossary/Clerihew"
+    },
+    {
+      "title": "Wikipedia — Clerihew",
+      "url": "https://en.wikipedia.org/wiki/Clerihew"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1335722007"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "B"
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 7081,
+    "sourceRevisionId": 1335722007,
+    "limitations": []
+  }
+}

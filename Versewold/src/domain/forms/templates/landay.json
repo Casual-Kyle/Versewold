@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "landay",
+  "name": "Landay",
+  "language": "ps",
+  "origin": "Pashto oral poetry · Afghanistan",
+  "summary": "A short, forceful couplet with a conventional nine-syllable line followed by thirteen.",
+  "tags": ["form", "ps", "fixed"],
+  "notes": [
+    "Themes can include love, separation, war, and homeland. Pashto rhythm and performance are not assessed by an English pronunciation model."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Landay (poetry)",
+      "url": "https://en.wikipedia.org/wiki/Landay_(poetry)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1261679539"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 9,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 13,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["Landay (poetry)"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 17689840,
+    "sourceRevisionId": 1261679539,
+    "limitations": []
+  }
+}

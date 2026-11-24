@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "shakespearean-sonnet",
+  "name": "Shakespearean sonnet",
+  "language": "en",
+  "origin": "England · adapted from the Italian sonnet",
+  "summary": "Three quatrains unfold a thought; a closing couplet gives it a turn. Fourteen lines, usually in iambic pentameter.",
+  "tags": ["fixed", "rhymed", "sonnet"],
+  "notes": [
+    "The complete rhyme scheme is ABAB CDCD EFEF GG.",
+    "The quatrains and couplet are structural sections. Guidance follows all fourteen lines whether printed together or separated by blank lines.",
+    "Iambic pentameter is a convention allowing expressive substitutions and extra unstressed endings."
+  ],
+  "sources": [
+    {
+      "title": "Academy of American Poets — Sonnet",
+      "url": "https://poets.org/glossary/sonnet"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "lineMapping": "poem",
+    "stanzas": [
+      {
+        "label": "First quatrain",
+        "lines": [
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "B",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "B",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Second quatrain",
+        "lines": [
+          {
+            "rhyme": "C",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "D",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "C",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "D",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Third quatrain",
+        "lines": [
+          {
+            "rhyme": "E",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "F",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "E",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "F",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Closing couplet",
+        "lines": [
+          {
+            "rhyme": "G",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "G",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "limitations": []
+  }
+}

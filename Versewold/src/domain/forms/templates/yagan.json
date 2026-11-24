@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "yagan",
+  "name": "Yagan",
+  "language": "my",
+  "origin": "Burmese satirical praise poetry",
+  "summary": "Praise a subject by sharply disparaging what is set against it.",
+  "tags": ["form", "my", "free"],
+  "notes": [
+    "The rhetorical contrast is central. Do not assume every yagan follows one stanza count merely because it has relationships with yadu and other Burmese forms."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Yagan (poetic form)",
+      "url": "https://en.wikipedia.org/wiki/Yagan_(poetic_form)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1327177441"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": ["Yagan (poetic form)"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 66055758,
+    "sourceRevisionId": 1327177441,
+    "limitations": []
+  }
+}

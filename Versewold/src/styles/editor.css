@@ -1,0 +1,384 @@
+/* Composition annotations are separate from manuscript text and never serialize. */
+.guidance-status {
+  margin-bottom: 14px;
+  padding: 11px 13px;
+  border-radius: 8px;
+  background: var(--earth);
+  color: var(--linen);
+  font-size: calc(10px * var(--ui-scale));
+}
+.guidance-status > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px 12px;
+}
+.guidance-status strong {
+  font-weight: 500;
+  color: var(--sage);
+}
+.guidance-notes strong,
+.guidance-layout strong {
+  color: var(--ochre);
+}
+.guidance-missing strong {
+  color: var(--clay);
+}
+.guidance-variants {
+  margin-top: 8px;
+}
+.guidance-variants .text-button {
+  color: var(--lavender);
+}
+.rhyme-unprescribed {
+  color: var(--text-faint);
+  background: transparent;
+  border: 1px dashed var(--bark);
+}
+.poem-editor {
+  min-height: 0;
+  padding-top: 28px;
+}
+.poem-editor .manuscript-rule {
+  margin: 18px 0 15px;
+}
+.editor-mode-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.editor-mode-bar > span {
+  color: var(--text-faint);
+  font-size: calc(9px * var(--ui-scale));
+}
+.editor-mode {
+  display: inline-flex;
+  padding: 3px;
+  gap: 3px;
+  border-radius: 8px;
+  background: var(--earth);
+}
+.editor-mode button {
+  padding: 6px 10px;
+  font-size: calc(10px * var(--ui-scale));
+  color: var(--linen);
+  border-radius: 5px;
+}
+.editor-mode button[aria-pressed='true'] {
+  background: var(--surface-raised);
+  color: var(--lavender);
+}
+.verse-editor {
+  flex: 1;
+  min-height: 160px;
+  overflow: hidden;
+}
+.verse-editor .cm-editor {
+  height: 100%;
+  background: transparent;
+  color: var(--parchment);
+}
+.verse-editor .cm-editor.cm-focused {
+  outline: none;
+}
+.verse-editor:focus-within {
+  box-shadow: inset 2px 0 color-mix(in srgb, var(--lavender) 45%, transparent);
+}
+.verse-editor .cm-scroller {
+  font: var(--editor-font-size)/var(--editor-line-height) var(--font-poem);
+  overflow: auto;
+}
+.verse-editor .cm-content {
+  padding: 0 10px 60px 0;
+  min-height: 100%;
+  caret-color: var(--lavender);
+  tab-size: 4;
+}
+.verse-editor .cm-line {
+  padding: 0 5px;
+}
+.verse-editor .cm-activeLine {
+  background: color-mix(in srgb, var(--lavender) 6%, transparent);
+  border-radius: 5px;
+}
+/* Warning ink is deliberately yellow in every palette; the tint covers the
+ * full logical line, including wrapped screen rows. Text remains untouched. */
+.verse-editor .cm-line.cm-strict-warning {
+  background: color-mix(in srgb, #e6bc52 17%, transparent);
+  box-shadow: inset 3px 0 #d4a52d;
+  border-radius: 4px;
+}
+.verse-target.strict-target-warning {
+  color: var(--ochre);
+  font-weight: 500;
+}
+.strict-mode-note {
+  margin: 0 0 12px;
+  color: var(--linen);
+  font-size: calc(9px * var(--ui-scale));
+  line-height: 1.7;
+}
+.strict-line-feedback {
+  margin-top: 16px;
+  padding: 13px;
+  border-radius: 8px;
+  background: var(--walnut);
+  font-size: calc(10px * var(--ui-scale));
+  line-height: 1.8;
+}
+.strict-line-feedback.warning {
+  box-shadow: inset 3px 0 #d4a52d;
+}
+.strict-line-feedback strong {
+  color: var(--sage);
+  font-family: var(--font-mono);
+  font-weight: 400;
+}
+.strict-line-feedback.warning strong {
+  color: var(--ochre);
+}
+.strict-line-feedback p {
+  margin: 8px 0 0;
+  color: var(--linen);
+}
+.strict-line-feedback summary {
+  margin-top: 10px;
+  cursor: pointer;
+  color: var(--lavender);
+}
+.strict-toggle[aria-pressed='true'] {
+  color: var(--ochre);
+}
+.strict-toggle .toggle-dot.on::after {
+  background: #e6bc52;
+}
+.verse-editor .cm-cursor {
+  border-left-color: var(--lavender);
+}
+.verse-editor .cm-selectionBackground {
+  background: color-mix(in srgb, var(--lavender) 25%, transparent) !important;
+}
+.verse-editor .cm-placeholder {
+  color: var(--text-faint);
+  font-style: italic;
+}
+.verse-editor .cm-gutters {
+  background: transparent;
+  border: none;
+  color: var(--text-faint);
+}
+.verse-editor .cm-gutterElement {
+  display: flex;
+  align-items: center;
+  padding-right: 12px;
+}
+.verse-marker {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 28px;
+}
+.is-guided .verse-marker {
+  min-width: 54px;
+}
+.verse-number {
+  min-width: 18px;
+  text-align: right;
+  font: calc(10px * var(--ui-scale)) var(--font-mono);
+}
+.stanza-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 19px 5px 13px;
+  margin: 0 0 8px;
+  border-bottom: 1px solid color-mix(in srgb, var(--heather) 35%, transparent);
+  color: var(--linen);
+  font: calc(9px * var(--ui-scale))/1.6 var(--font-ui);
+  letter-spacing: 0.13em;
+}
+.stanza-heading small {
+  font-size: calc(9px * var(--ui-scale));
+  letter-spacing: 0;
+  color: var(--text-faint);
+  text-align: right;
+}
+.verse-target {
+  display: inline-block;
+  margin-left: 24px;
+  color: var(--sage);
+  font: calc(9px * var(--ui-scale))/1.4 var(--font-ui);
+  white-space: nowrap;
+  user-select: none;
+  opacity: 0.9;
+  vertical-align: middle;
+}
+.rhyme-tone-0 {
+  --rhyme-ink: var(--lavender);
+}
+.rhyme-tone-1 {
+  --rhyme-ink: var(--sage);
+}
+.rhyme-tone-2 {
+  --rhyme-ink: var(--ochre);
+}
+.rhyme-tone-3 {
+  --rhyme-ink: var(--slate);
+}
+.rhyme-tone-4 {
+  --rhyme-ink: var(--clay);
+}
+.rhyme-label[class*='rhyme-tone-'],
+.rhyme-endings > span {
+  color: var(--rhyme-ink);
+  background: color-mix(in srgb, var(--rhyme-ink) 13%, transparent);
+}
+.line-inspector > h2 {
+  font-size: calc(28px * var(--ui-scale));
+  margin: 0 0 19px;
+  overflow-wrap: anywhere;
+}
+.active-line-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--lavender);
+  font-size: calc(11px * var(--ui-scale));
+}
+.line-progress {
+  color: var(--text-faint);
+  font-size: calc(10px * var(--ui-scale));
+  margin: 9px 0 17px;
+}
+.line-target-card {
+  margin: 17px 0;
+  padding: 17px 14px;
+  background: var(--walnut);
+  border-radius: 10px;
+}
+.line-target-card > strong {
+  display: block;
+  font: calc(12px * var(--ui-scale)) var(--font-mono);
+  color: var(--parchment);
+  margin: 12px 0;
+}
+.line-target-card > small {
+  display: block;
+  font-size: calc(10px * var(--ui-scale));
+  color: var(--sage);
+  margin-top: 12px;
+}
+.meter-pattern {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 15px 0 7px;
+}
+.meter-foot > div {
+  display: flex;
+  gap: 3px;
+}
+.meter-foot > small {
+  display: block;
+  text-align: center;
+  border-top: 1px solid var(--bark);
+  padding-top: 4px;
+  margin-top: 5px;
+  color: var(--text-faint);
+  font-size: calc(8px * var(--ui-scale));
+}
+.stress-token {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 29px;
+  padding: 0 4px;
+  border-radius: 4px;
+  background: var(--earth);
+  color: var(--linen);
+  font: 19px var(--font-poem);
+}
+.stress-token.stressed {
+  background: color-mix(in srgb, var(--lavender) 28%, var(--earth));
+  color: var(--parchment);
+}
+.target-note,
+.line-suggestion small {
+  display: block;
+  color: var(--text-faint);
+  font-size: calc(10px * var(--ui-scale));
+  line-height: 1.8;
+  margin: 12px 0 0;
+}
+.line-suggestion {
+  margin-top: 24px;
+}
+.line-suggestion h3 {
+  color: var(--linen);
+  font-size: calc(9px * var(--ui-scale));
+  margin-bottom: 10px;
+}
+.line-suggestion p {
+  font-size: calc(11px * var(--ui-scale));
+  color: var(--linen);
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+.rhyme-endings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.rhyme-endings > span {
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-family: var(--font-poem);
+  font-size: calc(17px * var(--ui-scale));
+}
+.line-suggestion blockquote {
+  margin: 12px 0;
+  padding-left: 13px;
+  border-left: 2px solid var(--heather);
+  font: calc(18px * var(--ui-scale))/1.6 var(--font-poem);
+  color: var(--parchment);
+  white-space: pre-wrap;
+}
+.full-form-guide {
+  margin-top: 25px;
+  padding-top: 18px;
+  border-top: 1px solid var(--bark);
+}
+.full-form-guide > summary {
+  cursor: pointer;
+  color: var(--lavender);
+  font-size: calc(11px * var(--ui-scale));
+  padding: 7px 0;
+}
+.full-form-guide[open] > summary {
+  margin-bottom: 22px;
+}
+.form-select {
+  margin-bottom: 22px;
+}
+@media (max-width: 1160px) {
+  .poem-editor {
+    padding: 26px 25px 0;
+  }
+  .verse-target {
+    margin-left: 12px;
+  }
+}
+@media (max-width: 960px) {
+  .verse-editor {
+    min-height: 350px;
+  }
+  .poem-editor {
+    min-height: 620px;
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "ijala",
+  "name": "Ìjálá",
+  "language": "yo",
+  "origin": "Yoruba hunters’ praise and chant traditions",
+  "summary": "A performed verbal art associated with hunters, Ogun, and praise.",
+  "tags": ["tradition", "yo", "free", "Ijala", "Ìjálá chant"],
+  "notes": [
+    "Voice, occasion, and relationship to oríkì matter. A regular English syllable scheme would not adequately specify this tradition."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Ìjálá",
+      "url": "https://en.wikipedia.org/wiki/%C3%8Cj%C3%A1l%C3%A1"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1384979335"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["Ijala", "Ìjálá chant"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 84367114,
+    "sourceRevisionId": 1384979335,
+    "limitations": []
+  }
+}

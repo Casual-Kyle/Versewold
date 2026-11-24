@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "modernist-poetry",
+  "name": "Modernist poetry",
+  "language": "mul",
+  "origin": "International literary modernisms",
+  "summary": "A collection of movements that reconsider poetic voice, form, perception, and tradition.",
+  "tags": ["tradition", "mul", "free"],
+  "notes": [
+    "Modernism is a historical and artistic grouping, not one meter. Formal and open verse both occur within it."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Modernist poetry",
+      "url": "https://en.wikipedia.org/wiki/Modernist_poetry"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1384723186"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 1134475,
+    "sourceRevisionId": 1384723186,
+    "limitations": []
+  }
+}

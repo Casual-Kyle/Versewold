@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "rune-poem",
+  "name": "Rune poem",
+  "language": "mul",
+  "origin": "Germanic runic mnemonic traditions",
+  "summary": "Use an alphabet sequence to carry compact names, images, and cultural associations.",
+  "tags": ["tradition", "mul", "free"],
+  "notes": [
+    "Select a particular runic alphabet and historical tradition. Different alphabets have different lengths, and surviving rune poems have different verse patterns."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Rune poem",
+      "url": "https://en.wikipedia.org/wiki/Rune_poem"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1387032247"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 1256208,
+    "sourceRevisionId": 1387032247,
+    "limitations": []
+  }
+}

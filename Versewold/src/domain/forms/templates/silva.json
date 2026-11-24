@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "silva",
+  "name": "Silva",
+  "language": "es",
+  "origin": "Spanish literary verse",
+  "summary": "Let seven- and eleven-syllable lines vary in order and extent.",
+  "tags": ["form", "es", "free"],
+  "notes": [
+    "Line order, rhyme distribution, and total length are not fixed. Choose each line’s target deliberately; this template does not impose a false alternating pattern."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Silva (poetry)",
+      "url": "https://en.wikipedia.org/wiki/Silva_(poetry)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1363056507"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": ["Silva (poetry)"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 3651665,
+    "sourceRevisionId": 1363056507,
+    "limitations": []
+  }
+}

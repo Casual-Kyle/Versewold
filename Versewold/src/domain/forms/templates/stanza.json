@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "stanza",
+  "name": "Stanza",
+  "language": "und",
+  "origin": "Cross-tradition terminology",
+  "summary": "A grouping of verse lines marked by spacing, pattern, or another organizing relationship.",
+  "tags": ["concept", "und", "free"],
+  "notes": [
+    "A stanza is a structural unit that can take many forms. Its name alone supplies no mandatory number of lines."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Stanza",
+      "url": "https://en.wikipedia.org/wiki/Stanza"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1376384029"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "concept",
+    "status": "reference",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 28263,
+    "sourceRevisionId": 1376384029,
+    "limitations": []
+  }
+}

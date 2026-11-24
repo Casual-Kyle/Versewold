@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "mawgun",
+  "name": "Mawgun",
+  "language": "my",
+  "origin": "Burmese commemorative poetry",
+  "summary": "Record an event so that its significance can endure.",
+  "tags": ["form", "my", "free"],
+  "notes": [
+    "Identify the event, perspective, and commemorative purpose. A specific Burmese composition is needed to establish its sound and rhyme design."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Mawgun",
+      "url": "https://en.wikipedia.org/wiki/Mawgun"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1325462813"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 66117538,
+    "sourceRevisionId": 1325462813,
+    "limitations": []
+  }
+}

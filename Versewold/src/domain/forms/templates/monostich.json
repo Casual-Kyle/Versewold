@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "monostich",
+  "name": "Monostich",
+  "language": "und",
+  "origin": "Single-line poetry",
+  "summary": "Give one line the weight and completeness of a whole poem.",
+  "tags": ["form", "und", "fixed"],
+  "notes": [
+    "A title may add another dimension without becoming a second body line. No universal meter or end rhyme is required."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Monostich",
+      "url": "https://en.wikipedia.org/wiki/Monostich"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1340993886"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [{}]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 2915858,
+    "sourceRevisionId": 1340993886,
+    "limitations": []
+  }
+}

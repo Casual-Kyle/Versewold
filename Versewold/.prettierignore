@@ -1,0 +1,8 @@
+node_modules/
+dist/
+src-tauri/target/
+src-tauri/gen/
+src-tauri/icons/
+src/domain/forms/generated/validate.js
+public/licenses/
+package-lock.json

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "tweede-asem",
+  "name": "Tweede Asem",
+  "language": "af",
+  "origin": "Afrikaans literary history",
+  "summary": "The “Second Breath” phase of Afrikaans poetry and its changing subjects.",
+  "tags": ["tradition", "af", "free", "Twintigers", "Second Breath"],
+  "notes": [
+    "This denotes a literary period and grouping rather than a single writing form. It remains a searchable historical reference."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Tweede Asem",
+      "url": "https://en.wikipedia.org/wiki/Tweede_Asem"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1096392257"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "reference",
+    "aliases": ["Twintigers", "Second Breath"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 9591228,
+    "sourceRevisionId": 1096392257,
+    "limitations": []
+  }
+}

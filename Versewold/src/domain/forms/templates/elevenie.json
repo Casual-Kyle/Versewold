@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "elevenie",
+  "name": "Elevenie",
+  "language": "de",
+  "origin": "German Elfchen teaching form",
+  "summary": "Eleven words unfold over five lines in a 1–2–3–4–1 arrangement.",
+  "tags": ["form", "de", "fixed", "Elfchen", "eleven-word poem"],
+  "notes": [
+    "Each line’s thematic instruction can vary between teaching versions. Word count, rather than syllable count, shapes this particular template."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Elevenie",
+      "url": "https://en.wikipedia.org/wiki/Elevenie"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1209166332"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [
+          {
+            "wordCount": 1
+          },
+          {
+            "wordCount": 2
+          },
+          {
+            "wordCount": 3
+          },
+          {
+            "wordCount": 4
+          },
+          {
+            "wordCount": 1
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["Elfchen", "eleven-word poem"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 47343763,
+    "sourceRevisionId": 1209166332,
+    "limitations": []
+  }
+}

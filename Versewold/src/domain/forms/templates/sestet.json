@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "sestet",
+  "name": "Sestet",
+  "language": "und",
+  "origin": "Six-line verse unit",
+  "summary": "A six-line stanza or complete poem with room for many rhyme patterns.",
+  "tags": ["form", "und", "fixed"],
+  "notes": [
+    "A sonnet’s closing sestet is a particular use of the unit. This general canvas imposes neither one rhyme order nor a universal meter."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Sestet",
+      "url": "https://en.wikipedia.org/wiki/Sestet"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1342140485"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [{}, {}, {}, {}, {}, {}]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 1590887,
+    "sourceRevisionId": 1342140485,
+    "limitations": []
+  }
+}

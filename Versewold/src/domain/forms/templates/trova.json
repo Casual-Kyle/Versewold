@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "trova",
+  "name": "Trova",
+  "language": "pt",
+  "origin": "Portuguese and Brazilian popular verse",
+  "summary": "A concise four-line poem in seven-syllable lines, with a rhyme connection at least between lines 2 and 4.",
+  "tags": ["form", "pt", "fixed"],
+  "notes": [
+    "Other rhyme arrangements can occur. Portuguese poetic syllable conventions, including the treatment of final stress, need native-language review."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Trova (poetry)",
+      "url": "https://en.wikipedia.org/wiki/Trova_(poetry)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1364169176"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 7,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "syllabic",
+              "syllables": 7,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 7,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "syllabic",
+              "syllables": 7,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["Trova (poetry)"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 63077265,
+    "sourceRevisionId": 1364169176,
+    "limitations": []
+  }
+}

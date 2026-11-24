@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "antistrophe",
+  "name": "Antistrophe",
+  "language": "und",
+  "origin": "Cross-tradition terminology",
+  "summary": "The answering movement in an ancient Greek choral ode.",
+  "tags": ["concept", "und", "free"],
+  "notes": [
+    "It responds to the strophe and normally corresponds metrically to it. It is a section of a larger composition, not a universal standalone stanza."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Antistrophe",
+      "url": "https://en.wikipedia.org/wiki/Antistrophe"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1316997895"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "concept",
+    "status": "reference",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 78908,
+    "sourceRevisionId": 1316997895,
+    "limitations": []
+  }
+}

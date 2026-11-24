@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "dinggedicht",
+  "name": "Dinggedicht",
+  "language": "de",
+  "origin": "German-language object poetry",
+  "summary": "Attend closely to a thing until its particular presence shapes the poem’s language.",
+  "tags": ["form", "de", "free", "thing poem", "object poem"],
+  "notes": [
+    "Describe or evoke the object rather than merely explaining a personal feeling about it. The form is defined by attention and approach, not a universal meter."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Dinggedicht",
+      "url": "https://en.wikipedia.org/wiki/Dinggedicht"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1370564663"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": ["thing poem", "object poem"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 36499558,
+    "sourceRevisionId": 1370564663,
+    "limitations": []
+  }
+}

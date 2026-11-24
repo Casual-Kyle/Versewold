@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "elegy",
+  "name": "Elegy",
+  "language": "und",
+  "origin": "Many poetic traditions",
+  "summary": "Write through loss, mourning, or serious reflection without requiring one inherited stanza.",
+  "tags": ["form", "und", "free"],
+  "notes": [
+    "Choose a subject and speaking situation before a pattern. Modern elegies need not use classical elegiac couplets."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Elegy",
+      "url": "https://en.wikipedia.org/wiki/Elegy"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1386543471"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 153459,
+    "sourceRevisionId": 1386543471,
+    "limitations": []
+  }
+}

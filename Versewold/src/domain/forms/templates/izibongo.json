@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "izibongo",
+  "name": "Izibongo",
+  "language": "zu",
+  "origin": "Southern African praise-poetry traditions",
+  "summary": "Public oral poetry that can celebrate, characterize, or criticize its subjects.",
+  "tags": ["tradition", "zu", "free", "praise poetry"],
+  "notes": [
+    "Praise is not the only function of izibongo. Study language, performance, and context rather than substituting one universal stanza."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Izibongo",
+      "url": "https://en.wikipedia.org/wiki/Izibongo"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1338086275"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["praise poetry"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 14780600,
+    "sourceRevisionId": 1338086275,
+    "limitations": []
+  }
+}

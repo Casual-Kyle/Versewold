@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "id": "terzanelle",
+  "name": "Terzanelle",
+  "language": "en",
+  "origin": "Modern villanelle and terza-rima hybrid",
+  "summary": "Five tercets and a quatrain pass their middle lines forward as refrains.",
+  "tags": ["form", "en", "fixed"],
+  "notes": [
+    "This selected closing arrangement is fA1FA2. Earlier middle lines recur as the next stanza’s third line; opening lines 1 and 3 return in the final quatrain. An alternate final-couplet arrangement also exists."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Terzanelle",
+      "url": "https://en.wikipedia.org/wiki/Terzanelle"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1154257721"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Stanza 1",
+        "lines": [
+          {
+            "refrain": {
+              "id": "A1",
+              "role": "define"
+            },
+            "rhyme": "A"
+          },
+          {
+            "refrain": {
+              "id": "B1",
+              "role": "define"
+            },
+            "rhyme": "B"
+          },
+          {
+            "refrain": {
+              "id": "A2",
+              "role": "define"
+            },
+            "rhyme": "A"
+          }
+        ]
+      },
+      {
+        "label": "Stanza 2",
+        "lines": [
+          {
+            "refrain": {
+              "id": "B2",
+              "role": "define"
+            },
+            "rhyme": "B"
+          },
+          {
+            "refrain": {
+              "id": "C1",
+              "role": "define"
+            },
+            "rhyme": "C"
+          },
+          {
+            "refrain": {
+              "id": "B1",
+              "role": "repeat"
+            },
+            "rhyme": "B"
+          }
+        ]
+      },
+      {
+        "label": "Stanza 3",
+        "lines": [
+          {
+            "refrain": {
+              "id": "C2",
+              "role": "define"
+            },
+            "rhyme": "C"
+          },
+          {
+            "refrain": {
+              "id": "D1",
+              "role": "define"
+            },
+            "rhyme": "D"
+          },
+          {
+            "refrain": {
+              "id": "C1",
+              "role": "repeat"
+            },
+            "rhyme": "C"
+          }
+        ]
+      },
+      {
+        "label": "Stanza 4",
+        "lines": [
+          {
+            "refrain": {
+              "id": "D2",
+              "role": "define"
+            },
+            "rhyme": "D"
+          },
+          {
+            "refrain": {
+              "id": "E1",
+              "role": "define"
+            },
+            "rhyme": "E"
+          },
+          {
+            "refrain": {
+              "id": "D1",
+              "role": "repeat"
+            },
+            "rhyme": "D"
+          }
+        ]
+      },
+      {
+        "label": "Stanza 5",
+        "lines": [
+          {
+            "refrain": {
+              "id": "E2",
+              "role": "define"
+            },
+            "rhyme": "E"
+          },
+          {
+            "refrain": {
+              "id": "F1",
+              "role": "define"
+            },
+            "rhyme": "F"
+          },
+          {
+            "refrain": {
+              "id": "E1",
+              "role": "repeat"
+            },
+            "rhyme": "E"
+          }
+        ]
+      },
+      {
+        "label": "Stanza 6",
+        "lines": [
+          {
+            "refrain": {
+              "id": "F2",
+              "role": "define"
+            },
+            "rhyme": "F"
+          },
+          {
+            "refrain": {
+              "id": "A1",
+              "role": "repeat"
+            },
+            "rhyme": "A"
+          },
+          {
+            "refrain": {
+              "id": "F1",
+              "role": "repeat"
+            },
+            "rhyme": "F"
+          },
+          {
+            "refrain": {
+              "id": "A2",
+              "role": "repeat"
+            },
+            "rhyme": "A"
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 1553210,
+    "sourceRevisionId": 1154257721,
+    "limitations": []
+  }
+}

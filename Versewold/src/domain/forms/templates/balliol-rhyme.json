@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "balliol-rhyme",
+  "name": "Balliol rhyme",
+  "language": "en",
+  "origin": "Balliol College, Oxford",
+  "summary": "A comic self-portrait in four lines and two rhyming couplets.",
+  "tags": ["form", "en", "fixed"],
+  "notes": [
+    "Write in the voice of the named subject. The surveyed pattern is AABB with four stresses per line; character and comic detail matter more than mechanical smoothness."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Balliol rhyme",
+      "url": "https://en.wikipedia.org/wiki/Balliol_rhyme"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1331056714"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual",
+              "beats": 4,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual",
+              "beats": 4,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "B",
+            "meter": {
+              "system": "accentual",
+              "beats": 4,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "B",
+            "meter": {
+              "system": "accentual",
+              "beats": 4,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 24494570,
+    "sourceRevisionId": 1331056714,
+    "limitations": []
+  }
+}

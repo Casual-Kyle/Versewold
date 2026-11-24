@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "bosinada",
+  "name": "Bosinada",
+  "language": "lmo",
+  "origin": "Lombardy · popular satirical performance",
+  "summary": "A Lombard popular poem made for topical satire and public recitation.",
+  "tags": ["tradition", "lmo", "free", "bosinata", "bosinade"],
+  "notes": [
+    "Choose a particular dialect and model. The singing or reciting context matters; the label alone does not determine a universal stanza."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Bosinada",
+      "url": "https://en.wikipedia.org/wiki/Bosinada"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1380711187"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["bosinata", "bosinade"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 32600138,
+    "sourceRevisionId": 1380711187,
+    "limitations": []
+  }
+}

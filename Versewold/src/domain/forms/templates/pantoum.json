@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "pantoum",
+  "name": "Pantoum · four-stanza practice",
+  "language": "en",
+  "origin": "French and English adaptations of Malay linked pantun",
+  "summary": "Returning lines change their meaning as they move through interwoven quatrains.",
+  "tags": ["form", "en", "fixed", "linked quatrains"],
+  "notes": [
+    "This selected four-stanza version repeats lines 2 and 4 as lines 1 and 3 of the next stanza, then closes with opening lines 3 and 1. Longer and differently closed versions also occur; rhyme is not compulsory in every modern adaptation."
+  ],
+  "sources": [
+    {
+      "title": "Poetry Archive — Pantoum",
+      "url": "https://poetryarchive.org/glossary/pantoum/"
+    },
+    {
+      "title": "Wikipedia — Pantoum",
+      "url": "https://en.wikipedia.org/wiki/Pantoum"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1370145864"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Stanza 1",
+        "lines": [
+          {
+            "refrain": {
+              "id": "L1",
+              "role": "define"
+            }
+          },
+          {
+            "refrain": {
+              "id": "L2",
+              "role": "define"
+            }
+          },
+          {
+            "refrain": {
+              "id": "L3",
+              "role": "define"
+            }
+          },
+          {
+            "refrain": {
+              "id": "L4",
+              "role": "define"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Stanza 2",
+        "lines": [
+          {
+            "refrain": {
+              "id": "L2",
+              "role": "repeat"
+            }
+          },
+          {
+            "refrain": {
+              "id": "L5",
+              "role": "define"
+            }
+          },
+          {
+            "refrain": {
+              "id": "L4",
+              "role": "repeat"
+            }
+          },
+          {
+            "refrain": {
+              "id": "L6",
+              "role": "define"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Stanza 3",
+        "lines": [
+          {
+            "refrain": {
+              "id": "L5",
+              "role": "repeat"
+            }
+          },
+          {
+            "refrain": {
+              "id": "L7",
+              "role": "define"
+            }
+          },
+          {
+            "refrain": {
+              "id": "L6",
+              "role": "repeat"
+            }
+          },
+          {
+            "refrain": {
+              "id": "L8",
+              "role": "define"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Stanza 4",
+        "lines": [
+          {
+            "refrain": {
+              "id": "L7",
+              "role": "repeat"
+            }
+          },
+          {
+            "refrain": {
+              "id": "L3",
+              "role": "repeat"
+            }
+          },
+          {
+            "refrain": {
+              "id": "L8",
+              "role": "repeat"
+            }
+          },
+          {
+            "refrain": {
+              "id": "L1",
+              "role": "repeat"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["Pantoum", "linked quatrains"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 24613,
+    "sourceRevisionId": 1370145864,
+    "limitations": []
+  }
+}

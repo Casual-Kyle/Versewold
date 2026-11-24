@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "pyo",
+  "name": "Pyo",
+  "language": "my",
+  "origin": "Burmese classical narrative verse",
+  "summary": "A major Burmese verse tradition used for sustained narrative and literary adaptation.",
+  "tags": ["form", "my", "free"],
+  "notes": [
+    "Study a particular pyo’s syllables and linked rhyme before prescribing a generic layout. The current record provides a guided writing space only."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Pyo",
+      "url": "https://en.wikipedia.org/wiki/Pyo"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1381992585"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 58376882,
+    "sourceRevisionId": 1381992585,
+    "limitations": []
+  }
+}

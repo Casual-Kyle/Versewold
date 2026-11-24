@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "balwo",
+  "name": "Balwo",
+  "language": "so",
+  "origin": "Somalia and Djibouti",
+  "summary": "A Somali song-and-poetry style often centered on love and longing.",
+  "tags": ["tradition", "so", "free"],
+  "notes": [
+    "The musical and oral setting is integral. No single line count or English stress pattern is assigned to the genre."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Balwo",
+      "url": "https://en.wikipedia.org/wiki/Balwo"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1380757023"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 20873773,
+    "sourceRevisionId": 1380757023,
+    "limitations": []
+  }
+}

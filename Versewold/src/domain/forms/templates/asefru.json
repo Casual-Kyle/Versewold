@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "asefru",
+  "name": "Asefru",
+  "language": "kab",
+  "origin": "Kabylia · Kabyle literature",
+  "summary": "A compact Kabyle poem commonly described as three 7–5–7 tercets.",
+  "tags": ["form", "kab", "fixed"],
+  "notes": [
+    "The surveyed article gives AAB AAB AAB across the three tercets. This layout is provisional because the source itself lacks adequate citation."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Asefru",
+      "url": "https://en.wikipedia.org/wiki/Asefru"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1381463155"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Tercet 1",
+        "lines": [
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 7,
+              "strength": "conventional"
+            },
+            "rhyme": "A"
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 5,
+              "strength": "conventional"
+            },
+            "rhyme": "A"
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 7,
+              "strength": "conventional"
+            },
+            "rhyme": "B"
+          }
+        ]
+      },
+      {
+        "label": "Tercet 2",
+        "lines": [
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 7,
+              "strength": "conventional"
+            },
+            "rhyme": "A"
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 5,
+              "strength": "conventional"
+            },
+            "rhyme": "A"
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 7,
+              "strength": "conventional"
+            },
+            "rhyme": "B"
+          }
+        ]
+      },
+      {
+        "label": "Tercet 3",
+        "lines": [
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 7,
+              "strength": "conventional"
+            },
+            "rhyme": "A"
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 5,
+              "strength": "conventional"
+            },
+            "rhyme": "A"
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 7,
+              "strength": "conventional"
+            },
+            "rhyme": "B"
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 42210935,
+    "sourceRevisionId": 1381463155,
+    "limitations": ["Counts and rhyme are a surveyed description awaiting a stronger source."]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "cantigas-de-escarnio-e-maldizer",
+  "name": "Cantigas de escárnio e maldizer",
+  "language": "gl",
+  "origin": "Medieval Galician-Portuguese satire",
+  "summary": "Satirical songs that turn insult, insinuation, or direct accusation into verse.",
+  "tags": ["tradition", "gl", "free", "cantigas de escarnio", "cantigas de maldizer"],
+  "notes": [
+    "These are related genres, not one universal meter. Study how indirect escárnio differs from more explicit maldizer before selecting a stanza."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Cantigas de escárnio e maldizer",
+      "url": "https://en.wikipedia.org/wiki/Cantigas_de_esc%C3%A1rnio_e_maldizer"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1385649545"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["cantigas de escarnio", "cantigas de maldizer"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 71574028,
+    "sourceRevisionId": 1385649545,
+    "limitations": []
+  }
+}

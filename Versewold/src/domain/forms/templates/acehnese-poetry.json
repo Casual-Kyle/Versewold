@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "acehnese-poetry",
+  "name": "Acehnese poetry",
+  "language": "ace",
+  "origin": "Aceh, Indonesia",
+  "summary": "Acehnese-language verse shaped by oral recitation, rhyme, community memory, and song.",
+  "tags": ["tradition", "ace", "free"],
+  "notes": [
+    "This umbrella covers several genres. Select a particular Acehnese form and performance model before imposing counts or rhyme positions."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Acehnese poetry",
+      "url": "https://en.wikipedia.org/wiki/Acehnese_poetry"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1387060306"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 84829229,
+    "sourceRevisionId": 1387060306,
+    "limitations": []
+  }
+}

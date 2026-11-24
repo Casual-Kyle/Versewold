@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "carmen",
+  "name": "Carmen",
+  "language": "la",
+  "origin": "Ancient Roman ritual and verse",
+  "summary": "A Latin term encompassing verse and, in ritual contexts, spells, prayers, or formulaic utterances.",
+  "tags": ["tradition", "la", "free"],
+  "notes": [
+    "Use a specific surviving carmen and period as your model. The historical label does not justify one generic quantitative pattern."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Carmen (verse)",
+      "url": "https://en.wikipedia.org/wiki/Carmen_(verse)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1345086034"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["Carmen (verse)"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 5341431,
+    "sourceRevisionId": 1345086034,
+    "limitations": []
+  }
+}

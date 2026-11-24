@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "copla",
+  "name": "Copla",
+  "language": "es",
+  "origin": "Spanish and Latin American stanza traditions",
+  "summary": "A short popular stanza with several established metrical and rhyme variants.",
+  "tags": ["form", "es", "repeating"],
+  "notes": [
+    "Romance-style coplas often use eight-syllable lines with even-line assonance; seguidilla and redondilla patterns differ. Choose a variant before assigning sound constraints."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Copla (poetry)",
+      "url": "https://en.wikipedia.org/wiki/Copla_(poetry)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1358391832"
+    }
+  ],
+  "structure": {
+    "kind": "repeating",
+    "rhymeScope": "stanza",
+    "stanzas": [
+      {
+        "label": "Octosyllabic practice variant",
+        "lines": [
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 8,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 8,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 8,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 8,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": ["Copla (poetry)"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 27169082,
+    "sourceRevisionId": 1358391832,
+    "limitations": [
+      "The displayed counts choose one common variant; assonance and alternative copla meters remain in the notes."
+    ]
+  }
+}

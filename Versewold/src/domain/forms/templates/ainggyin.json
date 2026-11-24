@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "ainggyin",
+  "name": "Ainggyin",
+  "language": "my",
+  "origin": "Myanmar · Burmese rural song",
+  "summary": "A sung Burmese verse tradition associated with group singing and agricultural life.",
+  "tags": ["form", "my", "free"],
+  "notes": [
+    "The surveyed full article describes flexible composition and an opening address to dear friends. Attend to rural voice, singing, and the particular Yarpyae or Thondaunt tradition before choosing a model."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Ainggyin",
+      "url": "https://en.wikipedia.org/wiki/Ainggyin"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1270449317"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 65992815,
+    "sourceRevisionId": 1270449317,
+    "limitations": ["Guidance only; no generic Burmese syllable or rhyme rule is invented."]
+  }
+}

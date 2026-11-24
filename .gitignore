@@ -1,0 +1,6 @@
+# Personal writing and local verification artifacts must never be committed.
+**/Versewold-data/
+artifacts/
+Exports/
+output/
+tmp/

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "tail-rhyme",
+  "name": "Tail rhyme",
+  "language": "en",
+  "origin": "Medieval French and English stanza families",
+  "summary": "Shorter returning lines form tails among longer lines.",
+  "tags": ["form", "en", "free"],
+  "notes": [
+    "Tail rhyme is a construction principle with several patterns. The separately available Standard Habbie is one subtype; no single eight-line scheme defines the whole family."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Tail rhyme",
+      "url": "https://en.wikipedia.org/wiki/Tail_rhyme"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1329735137"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 1676869,
+    "sourceRevisionId": 1329735137,
+    "limitations": []
+  }
+}

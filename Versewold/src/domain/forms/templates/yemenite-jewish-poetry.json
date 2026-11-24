@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "yemenite-jewish-poetry",
+  "name": "Yemenite Jewish poetry",
+  "language": "he",
+  "origin": "Yemenite Jewish devotional and social performance",
+  "summary": "Poetic texts live within distinctive sung, rhythmic, and communal practices.",
+  "tags": ["tradition", "he", "free"],
+  "notes": [
+    "Language, occasion, and men’s and women’s performance traditions differ. Choose a specific genre and melody rather than one generic stanza."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Yemenite Jewish poetry",
+      "url": "https://en.wikipedia.org/wiki/Yemenite_Jewish_poetry"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1364379108"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 49015936,
+    "sourceRevisionId": 1364379108,
+    "limitations": []
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "sisindiran",
+  "name": "Sisindiran",
+  "language": "su",
+  "origin": "Sundanese allusive verse",
+  "summary": "An outer image or cover prepares an inner meaning through sound correspondence.",
+  "tags": ["tradition", "su", "free", "susualan", "paparikan", "cangkang eusi"],
+  "notes": [
+    "Paparikan and other related types differ. Choose the precise type before treating four octosyllabic lines as universal."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Sisindiran",
+      "url": "https://en.wikipedia.org/wiki/Sisindiran"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1119284227"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["susualan", "paparikan", "cangkang eusi"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 17225718,
+    "sourceRevisionId": 1119284227,
+    "limitations": []
+  }
+}

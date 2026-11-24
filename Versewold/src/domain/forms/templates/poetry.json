@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "poetry",
+  "name": "Poetry",
+  "language": "und",
+  "origin": "Cross-tradition terminology",
+  "summary": "The literary art of shaping language through sound, rhythm, image, and line.",
+  "tags": ["reference", "und", "free"],
+  "notes": [
+    "This is the parent subject, not one fixed form. Choose a particular form or begin with free verse."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Poetry",
+      "url": "https://en.wikipedia.org/wiki/Poetry"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1387050133"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "reference",
+    "status": "reference",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 22926,
+    "sourceRevisionId": 1387050133,
+    "limitations": []
+  }
+}

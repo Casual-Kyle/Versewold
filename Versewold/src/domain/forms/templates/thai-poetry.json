@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "thai-poetry",
+  "name": "Thai poetry",
+  "language": "th",
+  "origin": "Thai literary and oral traditions",
+  "summary": "A range of systems including khlong, chan, kap, klon, and rai.",
+  "tags": ["tradition", "th", "free", "khlong", "chan", "kap", "klon"],
+  "notes": [
+    "Different types coordinate syllables, tones, rhyme positions, or quantity. Select a specific Thai form before turning the family into a structural template."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Thai poetry",
+      "url": "https://en.wikipedia.org/wiki/Thai_poetry"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1381648964"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["khlong", "chan", "kap", "klon", "rai"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 7306409,
+    "sourceRevisionId": 1381648964,
+    "limitations": []
+  }
+}

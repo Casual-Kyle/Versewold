@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "sonnet",
+  "name": "Sonnet",
+  "language": "und",
+  "origin": "Sicilian origins and international sonnet traditions",
+  "summary": "A fourteen-line lyric tradition with several established rhyme and rhetorical designs.",
+  "tags": ["form", "und", "fixed"],
+  "notes": [
+    "Choose a named subtype for a complete scheme: Shakespearean, Petrarchan, Spenserian, and other variants differ. The general canvas deliberately does not impose the English pattern on all sonnets."
+  ],
+  "sources": [
+    {
+      "title": "Academy of American Poets — Sonnet",
+      "url": "https://poets.org/glossary/sonnet"
+    },
+    {
+      "title": "Wikipedia — Sonnet",
+      "url": "https://en.wikipedia.org/wiki/Sonnet"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383157089"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 28260,
+    "sourceRevisionId": 1383157089,
+    "limitations": [],
+    "variants": ["shakespearean-sonnet"]
+  }
+}

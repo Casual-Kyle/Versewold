@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "id": "yadu",
+  "name": "Yadu · five-syllable ending",
+  "language": "my",
+  "origin": "Burmese seasonal lyric · five-syllable ending variant",
+  "summary": "Five-line stanzas combine short lines, a seasonal reference, and climbing internal rhyme.",
+  "tags": ["form", "my", "repeating", "ya du", "yatu"],
+  "notes": [
+    "The first four lines have four syllables; the last can have 5, 7, 9, or 11. This variant selects 5 and allows up to three stanzas. Internal A and B chains descend 4–3–2; the final two lines rhyme at their ends."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Yadu (poetry)",
+      "url": "https://en.wikipedia.org/wiki/Yadu_(poetry)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1376047430"
+    }
+  ],
+  "structure": {
+    "kind": "repeating",
+    "rhymeScope": "stanza",
+    "stanzas": [
+      {
+        "label": "Repeatable stanza",
+        "lines": [
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 4,
+              "strength": "conventional"
+            },
+            "internalRhymes": [
+              {
+                "group": "A",
+                "syllable": 4
+              }
+            ]
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 4,
+              "strength": "conventional"
+            },
+            "internalRhymes": [
+              {
+                "group": "A",
+                "syllable": 3
+              }
+            ]
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 4,
+              "strength": "conventional"
+            },
+            "internalRhymes": [
+              {
+                "group": "A",
+                "syllable": 2
+              },
+              {
+                "group": "B",
+                "syllable": 4
+              }
+            ]
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 4,
+              "strength": "conventional"
+            },
+            "rhyme": "C",
+            "internalRhymes": [
+              {
+                "group": "B",
+                "syllable": 3
+              }
+            ]
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 5,
+              "strength": "conventional"
+            },
+            "rhyme": "C",
+            "internalRhymes": [
+              {
+                "group": "B",
+                "syllable": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "maxStanzas": 3
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["Yadu (poetry)", "ya du", "yatu"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 3603380,
+    "sourceRevisionId": 1376047430,
+    "limitations": [
+      "Rhyme positions are targets; seasonal meaning and actual sound matches remain manual."
+    ]
+  }
+}

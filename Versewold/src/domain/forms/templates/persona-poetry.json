@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "persona-poetry",
+  "name": "Persona poetry",
+  "language": "und",
+  "origin": "Used in multiple literary traditions",
+  "summary": "Let an invented or adopted speaker carry the poem’s perspective.",
+  "tags": ["technique", "und", "free", "persona poem", "dramatic monologue"],
+  "notes": [
+    "Distinguish the speaker from the author. Choose diction, knowledge, and circumstances that make the voice coherent; no single meter is inherent."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Persona poetry",
+      "url": "https://en.wikipedia.org/wiki/Persona_poetry"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1345373580"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "technique",
+    "status": "guided",
+    "aliases": ["persona poem", "dramatic monologue"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 63107148,
+    "sourceRevisionId": 1345373580,
+    "limitations": []
+  }
+}

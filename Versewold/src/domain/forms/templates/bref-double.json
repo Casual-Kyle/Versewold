@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "bref-double",
+  "name": "Bref double",
+  "language": "fr",
+  "origin": "French form · Turco example variant",
+  "summary": "Fourteen lines arranged as three quatrains and a couplet, mixing rhyme with unrhymed lines.",
+  "tags": ["form", "fr", "fixed"],
+  "notes": [
+    "This variant follows AXBC XAXC BXXC AB, where X means no assigned rhyme. Other authorities describe different arrangements; line lengths are kept broadly consistent without one mandatory meter."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Bref double",
+      "url": "https://en.wikipedia.org/wiki/Bref_double"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303196951"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Quatrain 1",
+        "lines": [
+          {
+            "rhyme": "A"
+          },
+          {},
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "C"
+          }
+        ]
+      },
+      {
+        "label": "Quatrain 2",
+        "lines": [
+          {},
+          {
+            "rhyme": "A"
+          },
+          {},
+          {
+            "rhyme": "C"
+          }
+        ]
+      },
+      {
+        "label": "Quatrain 3",
+        "lines": [
+          {
+            "rhyme": "B"
+          },
+          {},
+          {},
+          {
+            "rhyme": "C"
+          }
+        ]
+      },
+      {
+        "label": "Couplet",
+        "lines": [
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 17047613,
+    "sourceRevisionId": 1303196951,
+    "limitations": [
+      "One explicitly selected variant; disagreement about the rhyme scheme is documented in the source."
+    ]
+  }
+}

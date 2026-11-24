@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "sigweya",
+  "name": "Sigweya",
+  "language": "luo",
+  "origin": "Luo spoken praise and commemoration",
+  "summary": "A solo spoken performance that characterizes and honors a person or community.",
+  "tags": ["tradition", "luo", "free"],
+  "notes": [
+    "Funerals are an important setting, but performances also address living people at other occasions. No universal stanza count is established here."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Sigweya",
+      "url": "https://en.wikipedia.org/wiki/Sigweya"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1330856590"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 81425848,
+    "sourceRevisionId": 1330856590,
+    "limitations": []
+  }
+}

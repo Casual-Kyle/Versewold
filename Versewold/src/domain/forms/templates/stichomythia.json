@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "stichomythia",
+  "name": "Stichomythia",
+  "language": "und",
+  "origin": "Used in multiple literary traditions",
+  "summary": "Exchange brief lines between dramatic speakers to sharpen pace and opposition.",
+  "tags": ["technique", "und", "free"],
+  "notes": [
+    "Single-line turns are typical, while half-line and two-line variants also exist. Speaker turns and metrical lines need separate representation."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Stichomythia",
+      "url": "https://en.wikipedia.org/wiki/Stichomythia"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1368581210"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "technique",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 581695,
+    "sourceRevisionId": 1368581210,
+    "limitations": []
+  }
+}

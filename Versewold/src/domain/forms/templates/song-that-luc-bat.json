@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "song-that-luc-bat",
+  "name": "Song thất lục bát",
+  "language": "vi",
+  "origin": "Vietnamese verse",
+  "summary": "A seven-seven-six-eight unit links its lines through tone and internal rhyme.",
+  "tags": ["form", "vi", "repeating", "song that luc bat", "double seven six eight"],
+  "notes": [
+    "The two seven-syllable lines precede a lục bát pair. Rhyme can land inside a line, and bằng/trắc positions are essential to a complete native specification."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Song thất lục bát",
+      "url": "https://en.wikipedia.org/wiki/Song_th%E1%BA%A5t_l%E1%BB%A5c_b%C3%A1t"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1379502469"
+    }
+  ],
+  "structure": {
+    "kind": "repeating",
+    "rhymeScope": "stanza",
+    "stanzas": [
+      {
+        "label": "Repeatable stanza",
+        "lines": [
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 7,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 7,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 6,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 8,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": ["song that luc bat", "double seven six eight"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 3607701,
+    "sourceRevisionId": 1379502469,
+    "limitations": [
+      "Line lengths are modeled; internal rhyme, tonal positions, and cross-stanza connections require manual review."
+    ]
+  }
+}

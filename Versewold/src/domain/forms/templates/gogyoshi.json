@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "gogyoshi",
+  "name": "Gogyōshi",
+  "language": "ja",
+  "origin": "Modern Japanese five-line poetry",
+  "summary": "A titled poem of five lines with an open rhythm.",
+  "tags": ["form", "ja", "fixed", "Gogyoshi"],
+  "notes": [
+    "This template selects the contemporary unrestricted form. The earlier syllabic model is a different historical variant. Remember to give the poem a title."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Gogyōshi",
+      "url": "https://en.wikipedia.org/wiki/Gogy%C5%8Dshi"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1311458686"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [{}, {}, {}, {}, {}]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["Gogyoshi"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 58203775,
+    "sourceRevisionId": 1311458686,
+    "limitations": []
+  }
+}

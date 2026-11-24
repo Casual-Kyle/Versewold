@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "kagyin",
+  "name": "Kagyin",
+  "language": "my",
+  "origin": "Burmese martial song",
+  "summary": "A performed martial poem associated with shield dance and collective spirit.",
+  "tags": ["form", "my", "free"],
+  "notes": [
+    "Study its sung movement and a particular composition. The surveyed evidence does not support a single universal line-count prescription."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Kagyin",
+      "url": "https://en.wikipedia.org/wiki/Kagyin"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1355271339"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 66057099,
+    "sourceRevisionId": 1355271339,
+    "limitations": []
+  }
+}

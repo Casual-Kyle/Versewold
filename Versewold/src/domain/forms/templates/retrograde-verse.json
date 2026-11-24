@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "retrograde-verse",
+  "name": "Retrograde verse",
+  "language": "und",
+  "origin": "Used in multiple literary traditions",
+  "summary": "Construct lines that remain viable when read backwards word by word.",
+  "tags": ["technique", "und", "free"],
+  "notes": [
+    "Check grammar, meter, and sense in both directions. This differs from reversing only the order of complete lines."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Retrograde verse",
+      "url": "https://en.wikipedia.org/wiki/Retrograde_verse"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1278082637"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "technique",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 78392873,
+    "sourceRevisionId": 1278082637,
+    "limitations": []
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "villanelle",
+  "name": "Villanelle",
+  "language": "en",
+  "origin": "French fixed form · widely adapted in English",
+  "summary": "Two refrains return through five tercets and a final quatrain, bringing nineteen lines full circle.",
+  "tags": ["fixed", "refrain", "rhymed"],
+  "notes": [
+    "Rhyme and refrain are separate relationships: A1 and A2 are different lines sharing rhyme A.",
+    "There is no mandatory meter. Refrain variations may be intentional and should remain editable."
+  ],
+  "sources": [
+    {
+      "title": "Academy of American Poets — Villanelle",
+      "url": "https://poets.org/glossary/villanelle"
+    },
+    {
+      "title": "Wikipedia — Villanelle",
+      "url": "https://en.wikipedia.org/wiki/Villanelle"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1384588271"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "First tercet",
+        "lines": [
+          {
+            "rhyme": "A",
+            "refrain": {
+              "id": "A1",
+              "role": "define"
+            }
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "A",
+            "refrain": {
+              "id": "A2",
+              "role": "define"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Second tercet",
+        "lines": [
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "A",
+            "refrain": {
+              "id": "A1",
+              "role": "repeat"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Third tercet",
+        "lines": [
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "A",
+            "refrain": {
+              "id": "A2",
+              "role": "repeat"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Fourth tercet",
+        "lines": [
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "A",
+            "refrain": {
+              "id": "A1",
+              "role": "repeat"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Fifth tercet",
+        "lines": [
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "A",
+            "refrain": {
+              "id": "A2",
+              "role": "repeat"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Final quatrain",
+        "lines": [
+          {
+            "rhyme": "A"
+          },
+          {
+            "rhyme": "B"
+          },
+          {
+            "rhyme": "A",
+            "refrain": {
+              "id": "A1",
+              "role": "repeat"
+            }
+          },
+          {
+            "rhyme": "A",
+            "refrain": {
+              "id": "A2",
+              "role": "repeat"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["villanesque"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 32683,
+    "sourceRevisionId": 1384588271,
+    "limitations": []
+  }
+}

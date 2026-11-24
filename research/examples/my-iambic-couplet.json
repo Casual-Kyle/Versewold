@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "my-iambic-couplet",
+  "name": "My iambic couplet practice",
+  "language": "en",
+  "origin": "Personal exercise, not a historical form",
+  "summary": "Two rhyming lines with a gentle four-beat movement.",
+  "tags": ["practice", "rhymed"],
+  "notes": ["Read aloud; use the pattern as a guide."],
+  "sources": [
+    {
+      "title": "Background: poetic meter",
+      "url": "https://www.poetryfoundation.org/education/glossary/meter"
+    }
+  ],
+  "structure": {
+    "kind": "repeating",
+    "rhymeScope": "stanza",
+    "stanzas": [
+      {
+        "label": "Couplet",
+        "lines": [
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 4,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 4,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "couplet",
+  "name": "Couplet",
+  "language": "und",
+  "origin": "Two-line verse unit",
+  "summary": "Two adjacent lines that can balance, answer, complete, or unsettle each other.",
+  "tags": ["form", "und", "fixed", "distich"],
+  "notes": [
+    "Couplets can be rhymed or unrhymed and can be closed or enjambed. This general template does not impose a particular meter."
+  ],
+  "sources": [
+    {
+      "title": "Academy of American Poets — Couplet",
+      "url": "https://poets.org/glossary/couplet"
+    },
+    {
+      "title": "Wikipedia — Couplet",
+      "url": "https://en.wikipedia.org/wiki/Couplet"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1368555851"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [{}, {}]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["distich"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 6530,
+    "sourceRevisionId": 1368555851,
+    "limitations": []
+  }
+}

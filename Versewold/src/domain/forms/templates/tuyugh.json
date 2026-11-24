@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "tuyugh",
+  "name": "Tuyugh",
+  "language": "chg",
+  "origin": "Classical Turkic poetry · Central Asia",
+  "summary": "A classical Turkic lyric form associated with poets writing in Chaghatay.",
+  "tags": ["form", "chg", "free", "tuyug", "tuyuk"],
+  "notes": [
+    "The surveyed article identifies the tradition but does not supply a reliable complete rule set. Verify a source on its meter and wordplay before imposing constraints."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Tuyugh",
+      "url": "https://en.wikipedia.org/wiki/Tuyugh"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1297524508"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": ["tuyug", "tuyuk"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 55907989,
+    "sourceRevisionId": 1297524508,
+    "limitations": ["Source coverage is too thin for a strict stanza and meter prescription."]
+  }
+}

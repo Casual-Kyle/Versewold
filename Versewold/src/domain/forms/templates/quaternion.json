@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "quaternion",
+  "name": "Quaternion",
+  "language": "und",
+  "origin": "Used in multiple literary traditions",
+  "summary": "Organize a theme into four related parts.",
+  "tags": ["technique", "und", "free"],
+  "notes": [
+    "The four parts are thematic movements, not necessarily four lines or four equal stanzas. Choose the subjects and relationships before selecting a meter."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Quaternion (poetry)",
+      "url": "https://en.wikipedia.org/wiki/Quaternion_(poetry)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1194470051"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "technique",
+    "status": "guided",
+    "aliases": ["Quaternion (poetry)"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 28278639,
+    "sourceRevisionId": 1194470051,
+    "limitations": []
+  }
+}

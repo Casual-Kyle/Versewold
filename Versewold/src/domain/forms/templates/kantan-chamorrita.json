@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "kantan-chamorrita",
+  "name": "Kantan Chamorrita",
+  "language": "ch",
+  "origin": "Chamoru traditions of the Mariana Islands",
+  "summary": "An improvised sung exchange that answers, challenges, or develops another voice.",
+  "tags": ["tradition", "ch", "free", "Kantan Chamorrita", "Chamorrita"],
+  "notes": [
+    "The dialogic and musical context is essential. Study a specific performance and its linguistic rhyme practices before assigning fixed rules."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Kantan Chamorrita",
+      "url": "https://en.wikipedia.org/wiki/Kantan_Chamorrita"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1281630684"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["Chamorrita"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 6697398,
+    "sourceRevisionId": 1281630684,
+    "limitations": []
+  }
+}

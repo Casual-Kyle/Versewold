@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "heroic-couplet",
+  "name": "Heroic couplet",
+  "language": "en",
+  "origin": "English narrative and satirical verse",
+  "summary": "Two rhyming iambic pentameter lines form a poised, often pointed unit.",
+  "tags": ["form", "en", "repeating"],
+  "notes": [
+    "This repeatable couplet uses five iambic feet per line. Enjambment and metrical substitutions remain possible; closure is a stylistic choice."
+  ],
+  "sources": [
+    {
+      "title": "Harvard — Guide to poetic terms",
+      "url": "https://poetry.harvard.edu/guide-poetic-terms"
+    },
+    {
+      "title": "Wikipedia — Heroic couplet",
+      "url": "https://en.wikipedia.org/wiki/Heroic_couplet"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1226705653"
+    }
+  ],
+  "structure": {
+    "kind": "repeating",
+    "rhymeScope": "stanza",
+    "stanzas": [
+      {
+        "label": "Heroic couplet",
+        "lines": [
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 14123,
+    "sourceRevisionId": 1226705653,
+    "limitations": []
+  }
+}

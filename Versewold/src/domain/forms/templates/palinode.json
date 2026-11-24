@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "palinode",
+  "name": "Palinode",
+  "language": "und",
+  "origin": "Greek origins and later recantation poems",
+  "summary": "Return to an earlier claim and retract, revise, or transform it.",
+  "tags": ["form", "und", "free", "palinody", "recantation poem"],
+  "notes": [
+    "Let the earlier position and the new response remain legible. Palinode describes the relationship between statements, not a fixed meter."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Palinode",
+      "url": "https://en.wikipedia.org/wiki/Palinode"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1360841942"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": ["palinody", "recantation poem"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 3601369,
+    "sourceRevisionId": 1360841942,
+    "limitations": []
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "quintain",
+  "name": "Quintain",
+  "language": "und",
+  "origin": "Five-line verse unit",
+  "summary": "A general five-line unit rather than one particular rhyme or syllable scheme.",
+  "tags": ["form", "und", "fixed", "pentastich", "quintet"],
+  "notes": ["A tanka, limerick, or specific cinquain adds rules beyond this general designation."],
+  "sources": [
+    {
+      "title": "Wikipedia — Quintain (poetry)",
+      "url": "https://en.wikipedia.org/wiki/Quintain_(poetry)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1306001028"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [{}, {}, {}, {}, {}]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["Quintain (poetry)", "pentastich", "quintet"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 32019908,
+    "sourceRevisionId": 1306001028,
+    "limitations": []
+  }
+}

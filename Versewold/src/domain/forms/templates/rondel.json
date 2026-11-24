@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "rondel",
+  "name": "Rondel · thirteen-line variant",
+  "language": "fr",
+  "origin": "French lyric · thirteen-line variant",
+  "summary": "Two rhymes and returning opening lines weave through three stanzas.",
+  "tags": ["form", "fr", "fixed"],
+  "notes": [
+    "This variant uses ABBA / ABAB / ABBAA. The opening two lines return as lines 7–8, and line 1 returns at line 13. A fourteen-line version repeats both at the end; other historical designs exist."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Rondel (poem)",
+      "url": "https://en.wikipedia.org/wiki/Rondel_(poem)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1379797405"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Stanza 1",
+        "lines": [
+          {
+            "refrain": {
+              "id": "R1",
+              "role": "define"
+            },
+            "rhyme": "A"
+          },
+          {
+            "refrain": {
+              "id": "R2",
+              "role": "define"
+            },
+            "rhyme": "B"
+          },
+          {
+            "refrain": {
+              "id": "L3",
+              "role": "define"
+            },
+            "rhyme": "B"
+          },
+          {
+            "refrain": {
+              "id": "L4",
+              "role": "define"
+            },
+            "rhyme": "A"
+          }
+        ]
+      },
+      {
+        "label": "Stanza 2",
+        "lines": [
+          {
+            "refrain": {
+              "id": "L5",
+              "role": "define"
+            },
+            "rhyme": "A"
+          },
+          {
+            "refrain": {
+              "id": "L6",
+              "role": "define"
+            },
+            "rhyme": "B"
+          },
+          {
+            "refrain": {
+              "id": "R1",
+              "role": "repeat"
+            },
+            "rhyme": "A"
+          },
+          {
+            "refrain": {
+              "id": "R2",
+              "role": "repeat"
+            },
+            "rhyme": "B"
+          }
+        ]
+      },
+      {
+        "label": "Stanza 3",
+        "lines": [
+          {
+            "refrain": {
+              "id": "L9",
+              "role": "define"
+            },
+            "rhyme": "A"
+          },
+          {
+            "refrain": {
+              "id": "L10",
+              "role": "define"
+            },
+            "rhyme": "B"
+          },
+          {
+            "refrain": {
+              "id": "L11",
+              "role": "define"
+            },
+            "rhyme": "B"
+          },
+          {
+            "refrain": {
+              "id": "L12",
+              "role": "define"
+            },
+            "rhyme": "A"
+          },
+          {
+            "refrain": {
+              "id": "R1",
+              "role": "repeat"
+            },
+            "rhyme": "A"
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["Rondel (poem)"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 4795706,
+    "sourceRevisionId": 1379797405,
+    "limitations": []
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "quatorzain",
+  "name": "Quatorzain",
+  "language": "und",
+  "origin": "Fourteen-line poetry",
+  "summary": "A fourteen-line poem whose design need not follow a recognized sonnet pattern.",
+  "tags": ["form", "und", "fixed", "fourteen-line poem"],
+  "notes": [
+    "This canvas fixes the number of lines without inventing a rhyme scheme. The historical relationship between quatorzain and sonnet terminology is not uniform."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Quatorzain",
+      "url": "https://en.wikipedia.org/wiki/Quatorzain"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303588727"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["fourteen-line poem"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 51671,
+    "sourceRevisionId": 1303588727,
+    "limitations": []
+  }
+}

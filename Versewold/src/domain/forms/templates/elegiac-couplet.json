@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "elegiac-couplet",
+  "name": "Elegiac couplet",
+  "language": "grc",
+  "origin": "Greek and Latin quantitative verse",
+  "summary": "Pair a dactylic hexameter with a dactylic pentameter.",
+  "tags": ["form", "grc", "repeating"],
+  "notes": [
+    "The displayed quantity sequences are base models: − marks long, u short, and x anceps. Classical substitutions and the pentameter’s central division require specialist scansion."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Elegiac couplet",
+      "url": "https://en.wikipedia.org/wiki/Elegiac_couplet"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1381055149"
+    }
+  ],
+  "structure": {
+    "kind": "repeating",
+    "rhymeScope": "stanza",
+    "stanzas": [
+      {
+        "label": "Quantitative couplet",
+        "lines": [
+          {
+            "meter": {
+              "system": "quantitative",
+              "quantityPattern": "-uu-uu-uu-uu-uu-x",
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "quantitative",
+              "quantityPattern": "-uu-uu--uu-uu-",
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 9755,
+    "sourceRevisionId": 1381055149,
+    "limitations": [
+      "Quantity is not English stress. Base sequences omit alternatives and explicit caesura positions."
+    ]
+  }
+}

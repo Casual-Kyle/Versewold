@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "ode",
+  "name": "Ode",
+  "language": "und",
+  "origin": "Greek origins and later international lyric traditions",
+  "summary": "Address or contemplate a subject with sustained lyric attention.",
+  "tags": ["form", "und", "free"],
+  "notes": [
+    "Pindaric, Horatian, and irregular odes organize their movements differently. Choose a subtype before imposing a stanza pattern."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Ode",
+      "url": "https://en.wikipedia.org/wiki/Ode"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1377205785"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 22172,
+    "sourceRevisionId": 1377205785,
+    "limitations": []
+  }
+}

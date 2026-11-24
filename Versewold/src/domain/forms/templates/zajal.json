@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "zajal",
+  "name": "Zajal",
+  "language": "ar",
+  "origin": "Andalusi roots and living colloquial Arabic traditions",
+  "summary": "Strophic, often improvised oral poetry that can unfold as a sung exchange.",
+  "tags": ["tradition", "ar", "free", "zajjal", "زجل"],
+  "notes": [
+    "Regional practices and metrical traditions vary. Musical delivery, dialect, and answering voices are part of the specification."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Zajal",
+      "url": "https://en.wikipedia.org/wiki/Zajal"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1360600746"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["zajjal", "زجل"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 7880901,
+    "sourceRevisionId": 1360600746,
+    "limitations": []
+  }
+}

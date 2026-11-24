@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "cumulative-song",
+  "name": "Cumulative song",
+  "language": "und",
+  "origin": "Used in multiple literary traditions",
+  "summary": "Build each successive verse by adding material while returning to what came before.",
+  "tags": ["technique", "und", "free"],
+  "notes": [
+    "Plan the growth and the recurring sequence. Total length is author-selected; a fixed four-verse example would not define the whole technique."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Cumulative song",
+      "url": "https://en.wikipedia.org/wiki/Cumulative_song"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383107396"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "technique",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 603864,
+    "sourceRevisionId": 1383107396,
+    "limitations": []
+  }
+}

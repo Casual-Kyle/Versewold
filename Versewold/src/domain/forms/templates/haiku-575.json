@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "haiku-575",
+  "name": "Haiku · 5–7–5 practice",
+  "language": "en",
+  "origin": "English-language teaching adaptation of Japanese haiku",
+  "summary": "A three-line syllabic exercise: five, seven, five. Capture a moment with precise, concrete images.",
+  "tags": ["syllabic", "beginner", "fixed"],
+  "notes": [
+    "Japanese on (morae) are not equivalent to English syllables. This is an explicitly labeled English practice variant.",
+    "Contemporary English-language haiku need not follow 5–7–5. Seasonal context and a cut or juxtaposition also matter."
+  ],
+  "sources": [
+    {
+      "title": "The Haiku Foundation — Line and syllable count",
+      "url": "https://thehaikufoundation.org/some-thoughts-on-line-and-syllable-count-in-english-language-haiku/"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "One small moment",
+        "lines": [
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 5,
+              "strength": "required"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 7,
+              "strength": "required"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 5,
+              "strength": "required"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "limitations": []
+  }
+}

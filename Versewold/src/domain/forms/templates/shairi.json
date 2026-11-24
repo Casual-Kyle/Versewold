@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "shairi",
+  "name": "Shairi",
+  "language": "ka",
+  "origin": "Georgian verse · Rustavelian quatrain",
+  "summary": "Four sixteen-syllable lines share a rhyme and an internal eight-plus-eight division.",
+  "tags": ["form", "ka", "fixed", "Rustavelian quatrain"],
+  "notes": [
+    "Different high and low shairi organize the halves differently. Georgian stress should not be equated with strong English iambs."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Shairi",
+      "url": "https://en.wikipedia.org/wiki/Shairi"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1347697677"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "syllabic",
+              "syllables": 16,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "syllabic",
+              "syllables": 16,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "syllabic",
+              "syllables": 16,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "syllabic",
+              "syllables": 16,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["Rustavelian quatrain"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 18629957,
+    "sourceRevisionId": 1347697677,
+    "limitations": ["The internal division and subtype rhythms remain descriptive."]
+  }
+}

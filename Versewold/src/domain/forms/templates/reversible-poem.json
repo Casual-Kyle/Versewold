@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "reversible-poem",
+  "name": "Reversible poem",
+  "language": "und",
+  "origin": "Used in multiple literary traditions",
+  "summary": "Let a backward reading reveal a second perspective or meaning.",
+  "tags": ["technique", "und", "free", "reverso", "reverse poem", "palindrome poem"],
+  "notes": [
+    "Choose what reverses: line order, words, or another unit. The app preserves your lineation but does not automatically verify the second reading."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Reversible poem",
+      "url": "https://en.wikipedia.org/wiki/Reversible_poem"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1304072390"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "technique",
+    "status": "guided",
+    "aliases": ["reverso", "reverse poem", "palindrome poem"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 76755404,
+    "sourceRevisionId": 1304072390,
+    "limitations": []
+  }
+}

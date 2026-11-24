@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "free-verse",
+  "name": "Free verse",
+  "language": "en",
+  "origin": "Many traditions; prominent in modern poetry",
+  "summary": "Let the line follow your ear. No fixed rhyme, meter, or stanza length is prescribed.",
+  "tags": ["open form", "beginner"],
+  "notes": [
+    "Free verse still uses rhythm, deliberate line breaks, imagery, and sound. Freedom is a choice of structure, not the absence of craft."
+  ],
+  "sources": [
+    {
+      "title": "Poetry Foundation — Free verse",
+      "url": "https://www.poetryfoundation.org/education/glossary/free-verse"
+    },
+    {
+      "title": "Wikipedia — Free verse",
+      "url": "https://en.wikipedia.org/wiki/Free_verse"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1371622893"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": ["open form"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 11478,
+    "sourceRevisionId": 1371622893,
+    "limitations": []
+  }
+}

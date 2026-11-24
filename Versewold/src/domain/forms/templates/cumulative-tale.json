@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "cumulative-tale",
+  "name": "Cumulative tale",
+  "language": "und",
+  "origin": "Used in multiple literary traditions",
+  "summary": "Let a repeated action or phrase accumulate as a story moves forward.",
+  "tags": ["technique", "und", "free"],
+  "notes": [
+    "Choose an escalating sequence and a deliberate ending. This narrative technique can appear in prose or song as well as verse."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Cumulative tale",
+      "url": "https://en.wikipedia.org/wiki/Cumulative_tale"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1371696990"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "technique",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 16480472,
+    "sourceRevisionId": 1371696990,
+    "limitations": []
+  }
+}

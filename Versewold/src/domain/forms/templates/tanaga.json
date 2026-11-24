@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "tanaga",
+  "name": "Tanaga",
+  "language": "tl",
+  "origin": "Philippine Tagalog verse",
+  "summary": "A compact quatrain of seven-syllable lines.",
+  "tags": ["form", "tl", "fixed"],
+  "notes": [
+    "Rhyme arrangements vary, including monorhyme and paired or alternating rhymes. This general count template does not silently choose one for all tanaga."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Tanaga",
+      "url": "https://en.wikipedia.org/wiki/Tanaga"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1384060240"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 7,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 7,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 7,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 7,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 666704,
+    "sourceRevisionId": 1384060240,
+    "limitations": []
+  }
+}

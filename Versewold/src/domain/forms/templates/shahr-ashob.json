@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "shahr-ashob",
+  "name": "Shahr Ashob",
+  "language": "ur",
+  "origin": "Persian, Urdu, and related urban lament traditions",
+  "summary": "Write through a city’s upheaval and the social changes felt by its inhabitants.",
+  "tags": ["tradition", "ur", "free", "Shahr-i Ashob", "Shahrashub", "Shahar-i Ashub"],
+  "notes": [
+    "Historical examples and stanza arrangements vary. Descriptions of one five-line pattern should not be generalized to every shahr ashob."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Shahr Ashob",
+      "url": "https://en.wikipedia.org/wiki/Shahr_Ashob"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1369512636"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["Shahr-i Ashob", "Shahrashub", "Shahar-i Ashub"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 64161745,
+    "sourceRevisionId": 1369512636,
+    "limitations": []
+  }
+}

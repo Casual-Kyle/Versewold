@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "vers-libre",
+  "name": "Vers libre",
+  "language": "fr",
+  "origin": "French free verse and related open-form traditions",
+  "summary": "Open verse shaped without a single mandatory inherited meter or rhyme pattern.",
+  "tags": ["form", "fr", "free", "free verse", "vers-libre"],
+  "notes": [
+    "The category entry redirects to free verse. It is retained with its own searchable name and source mapping; it does not create a second set of fixed constraints."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Vers libre",
+      "url": "https://en.wikipedia.org/wiki/Vers_libre"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1371622893"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": ["free verse", "vers-libre"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 11478,
+    "sourceRevisionId": 1371622893,
+    "limitations": []
+  }
+}

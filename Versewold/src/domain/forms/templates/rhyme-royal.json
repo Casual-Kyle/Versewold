@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "rhyme-royal",
+  "name": "Rhyme royal",
+  "language": "en",
+  "origin": "English and Scots literary stanza",
+  "summary": "A seven-line ABABBCC stanza, conventionally in iambic pentameter.",
+  "tags": ["form", "en", "repeating", "rime royal", "rime royale"],
+  "notes": [
+    "The final couplet can sharpen or settle the stanza’s argument. Meter and syntax allow expressive variation."
+  ],
+  "sources": [
+    {
+      "title": "Poetry Foundation — Rhyme royal",
+      "url": "https://www.poetryfoundation.org/education/glossary/rhyme-royal-rime-royale"
+    },
+    {
+      "title": "Wikipedia — Rhyme royal",
+      "url": "https://en.wikipedia.org/wiki/Rhyme_royal"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1366772205"
+    }
+  ],
+  "structure": {
+    "kind": "repeating",
+    "rhymeScope": "stanza",
+    "stanzas": [
+      {
+        "label": "Repeatable stanza",
+        "lines": [
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "B",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "A",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "B",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "B",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "C",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          },
+          {
+            "rhyme": "C",
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["rime royal", "rime royale"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 246167,
+    "sourceRevisionId": 1366772205,
+    "limitations": []
+  }
+}

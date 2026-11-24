@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "slavic-antithesis",
+  "name": "Slavic antithesis",
+  "language": "und",
+  "origin": "South Slavic epic traditions",
+  "summary": "Pose possible explanations, reject them, then reveal what the scene really means.",
+  "tags": ["technique", "und", "free"],
+  "notes": [
+    "Use the question–negation–revelation movement to delay recognition. These are rhetorical parts, not three mandatory physical lines."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Slavic antithesis",
+      "url": "https://en.wikipedia.org/wiki/Slavic_antithesis"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1369192816"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "technique",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 5230744,
+    "sourceRevisionId": 1369192816,
+    "limitations": []
+  }
+}

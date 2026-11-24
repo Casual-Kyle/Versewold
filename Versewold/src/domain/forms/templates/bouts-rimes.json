@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "bouts-rimes",
+  "name": "Bouts-Rimés",
+  "language": "fr",
+  "origin": "Used in multiple literary traditions",
+  "summary": "Compose a poem from a supplied list of rhyming end-words in a fixed order.",
+  "tags": ["technique", "fr", "free", "bouts rimes", "rhymed ends"],
+  "notes": [
+    "Choose the end-word list first, then fit original lines around it. The list determines the length and rhyme plan; this template does not substitute a canned list."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Bouts-Rimés",
+      "url": "https://en.wikipedia.org/wiki/Bouts-Rim%C3%A9s"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1381648477"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "technique",
+    "status": "guided",
+    "aliases": ["bouts rimes", "rhymed ends"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 2440498,
+    "sourceRevisionId": 1381648477,
+    "limitations": []
+  }
+}

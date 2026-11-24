@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "profile": { "authorName": "" },
+  "appearance": {
+    "preset": "heather-earth",
+    "colorScheme": "dark",
+    "colors": {
+      "earth": "#24211f",
+      "walnut": "#302b27",
+      "bark": "#453b34",
+      "lavender": "#b5a0c7",
+      "heather": "#8d78a3",
+      "sage": "#8b9a83",
+      "parchment": "#e9e0d3",
+      "linen": "#b1a69b",
+      "ochre": "#c3a16e",
+      "slate": "#8daab8",
+      "clay": "#c28d87",
+      "surfaceDeep": "#211e1c",
+      "surfaceRaised": "#37302b",
+      "line": "#3a332e",
+      "textFaint": "#a2968b"
+    },
+    "interfaceFont": "Inter",
+    "headingFont": "Cormorant Garamond",
+    "monoFont": "IBM Plex Mono",
+    "interfaceFontSize": 13
+  },
+  "writing": {
+    "font": "EB Garamond",
+    "fontSize": 21,
+    "lineHeight": 1.9,
+    "maxWidth": 720,
+    "spellcheck": true,
+    "softWrap": true,
+    "showStatistics": true,
+    "showGuidance": true,
+    "strictFormatting": false
+  }
+}

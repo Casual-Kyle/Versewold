@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "book-rhyme",
+  "name": "Book rhyme",
+  "language": "en",
+  "origin": "Book ownership and inscription traditions",
+  "summary": "A brief verse inscription that names an owner or playfully guards a book.",
+  "tags": ["form", "en", "free"],
+  "notes": [
+    "Choose a concise address to a reader, borrower, or would-be thief. No mandatory stanza, meter, or rhyme is prescribed by the genre."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Book rhyme",
+      "url": "https://en.wikipedia.org/wiki/Book_rhyme"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1295936049"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "guided",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 6555036,
+    "sourceRevisionId": 1295936049,
+    "limitations": []
+  }
+}

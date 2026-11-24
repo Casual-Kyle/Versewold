@@ -1,0 +1,197 @@
+/* The searchable writing picker stays in the sidebar flow so large fonts and
+ * short windows can scroll naturally without a clipped overlay. */
+.form-picker {
+  position: relative;
+  margin-bottom: 24px;
+}
+.form-picker-field {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px;
+  border: 1px solid var(--bark);
+  border-radius: 8px;
+  background: var(--walnut);
+  color: var(--lavender);
+}
+.form-picker-field:focus-within {
+  outline: 2px solid var(--lavender);
+  outline-offset: 2px;
+}
+.form-picker-field > svg {
+  flex-shrink: 0;
+}
+.form-picker-field input {
+  min-width: 0;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--parchment);
+  font: calc(11px * var(--ui-scale))/1.6 var(--font-ui);
+}
+.form-picker-field input::placeholder {
+  color: var(--text-faint);
+}
+.form-picker-popup {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  background: var(--walnut);
+  box-shadow: 0 8px 20px #0002;
+}
+.form-picker-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.form-picker-filters button {
+  padding: 6px 7px;
+  border-radius: 5px;
+  color: var(--linen);
+  font-size: calc(9px * var(--ui-scale));
+}
+.form-picker-filters button[aria-pressed='true'] {
+  background: var(--surface-raised);
+  color: var(--lavender);
+}
+.form-picker-count,
+.form-picker-help {
+  display: block;
+  margin: 10px 4px;
+  color: var(--text-faint);
+  font-size: calc(9px * var(--ui-scale));
+  line-height: 1.6;
+}
+.form-picker-results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 235px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.form-picker-results > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.form-picker-results > li.highlighted {
+  background: color-mix(in srgb, var(--lavender) 15%, transparent);
+  box-shadow: inset 2px 0 var(--lavender);
+}
+.form-picker-results strong,
+.form-picker-results small {
+  display: block;
+}
+.form-picker-results strong {
+  color: var(--parchment);
+  font-size: calc(11px * var(--ui-scale));
+  font-weight: 500;
+  line-height: 1.6;
+}
+.form-picker-results small {
+  margin-top: 3px;
+  color: var(--linen);
+  font-size: calc(9px * var(--ui-scale));
+}
+.form-picker-selected {
+  color: var(--sage);
+}
+.form-picker-preview {
+  margin: 9px 0 0;
+  padding: 12px 8px;
+  background: var(--earth);
+  border-radius: 6px;
+  font-size: calc(10px * var(--ui-scale));
+  line-height: 1.7;
+}
+.form-picker-preview > strong {
+  color: var(--lavender);
+  font-weight: 500;
+}
+.form-picker-preview p {
+  margin: 7px 0;
+  color: var(--linen);
+}
+.form-picker-preview small {
+  font-size: inherit;
+  color: var(--sage);
+}
+.form-picker-empty {
+  padding: 12px 8px;
+  color: var(--linen);
+  font-size: calc(11px * var(--ui-scale));
+  line-height: 1.8;
+}
+.form-map {
+  margin-top: 24px;
+  padding: 16px 13px;
+  border-radius: 10px;
+  background: var(--walnut);
+}
+.form-map > h3 {
+  font-size: calc(9px * var(--ui-scale));
+  color: var(--sage);
+  margin-bottom: 8px;
+}
+.form-map p {
+  color: var(--text-faint);
+  font-size: calc(9px * var(--ui-scale));
+  line-height: 1.7;
+  margin: 0 0 13px;
+}
+.form-map-section + .form-map-section {
+  margin-top: 15px;
+}
+.form-map-section h4 {
+  font: calc(10px * var(--ui-scale))/1.6 var(--font-ui);
+  color: var(--linen);
+  margin-bottom: 7px;
+}
+.form-map-lines {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.form-map-lines button {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-width: 48px;
+  padding: 7px 6px;
+  border-radius: 5px;
+  background: var(--earth);
+  font: calc(10px * var(--ui-scale)) var(--font-mono);
+}
+.form-map-lines button > span {
+  color: var(--linen);
+}
+.form-map-lines button > small {
+  flex-basis: 100%;
+  color: var(--sage);
+  font: calc(9px * var(--ui-scale))/1.5 var(--font-ui);
+}
+.form-map-lines strong {
+  color: var(--rhyme-ink, var(--text-faint));
+  font-weight: 400;
+  border: 0;
+}
+.form-map-lines button[aria-current='step'] {
+  outline: 1px solid var(--lavender);
+  background: color-mix(in srgb, var(--lavender) 14%, var(--earth));
+}
+.form-map-lines button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.form-map-lines button:not(:disabled):hover {
+  background: var(--surface-raised);
+}

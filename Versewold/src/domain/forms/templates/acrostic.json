@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "acrostic",
+  "name": "Acrostic",
+  "language": "und",
+  "origin": "Used in multiple literary traditions",
+  "summary": "Let the beginnings of your lines reveal a second word or message.",
+  "tags": ["technique", "und", "free", "acrostich", "telestich", "double acrostic"],
+  "notes": [
+    "Choose the hidden text first, then write one line for each letter or unit. Telestichs use endings; double acrostics use both. The hidden-text relationship needs manual checking."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Acrostic",
+      "url": "https://en.wikipedia.org/wiki/Acrostic"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1386429199"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "technique",
+    "status": "guided",
+    "aliases": ["acrostich", "telestich", "double acrostic"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 219730,
+    "sourceRevisionId": 1386429199,
+    "limitations": []
+  }
+}

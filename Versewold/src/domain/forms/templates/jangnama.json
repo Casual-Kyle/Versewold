@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "jangnama",
+  "name": "Jangnama",
+  "language": "mul",
+  "origin": "Persian-influenced South and Central Asian literatures",
+  "summary": "An epic or heroic poetic account often concerned with battles and conflict.",
+  "tags": ["tradition", "mul", "free", "jang nama", "jangnamah"],
+  "notes": [
+    "Usage varies by language and period. Choose a particular literary model before specifying meter or stanza structure."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Jangnama",
+      "url": "https://en.wikipedia.org/wiki/Jangnama"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1372733016"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["jang nama", "jangnamah"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 21965725,
+    "sourceRevisionId": 1372733016,
+    "limitations": []
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "strophe",
+  "name": "Strophe",
+  "language": "und",
+  "origin": "Cross-tradition terminology",
+  "summary": "A movement of a choral ode or, more broadly, a grouped division of verse.",
+  "tags": ["concept", "und", "free"],
+  "notes": [
+    "In a Greek choral design it precedes the antistrophe and epode. The term does not identify one universally repeatable stanza pattern."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Strophe",
+      "url": "https://en.wikipedia.org/wiki/Strophe"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1372006072"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "concept",
+    "status": "reference",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 78900,
+    "sourceRevisionId": 1372006072,
+    "limitations": []
+  }
+}

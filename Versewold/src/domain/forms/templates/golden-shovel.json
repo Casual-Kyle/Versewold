@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "golden-shovel",
+  "name": "Golden shovel",
+  "language": "en",
+  "origin": "Terrance Hayes · contemporary American poetry",
+  "summary": "End each line with the next word of a chosen source passage.",
+  "tags": ["technique", "en", "free", "golden-shovel poem"],
+  "notes": [
+    "Keep the borrowed words in their original order while making a new poem. Identify and credit the source. The number of source words determines the number of lines."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Golden shovel",
+      "url": "https://en.wikipedia.org/wiki/Golden_shovel"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1319673239"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "technique",
+    "status": "guided",
+    "aliases": ["golden-shovel poem"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 63120183,
+    "sourceRevisionId": 1319673239,
+    "limitations": []
+  }
+}

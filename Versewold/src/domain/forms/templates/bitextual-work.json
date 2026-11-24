@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "bitextual-work",
+  "name": "Bitextual work",
+  "language": "und",
+  "origin": "Used in multiple literary traditions",
+  "summary": "Use the same words to sustain two distinct readings or narratives.",
+  "tags": ["technique", "und", "free", "bi-textual poetry", "slesa", "śleṣa"],
+  "notes": [
+    "Build ambiguity in vocabulary and sentence structure. This is not simply writing in two languages, and it is distinct from reading a poem backwards."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Bitextual work",
+      "url": "https://en.wikipedia.org/wiki/Bitextual_work"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1358385763"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "technique",
+    "status": "guided",
+    "aliases": ["bi-textual poetry", "slesa", "śleṣa"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 77284812,
+    "sourceRevisionId": 1358385763,
+    "limitations": []
+  }
+}

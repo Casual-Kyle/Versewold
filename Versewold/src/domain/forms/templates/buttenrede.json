@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "buttenrede",
+  "name": "Büttenrede",
+  "language": "de",
+  "origin": "German carnival traditions",
+  "summary": "A comic carnival speech, often in rhyme and local dialect.",
+  "tags": ["tradition", "de", "free", "Buttenrede", "carnival speech"],
+  "notes": [
+    "Shape a performed satirical address rather than assuming a single stanza form. Delivery and audience response guide its pacing."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Büttenrede",
+      "url": "https://en.wikipedia.org/wiki/B%C3%BCttenrede"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1360623840"
+    }
+  ],
+  "structure": {
+    "kind": "free",
+    "rhymeScope": "poem",
+    "stanzas": []
+  },
+  "catalog": {
+    "kind": "tradition",
+    "status": "guided",
+    "aliases": ["Buttenrede", "carnival speech"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 72696789,
+    "sourceRevisionId": 1360623840,
+    "limitations": []
+  }
+}

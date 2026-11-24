@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "blank-verse",
+  "name": "Blank verse",
+  "language": "en",
+  "origin": "English-language metrical verse",
+  "summary": "Write unrhymed lines with an underlying iambic pentameter.",
+  "tags": ["form", "en", "repeating"],
+  "notes": [
+    "There is no required end-rhyme or stanza length. Each displayed unit is one repeatable line; line-by-line repetition does not require blank lines between lines."
+  ],
+  "sources": [
+    {
+      "title": "Harvard — Guide to poetic terms",
+      "url": "https://poetry.harvard.edu/guide-poetic-terms"
+    },
+    {
+      "title": "Wikipedia — Blank verse",
+      "url": "https://en.wikipedia.org/wiki/Blank_verse"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383622209"
+    }
+  ],
+  "structure": {
+    "kind": "repeating",
+    "rhymeScope": "stanza",
+    "stanzas": [
+      {
+        "label": "Repeatable metrical line",
+        "lines": [
+          {
+            "meter": {
+              "system": "accentual-syllabic",
+              "pattern": "u/",
+              "feet": 5,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ],
+    "unit": "line"
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": [],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 265893,
+    "sourceRevisionId": 1383622209,
+    "limitations": []
+  }
+}

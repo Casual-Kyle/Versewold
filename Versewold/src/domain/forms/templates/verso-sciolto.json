@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "verso-sciolto",
+  "name": "Verso sciolto",
+  "language": "it",
+  "origin": "Italian unrhymed hendecasyllables",
+  "summary": "Italian eleven-syllable verse without a required end-rhyme scheme.",
+  "tags": ["form", "it", "repeating", "versi sciolti"],
+  "notes": [
+    "Italian hendecasyllables involve stress placement and poetic counting conventions beyond the number eleven. Do not substitute English iambic pentameter."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Verso sciolto",
+      "url": "https://en.wikipedia.org/wiki/Verso_sciolto"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1358929061"
+    }
+  ],
+  "structure": {
+    "kind": "repeating",
+    "rhymeScope": "stanza",
+    "stanzas": [
+      {
+        "label": "Repeatable hendecasyllabic line",
+        "lines": [
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 11,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ],
+    "unit": "line"
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["versi sciolti"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 5386146,
+    "sourceRevisionId": 1358929061,
+    "limitations": [
+      "The syllable target is displayed; Italian accent placement is not automatically checked."
+    ]
+  }
+}

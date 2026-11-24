@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "tetractys",
+  "name": "Tetractys · syllabic poem",
+  "language": "en",
+  "origin": "Ray Stebbing · modern syllabic poetry",
+  "summary": "Five lines grow through 1–2–3–4 syllables before a ten-syllable close.",
+  "tags": ["form", "en", "fixed"],
+  "notes": [
+    "This entry uses the poetry section of the source, not the geometric or mystical figure bearing the same name. Its total is twenty syllables."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Tetractys",
+      "url": "https://en.wikipedia.org/wiki/Tetractys"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1366298924"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 1,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 2,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 3,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 4,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 10,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["Tetractys"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 1570530,
+    "sourceRevisionId": 1366298924,
+    "limitations": []
+  }
+}

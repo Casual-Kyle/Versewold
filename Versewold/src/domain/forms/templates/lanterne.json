@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "lanterne",
+  "name": "Lanterne",
+  "language": "en",
+  "origin": "Modern visual syllabic practice",
+  "summary": "Five lines make a small lantern shape with counts 1–2–3–4–1.",
+  "tags": ["form", "en", "fixed", "lantern poem"],
+  "notes": [
+    "Each line can carry a compact image. Centered typesetting is a presentation choice and is not applied to the Markdown source automatically."
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Lanterne (poem)",
+      "url": "https://en.wikipedia.org/wiki/Lanterne_(poem)"
+    },
+    {
+      "title": "Wikipedia — surveyed revision and attribution",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1361712758"
+    }
+  ],
+  "structure": {
+    "kind": "fixed",
+    "rhymeScope": "poem",
+    "stanzas": [
+      {
+        "label": "Poem",
+        "lines": [
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 1,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 2,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 3,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 4,
+              "strength": "conventional"
+            }
+          },
+          {
+            "meter": {
+              "system": "syllabic",
+              "syllables": 1,
+              "strength": "conventional"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "kind": "form",
+    "status": "structured",
+    "aliases": ["Lanterne (poem)", "lantern poem"],
+    "researchedOn": "2026-11-23",
+    "sourcePageId": 15245037,
+    "sourceRevisionId": 1361712758,
+    "limitations": []
+  }
+}

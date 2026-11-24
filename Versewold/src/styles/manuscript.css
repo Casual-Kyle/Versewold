@@ -1,0 +1,438 @@
+/* Manuscript tools use app colors; the physical sheets always use paper/ink.
+   The print rules strip the shell, zoom, and preview-only aids from the PDF. */
+.manuscript-view {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.manuscript-view > .view-toolbar {
+  flex-shrink: 0;
+}
+.manuscript-workspace {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+}
+.manuscript-controls {
+  overflow: auto;
+  padding: 24px 20px;
+  background: var(--surface-deep);
+}
+.setup-intro h1 {
+  font-size: 34px;
+  margin: 8px 0 12px;
+}
+.setup-intro p,
+.setup-footnote {
+  font-size: 11px;
+  color: var(--linen);
+}
+.setup-author,
+.setup-fields > label,
+.setup-pair > label,
+.document-detail-fields > label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 11px;
+}
+.setup-author {
+  margin: 22px 0;
+}
+.setup-author input,
+.setup-fields input,
+.setup-fields select {
+  padding: 8px 10px;
+  width: 100%;
+  min-width: 0;
+}
+.setup-author small,
+.setup-fields small,
+.document-detail-fields small {
+  display: block;
+  color: var(--linen);
+  font-size: 10px;
+  line-height: 1.6;
+}
+.setup-author a {
+  color: var(--lavender);
+  text-decoration: underline;
+}
+.page-setup details {
+  margin: 0 0 12px;
+  padding: 12px;
+  border-radius: 9px;
+  background: var(--earth);
+}
+.page-setup summary {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+}
+.setup-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 16px;
+}
+.setup-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.setup-fields > .setup-check {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.setup-check input {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  padding: 0;
+}
+.page-setup .font-setting {
+  display: block;
+  padding: 0;
+  border: 0;
+}
+.page-setup .preference-control {
+  justify-content: flex-start;
+  margin-top: 7px;
+}
+.page-setup .font-choice {
+  width: 174px;
+  min-width: 0;
+  padding: 7px;
+  font-size: 12px;
+}
+.page-setup .font-choice > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.page-setup .reset-control {
+  font-size: 10px;
+}
+.reset-layout {
+  margin: 10px 0 20px;
+  color: var(--lavender);
+}
+.manuscript-preview {
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface-raised);
+}
+.preview-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 20px;
+  flex-shrink: 0;
+  background: var(--earth);
+  font-size: 11px;
+}
+.preview-toolbar > span {
+  margin-right: auto;
+  white-space: nowrap;
+}
+.preview-toolbar select {
+  padding: 5px 7px;
+  max-width: 200px;
+  min-width: 60px;
+}
+.preview-guides {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.preview-scroll {
+  overflow: auto;
+  min-height: 0;
+  flex: 1;
+  scroll-padding: 20px;
+}
+.manuscript-pages {
+  min-width: fit-content;
+  padding: 16px 35px 50px;
+}
+.paper-figure {
+  margin: 0 auto 28px;
+  width: fit-content;
+  scroll-margin-top: 20px;
+}
+.page-caption {
+  display: flex;
+  gap: 14px;
+  margin: 0 0 8px;
+  font-size: 10px;
+  color: var(--linen);
+}
+.page-caption > span {
+  max-width: 480px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.paper-frame {
+  position: relative;
+}
+.manuscript-page {
+  position: relative;
+  background: #fff;
+  color: #111;
+  color-scheme: light;
+  transform-origin: top left;
+  box-shadow: 0 6px 24px #0003;
+  overflow: hidden;
+}
+.manuscript-line {
+  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-transform: none;
+  font-style: normal;
+  font-kerning: normal;
+}
+.manuscript-page ::selection {
+  background: #ded4e8;
+  color: #111;
+}
+.margin-guides {
+  position: absolute;
+  border: 1px dashed #998da566;
+  pointer-events: none;
+}
+.preview-notice {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 12px 20px;
+  background: var(--earth);
+  color: var(--sage);
+  font-size: 11px;
+}
+.preview-notice code {
+  display: block;
+  overflow-wrap: anywhere;
+}
+.preview-notice.failed {
+  color: var(--ochre);
+}
+.pdf-busy-dialog {
+  max-width: 460px;
+  padding: 30px;
+  color: var(--parchment);
+  background: var(--walnut);
+  border: 1px solid var(--bark);
+}
+.pdf-busy-dialog h2 {
+  font-size: 30px;
+}
+.pdf-busy-dialog p {
+  margin-bottom: 0;
+}
+.pdf-busy-dialog::backdrop {
+  background: #0009;
+}
+.outline-title-page {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 10px;
+  color: var(--linen);
+  font-size: 11px;
+  border-radius: 6px;
+}
+.outline-title-page:hover {
+  color: var(--lavender);
+  background: var(--earth);
+}
+.outline-part {
+  margin-top: 16px;
+}
+.outline-part-heading {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 8px 5px;
+  color: var(--linen);
+}
+.outline-part-heading strong {
+  font-size: 11px;
+  font-weight: 500;
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+.outline-part-heading > button {
+  padding: 4px;
+}
+.project-outline .poem-link.in-part {
+  padding-left: 22px;
+}
+.outline-tools {
+  padding: 14px 6px 4px;
+  font-size: 10px;
+}
+.outline-tools .text-button {
+  padding: 5px 6px;
+  font-size: 10px;
+}
+.outline-tools input,
+.part-editor input {
+  width: 100%;
+  padding: 7px;
+  font-size: 11px;
+}
+.add-matter {
+  margin: 8px 0 0 6px;
+}
+.add-matter summary {
+  cursor: pointer;
+  color: var(--linen);
+}
+.add-matter button {
+  display: block;
+}
+.part-editor {
+  padding: 8px;
+  background: var(--earth);
+  border-radius: 6px;
+}
+.part-editor .text-button {
+  padding: 5px;
+  font-size: 10px;
+}
+.empty-part {
+  padding: 4px 10px;
+  font-size: 10px;
+  color: var(--text-faint);
+}
+.document-details {
+  margin: 8px 0 18px;
+  font: 11px/1.5 var(--font-ui);
+}
+.document-details summary {
+  cursor: pointer;
+  width: fit-content;
+  color: var(--lavender);
+}
+.document-details summary > span {
+  color: var(--linen);
+  margin-left: 8px;
+}
+.document-detail-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  margin-top: 14px;
+  padding: 18px;
+  background: var(--earth);
+  border-radius: 9px;
+}
+.document-detail-fields input,
+.document-detail-fields select {
+  width: 100%;
+  padding: 7px 10px;
+}
+.document-detail-fields p {
+  margin: 0;
+  font-size: 11px;
+}
+.document-order {
+  grid-column: 1/-1;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.document-order > span {
+  margin-right: auto;
+  color: var(--linen);
+}
+@media (max-width: 1200px) {
+  .manuscript-workspace {
+    grid-template-columns: 260px minmax(0, 1fr);
+  }
+  .manuscript-controls {
+    padding: 20px 12px;
+  }
+  .preview-toolbar {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .preview-toolbar > span {
+    width: 100%;
+  }
+}
+@media print {
+  html,
+  body,
+  #app,
+  .app-shell,
+  .app-body,
+  .main-content,
+  .manuscript-view,
+  .manuscript-workspace,
+  .manuscript-preview,
+  .preview-scroll,
+  .manuscript-pages {
+    display: block !important;
+    width: auto !important;
+    height: auto !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+  }
+  .app-header,
+  .project-sidebar,
+  .skip-link,
+  .error-banner,
+  .view-toolbar,
+  .manuscript-controls,
+  .preview-toolbar,
+  .preview-notice,
+  .page-caption,
+  .margin-guides,
+  .pdf-busy-dialog {
+    display: none !important;
+  }
+  .pdf-busy-dialog::backdrop {
+    display: none !important;
+  }
+  .paper-figure,
+  .paper-frame {
+    display: block !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .paper-figure {
+    break-after: page;
+    break-inside: avoid;
+  }
+  .paper-figure:last-of-type {
+    break-after: auto;
+  }
+  .manuscript-page {
+    transform: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
