@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, onBeforeUnmount, ref } from 'vue';
+import { computed, onMounted, onBeforeUnmount, ref, watch } from 'vue';
 import { useWorkspace } from '../composables/useWorkspace';
 import { structureIssues } from '../domain/forms/structure';
 import AppIcon from '../components/ui/AppIcon.vue';
@@ -12,6 +12,7 @@ import FormMap from '../components/forms/FormMap.vue';
 import { usePreferences } from '../composables/usePreferences';
 import { isPoem } from '../domain/manuscript/structure';
 import { pdfPrinting } from '../services/pdfExport';
+import { pendingSourceJump } from '../composables/sourceJump';
 const { preferences } = usePreferences();
 
 const { activeProject, activePoem, activeForm, forms, body, createProject, createPoem } =
@@ -20,6 +21,16 @@ const creating = ref(false);
 const focus = ref(false);
 const inspectedLine = ref(1);
 const editor = ref<InstanceType<typeof PoemEditor>>();
+watch(
+  () => [editor.value, activeProject.value?.id, activePoem.value?.id, pendingSourceJump.value] as const,
+  ([target, projectId, poemId, jump]) => {
+    if (!target || !jump) return;
+    pendingSourceJump.value = undefined;
+    if (projectId === jump.projectId && poemId === jump.poemId)
+      target.focusPassage(jump.line, jump.column, jump.text);
+  },
+  { flush: 'post' },
+);
 const issues = computed(() =>
   activeForm.value ? structureIssues(activeForm.value, body.value) : [],
 );

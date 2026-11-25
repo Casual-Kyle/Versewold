@@ -204,7 +204,22 @@ function focusLine(sourceLine: number) {
   });
   editor.focus();
 }
-defineExpose({ replaceLine, focusLine, openSearch, findNext });
+function focusPassage(sourceLine: number, column: number, text: string) {
+  if (!editor || sourceLine < 1 || sourceLine > editor.state.doc.lines) return;
+  const line = editor.state.doc.line(sourceLine);
+  if (column < 0 || !line.text.startsWith(text, column)) {
+    focusLine(sourceLine);
+    return;
+  }
+  const anchor = line.from + column;
+  editor.dispatch({
+    selection: { anchor, head: anchor + text.length },
+    scrollIntoView: true,
+    annotations: Transaction.addToHistory.of(false),
+  });
+  editor.focus();
+}
+defineExpose({ replaceLine, focusLine, focusPassage, openSearch, findNext });
 </script>
 
 <template>

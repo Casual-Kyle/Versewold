@@ -9,6 +9,9 @@ import AppIcon from '../ui/AppIcon.vue';
 
 const props = defineProps<{ project: Project }>();
 const themes = computed(() => collectionThemes(props.project));
+const canvasThemes = computed(() => new Set(props.project.themeCanvas?.cards
+  .filter((card) => card.kind === 'theme')
+  .map((card) => card.targetId)));
 const draft = ref('');
 const editing = ref('');
 const renamed = ref('');
@@ -81,8 +84,8 @@ function remove(id: string) {
           <button class="text-button" type="button" :aria-label="`Rename theme ${theme.label}`" @click="beginRename(theme.id, theme.label)">Rename</button>
           <button
             class="icon-button" type="button" :aria-label="`Remove theme ${theme.label}`"
-            :disabled="themeUseCount(project, theme.id) > 0"
-            :title="themeUseCount(project, theme.id) ? 'Unassign this theme from its documents before removing it.' : 'Remove unused theme'"
+            :disabled="themeUseCount(project, theme.id) > 0 || canvasThemes.has(theme.id)"
+            :title="canvasThemes.has(theme.id) ? 'Remove this theme’s canvas card first.' : themeUseCount(project, theme.id) ? 'Unassign this theme from its documents before removing it.' : 'Remove unused theme'"
             @click="remove(theme.id)"
           ><AppIcon name="close" :size="13" /></button>
         </template>
@@ -90,6 +93,9 @@ function remove(id: string) {
     </ul>
     <p v-if="themes.some((theme) => themeUseCount(project, theme.id) > 0)" class="collection-help">
       Unassign a theme from its documents before removing it.
+    </p>
+    <p v-if="canvasThemes.size" class="collection-help">
+      Remove a theme’s canvas card before deleting the theme.
     </p>
     <p v-if="removeError" class="collection-error" role="alert">{{ removeError }}</p>
     <form class="collection-theme-add" @submit.prevent="add">

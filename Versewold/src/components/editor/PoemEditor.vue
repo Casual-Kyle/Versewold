@@ -17,6 +17,8 @@ const emit = defineEmits<{ inspect: [sourceLine: number] }>();
 defineExpose({
   replaceLine: (sourceLine: number, text: string) => editor.value?.replaceLine(sourceLine, text),
   focusLine: (sourceLine: number) => editor.value?.focusLine(sourceLine),
+  focusPassage: (sourceLine: number, column: number, text: string) =>
+    editor.value?.focusPassage(sourceLine, column, text),
   openSearch: (replace = false) => editor.value?.openSearch(replace),
   findNext: (direction: -1 | 1) => editor.value?.findNext(direction),
 });

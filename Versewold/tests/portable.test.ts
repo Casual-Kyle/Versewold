@@ -2,6 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { reactive, toRaw } from 'vue';
+import { removeCanvasCard, storeThemeCanvas } from '../src/domain/themeCanvas.ts';
 import { createWorkspace, type Project } from '../src/domain/workspace.ts';
 import type { PoetryForm } from '../src/domain/forms/types.ts';
 import {
@@ -64,6 +65,60 @@ test('collection planning survives copies and import with independent metadata a
   broken.project.themes = [''];
   assert.throws(() => prepareProjectImport(broken, workspace.projects, ids()), /themes/);
   assert.deepEqual(workspace, before);
+});
+
+test('project import remaps canvas cards, connections, and their source references', () => {
+  const workspace = fixture();
+  const project = workspace.projects[0];
+  project.themeDefinitions = [{ id: 'home', label: 'Home' }];
+  project.themeCanvas = {
+    camera: { x: -60, y: 28, zoom: 1.3 },
+    cards: [
+      { id: 'poem-card', kind: 'poem', targetId: 'poem-2', x: 32, y: 40 },
+      { id: 'theme-card', kind: 'theme', targetId: 'home', x: 320, y: -20 },
+      { id: 'note-card', kind: 'note', text: '  Café\r\n🌙', x: 32, y: 160 },
+    ],
+    connections: [{ id: 'edge', from: 'poem-card', to: 'theme-card', label: 'Echoes' }],
+  };
+  const before = structuredClone(workspace);
+  const transfer = projectCopy(workspace, project, []);
+  const result = prepareProjectImport(transfer, workspace.projects, ids());
+  const canvas = result.project.themeCanvas!;
+  assert.deepEqual(canvas.camera, project.themeCanvas.camera);
+  assert.equal(canvas.cards[0].targetId, result.project.poems[0].id);
+  assert.equal(canvas.cards[1].targetId, result.project.themeDefinitions![0].id);
+  assert.equal(canvas.cards[2].text, project.themeCanvas.cards[2].text);
+  assert.deepEqual(canvas.connections[0], {
+    id: canvas.connections[0].id, from: canvas.cards[0].id, to: canvas.cards[1].id, label: 'Echoes',
+  });
+  assert.notEqual(canvas.connections[0].id, 'edge');
+  assert.ok(canvas.cards.every((entry, index) => entry.id !== project.themeCanvas!.cards[index].id));
+  assert.equal(result.documents[result.project.id + '/' + result.project.poems[0].id], transfer.documents['poem-2']);
+
+  transfer.project.themeCanvas!.connections[0].to = 'missing';
+  assert.throws(() => prepareProjectImport(transfer, workspace.projects, ids()), /connection/i);
+  assert.deepEqual(workspace, before);
+});
+
+test('canvas edits on the live workspace keep autosave snapshots cloneable', () => {
+  const workspace = reactive(fixture());
+  const project = workspace.projects[0];
+  storeThemeCanvas(project, {
+    camera: { x: 0, y: 0, zoom: 1 },
+    cards: [
+      { id: 'poem-card', kind: 'poem', targetId: 'poem-2', x: 20, y: 20 },
+      { id: 'note-card', kind: 'note', text: 'A note', x: 240, y: 20 },
+    ],
+    connections: [{ id: 'edge', from: 'poem-card', to: 'note-card', label: 'Echoes' }],
+  });
+  const canvas = project.themeCanvas!;
+  storeThemeCanvas(project, { ...canvas, camera: { ...canvas.camera, x: -20 } });
+  const snapshot = structuredClone(toRaw(workspace));
+  assert.equal(snapshot.projects[0].themeCanvas!.camera.x, -20);
+  assert.equal(snapshot.projects[0].themeCanvas!.connections[0].label, 'Echoes');
+  storeThemeCanvas(project, removeCanvasCard(project.themeCanvas!, 'note-card'));
+  assert.deepEqual(project.themeCanvas!.connections, []);
+  assert.ok(workspace.documents['project-1/poem-2']);
 });
 
 test('project import remaps theme identities and poem links together', () => {

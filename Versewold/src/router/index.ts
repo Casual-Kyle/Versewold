@@ -10,6 +10,16 @@ export const router = createRouter({
       name: 'collection',
       component: () => import('../views/CollectionView.vue'),
     },
+    {
+      path: '/collection/canvas',
+      name: 'theme-canvas',
+      component: () => import('../views/ThemeCanvasView.vue'),
+    },
+    {
+      path: '/collection/words',
+      name: 'word-explorer',
+      component: () => import('../views/WordExplorerView.vue'),
+    },
     { path: '/forms', name: 'forms', component: () => import('../views/FormLibraryView.vue') },
     { path: '/settings', name: 'settings', component: () => import('../views/SettingsView.vue') },
     {

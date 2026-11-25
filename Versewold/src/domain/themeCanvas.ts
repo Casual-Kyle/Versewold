@@ -1,4 +1,5 @@
-import type { Project } from './workspace.ts';
+import type { Project, ProjectTheme } from './workspace.ts';
+import { commitThemeDefinitions } from './projectThemes.ts';
 
 export interface CanvasPoint {
   x: number;
@@ -102,6 +103,22 @@ export function validateThemeCanvas(project: Pick<Project, 'themeCanvas' | 'poem
     if (pairs.has(pair)) throw new Error('These cards already have a connection.');
     pairs.add(pair);
   }
+}
+
+/** Keep nested Vue proxies out of the snapshots used for saves and copies. */
+export function storeThemeCanvas(project: Project, next: ThemeCanvas, definitions?: ProjectTheme[]): void {
+  validateThemeCanvas({
+    poems: project.poems,
+    themeDefinitions: definitions ?? project.themeDefinitions,
+    themeCanvas: next,
+  });
+  const snapshot: ThemeCanvas = {
+    cards: next.cards.map((card) => ({ ...card })),
+    connections: next.connections.map((edge) => ({ ...edge })),
+    camera: { ...next.camera },
+  };
+  if (definitions) commitThemeDefinitions(project, definitions);
+  project.themeCanvas = snapshot;
 }
 
 /** Project copies get fresh card and connection IDs alongside fresh source IDs. */

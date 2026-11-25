@@ -28,7 +28,15 @@ function openPoem(id: string) {
         <AppIcon v-if="activeProject" name="chevron" :size="12" />
         <strong v-if="activeProject">{{ activeProject.title }}</strong>
       </div>
-      <RouterLink to="/" class="text-button">Back to writing</RouterLink>
+      <div class="canvas-nav">
+        <RouterLink v-if="activeProject" to="/collection/canvas" class="text-button">
+          Theme canvas
+        </RouterLink>
+        <RouterLink v-if="activeProject" to="/collection/words" class="text-button">
+          Word explorer
+        </RouterLink>
+        <RouterLink to="/" class="text-button">Back to writing</RouterLink>
+      </div>
     </header>
     <div class="collection-scroll">
       <template v-if="activeProject">

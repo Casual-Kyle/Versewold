@@ -74,6 +74,31 @@ fn poem_sidecars_roundtrip_tone_notes_and_theme_labels_with_exact_markdown() {
 }
 
 #[test]
+fn theme_canvas_round_trips_in_project_copies_and_rejects_broken_connections() {
+    let directory = tempfile::tempdir().unwrap();
+    let mut transfer = project();
+    let value = json!({
+        "camera": {"x": -120,"y": 12,"zoom": 1.5},
+        "cards": [
+            {"id":"poem-card","kind":"poem","targetId":"second","x":24,"y":24},
+            {"id":"note-card","kind":"note","text":"  Café\r\n🌙","x":250,"y":24}
+        ],
+        "connections":[{"id":"link","from":"poem-card","to":"note-card","label":"Echoes"}]
+    });
+    transfer.project.theme_canvas = Some(serde_json::from_value(value.clone()).unwrap());
+    let saved = save_project(directory.path(), &transfer).unwrap();
+    let loaded = load_project(&saved.join("project.json")).unwrap();
+    assert_eq!(serde_json::to_value(loaded.project.theme_canvas).unwrap(), value);
+    assert_eq!(loaded.documents, transfer.documents);
+
+    let mut invalid = value;
+    invalid["connections"][0]["to"] = json!("missing-card");
+    transfer.project.theme_canvas = Some(serde_json::from_value(invalid).unwrap());
+    assert!(save_project(directory.path(), &transfer).is_err());
+    assert_eq!(fs::read_dir(directory.path()).unwrap().count(), 1);
+}
+
+#[test]
 fn project_roundtrip_preserves_order_metadata_forms_and_exact_markdown() {
     let directory = tempfile::tempdir().unwrap();
     let transfer = project();

@@ -9,7 +9,15 @@ Open **Collection overview → Rename & plan** below the project selector in the
 
 Description, tone, and theme changes use the normal autosave queue. A new name enters that queue after **Rename project** is applied. The app's save indicator and Save now action also cover these details. Browser preview remains temporary.
 
-The overview shows poem count, part count, and manuscript body word count. Planning notes, theme labels, and titles are excluded from this word total. Its poem browser filters and groups by tone/theme and opens the selected poem. See [poem planning](poem-planning.md) for assignments, stable theme identities, and copy behavior. The graphical canvas remains later work.
+The overview shows poem count, part count, and manuscript body word count. Planning notes, theme labels, and titles are excluded from this word total. Its poem browser filters and groups by tone or theme and opens the selected poem. See [poem planning](poem-planning.md).
+
+Open **Theme canvas** from the overview toolbar. Add poem, theme, or note cards, then drag them to arrange the board. Select a card and use **Connect to** to label a relationship with another card. **Open poem** opens the linked poem in the writing desk. Drag the background to pan and scroll to zoom, or use the zoom buttons. Tab to a card and move it with the arrow keys. **Find a card** centers the view on it.
+
+The app saves the layout, relationship labels, and viewport with the project. Each poem or theme can appear once on the board, and each pair of cards can have one labeled connection. Removing a card removes its connections. Remove a theme’s card before deleting the collection theme. A project copy preserves the canvas and updates its links when imported.
+
+Open **Word explorer** from the overview toolbar to view counts for the whole collection, a part, or a poem. Select a word in the cloud or table to compare its frequency across poems, or open a passage to select that occurrence in the writing desk. The common-word list is editable and can be switched off. Filters and the selected word are remembered for each collection during the current app session.
+
+The explorer counts Markdown poem bodies, including words in links and code. Internal apostrophes and hyphens stay in words, with common punctuation variants and equivalent Unicode spellings grouped. Set the case toggle to count uppercase and lowercase separately. Rates per 1,000 words use the full word count of the scope or poem, including words hidden by filters.
 
 ## Persistence and compatibility
 

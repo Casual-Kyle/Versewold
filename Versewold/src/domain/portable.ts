@@ -157,22 +157,20 @@ export function prepareProjectImport(
     };
   });
   const imported: Project = {
-      ...structuredClone(transfer.project),
-      id: projectId,
-      title: uniqueTitle(transfer.project.title, existing),
-      poems,
-      templates: structuredClone(templates),
-      ...(transfer.project.themeDefinitions ? {
-        themeDefinitions: remappedThemes,
-      } : {}),
-      ...(transfer.project.sections
-        ? {
-            sections: transfer.project.sections.map((section) => ({
-              ...section,
-              id: sectionIds.get(section.id)!,
-            })),
-          }
-        : {}),
+    ...structuredClone(transfer.project),
+    id: projectId,
+    title: uniqueTitle(transfer.project.title, existing),
+    poems,
+    templates: structuredClone(templates),
+    ...(remappedThemes ? { themeDefinitions: remappedThemes } : {}),
+    ...(transfer.project.sections
+      ? {
+          sections: transfer.project.sections.map((section) => ({
+            ...section,
+            id: sectionIds.get(section.id)!,
+          })),
+        }
+      : {}),
   };
   if (transfer.project.themeCanvas)
     imported.themeCanvas = remapThemeCanvas(transfer.project.themeCanvas, poemIds, themeIds, id);
