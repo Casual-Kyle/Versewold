@@ -55,4 +55,6 @@ Project `themeDefinitions: [{"id":"theme-home","label":"Home"}]` is the canonica
 
 `documents` exists only in the frontend/native transport object; it is never written as a JSON copy of the poems. Custom form files follow the separate poetry-form schema described in the research folder.
 
+The optional poem and poem-sidecar field `toneIntensity` stores the writer’s whole-number rating from 1 through 5. The progression view reads this rating alongside `tone` and `themeIds`.
+
 Changed poems and project manifests also receive [automatic saved-version backups](backups.md) under the app folder's `backups/` directory, retaining 50 readable revisions per file. The native loader reads only the current `projects/` files; backup snapshots are never silently imported or restored. Existing executable-adjacent data is handled by [one-time storage migration](storage-migration.md).

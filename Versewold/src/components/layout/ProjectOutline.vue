@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, nextTick, ref } from 'vue';
 import { useWorkspace } from '../../composables/useWorkspace';
-import { manuscriptGroups, documentKind } from '../../domain/manuscript/structure';
+import { manuscriptGroups, documentKind, removeManuscriptPart } from '../../domain/manuscript/structure';
 import AppIcon from '../ui/AppIcon.vue';
 const { activeProject, activePoem, forms, createSection, moveSection, frontMatter } =
   useWorkspace();
@@ -32,8 +32,7 @@ function rename(id: string, event: Event) {
 function removePart(id: string) {
   const project = activeProject.value;
   if (!project) return;
-  for (const poem of project.poems) if (poem.sectionId === id) delete poem.sectionId;
-  project.sections = project.sections?.filter((section) => section.id !== id);
+  removeManuscriptPart(project, id);
   editing.value = '';
 }
 </script>

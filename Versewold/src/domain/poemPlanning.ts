@@ -3,14 +3,19 @@ import { collectionThemes, commitThemeDefinitions, validateProjectThemes } from 
 import { isPoem, manuscriptGroups } from './manuscript/structure.ts';
 
 export const poemPlanningLimits = { tone: 200, notes: 20_000, themes: 50 } as const;
+export const toneIntensityLevels = [1, 2, 3, 4, 5] as const;
 const control = /\p{Cc}/u;
 const notesControl = /[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f-\u009f]/u;
 export const toneKey = (value: string) => value.trim().toLowerCase();
 
-export function validatePoemPlanning(poem: Pick<PoemEntry, 'tone' | 'planningNotes' | 'themeIds'>): void {
+export function validatePoemPlanning(
+  poem: Pick<PoemEntry, 'tone' | 'toneIntensity' | 'planningNotes' | 'themeIds'>,
+): void {
   if (poem.tone !== undefined && (typeof poem.tone !== 'string' ||
     [...poem.tone].length > poemPlanningLimits.tone || control.test(poem.tone)))
     throw new Error('Poem tone must be one line of up to 200 characters.');
+  if (poem.toneIntensity !== undefined && !toneIntensityLevels.some((level) => level === poem.toneIntensity))
+    throw new Error('Tone intensity must be a whole number from 1 to 5.');
   if (poem.planningNotes !== undefined && (typeof poem.planningNotes !== 'string' ||
     [...poem.planningNotes].length > poemPlanningLimits.notes || notesControl.test(poem.planningNotes)))
     throw new Error('Planning notes must be text of up to 20,000 characters.');
@@ -47,6 +52,13 @@ export function setPoemPlanning(
   if (value === '') delete poem[field];
   else poem[field] = value;
   return true;
+}
+
+export function setPoemIntensity(project: Project, poem: PoemEntry, value?: number): void {
+  belongsTo(project, poem);
+  validatePoemPlanning({ ...poem, toneIntensity: value });
+  if (value === undefined) delete poem.toneIntensity;
+  else if (poem.toneIntensity !== value) poem.toneIntensity = value;
 }
 
 export function setPoemThemes(project: Project, poem: PoemEntry, ids: readonly string[]): boolean {

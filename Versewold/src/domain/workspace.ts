@@ -18,6 +18,7 @@ export interface PoemEntry {
   composedOn?: string;
   updatedAt?: string;
   tone?: string;
+  toneIntensity?: number;
   planningNotes?: string;
   themeIds?: string[];
 }

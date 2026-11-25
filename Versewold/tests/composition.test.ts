@@ -104,6 +104,22 @@ test('normalized-offset edits preserve untouched Unicode, mixed line endings, an
   assert.throws(() => applySourceChanges(body, [{ from: 0, to: 1000, insert: '' }]));
 });
 
+test('joining a bare CR to LF keeps both logical line breaks without changing other bytes', () => {
+  const original = 'header\r\nfirst\rremove\nlast  \r';
+  const from = normalizeNewlines(original).indexOf('remove');
+  assert.equal(
+    applySourceChanges(original, [{ from, to: from + 'remove'.length, insert: '' }]),
+    'header\r\nfirst\r\n\nlast  \r',
+  );
+
+  const beforeInsert = 'header\nfirst\r🪶last';
+  const at = normalizeNewlines(beforeInsert).indexOf('🪶');
+  assert.equal(
+    applySourceChanges(beforeInsert, [{ from: at, to: at, insert: '\nadded' }]),
+    'header\nfirst\r\n\nadded🪶last',
+  );
+});
+
 test('undo and redo restore the exact source, including a deleted mixed-style newline', () => {
   const initial = 'Rain\r\nMoon\nSea\rWind\n';
   const source = sourceDocument(initial);

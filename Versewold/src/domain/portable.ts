@@ -24,6 +24,7 @@ export interface PoemTransfer {
     composedOn?: string;
     updatedAt?: string;
     tone?: string;
+    toneIntensity?: number;
     planningNotes?: string;
     /** Theme labels, resolved into destination-local identities on import. */
     themes?: string[];
@@ -98,6 +99,7 @@ export function poemCopy(
       ...(poem.composedOn ? { composedOn: poem.composedOn } : {}),
       ...(poem.updatedAt ? { updatedAt: poem.updatedAt } : {}),
       ...(poem.tone !== undefined ? { tone: poem.tone } : {}),
+      ...(poem.toneIntensity !== undefined ? { toneIntensity: poem.toneIntensity } : {}),
       ...(poem.planningNotes !== undefined ? { planningNotes: poem.planningNotes } : {}),
       ...(themes.length ? { themes } : {}),
       ...(template ? { template: structuredClone(template) } : {}),
@@ -213,7 +215,7 @@ export function preparePoemImports(
       known.set(formId, template);
     }
     const poemId = id();
-    const { kind, author, composedOn, updatedAt, tone, planningNotes } = poem.metadata;
+    const { kind, author, composedOn, updatedAt, tone, toneIntensity, planningNotes } = poem.metadata;
     const assignedThemes: string[] = [];
     for (const incomingLabel of poem.metadata.themes ?? []) {
       const label = incomingLabel.trim();
@@ -235,6 +237,7 @@ export function preparePoemImports(
       ...(composedOn ? { composedOn } : {}),
       ...(updatedAt ? { updatedAt } : {}),
       ...(tone !== undefined ? { tone } : {}),
+      ...(toneIntensity !== undefined ? { toneIntensity } : {}),
       ...(planningNotes !== undefined ? { planningNotes } : {}),
       ...(assignedThemes.length ? { themeIds: assignedThemes } : {}),
     });

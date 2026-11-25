@@ -21,6 +21,8 @@ pub struct PoemEntry {
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub tone: Option<String>,
     #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub tone_intensity: Option<u8>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
     pub planning_notes: Option<String>,
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
     pub theme_ids: Vec<String>,
@@ -33,9 +35,16 @@ pub struct ProjectTheme {
     pub label: String,
 }
 
-pub fn validate_poem_planning(tone: Option<&str>, notes: Option<&str>) -> Result<(), String> {
+pub fn validate_poem_planning(
+    tone: Option<&str>,
+    notes: Option<&str>,
+    intensity: Option<u8>,
+) -> Result<(), String> {
     if tone.is_some_and(|value| value.chars().count() > 200 || value.chars().any(char::is_control)) {
         return Err("Poem tone must be one line of up to 200 characters.".into());
+    }
+    if intensity.is_some_and(|value| !(1..=5).contains(&value)) {
+        return Err("Tone intensity must be a whole number from 1 to 5.".into());
     }
     if notes.is_some_and(|value| {
         value.chars().count() > 20_000
@@ -48,7 +57,11 @@ pub fn validate_poem_planning(tone: Option<&str>, notes: Option<&str>) -> Result
 
 impl PoemEntry {
     pub fn validate_planning(&self) -> Result<(), String> {
-        validate_poem_planning(self.tone.as_deref(), self.planning_notes.as_deref())?;
+        validate_poem_planning(
+            self.tone.as_deref(),
+            self.planning_notes.as_deref(),
+            self.tone_intensity,
+        )?;
         if self.theme_ids.len() > 50 {
             return Err("Too many poem theme links.".into());
         }

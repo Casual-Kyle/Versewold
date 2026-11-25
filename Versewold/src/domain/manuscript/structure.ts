@@ -4,6 +4,19 @@ import { poemStats } from '../forms/structure.ts';
 export const documentKind = (poem: PoemEntry) => poem.kind ?? 'poem';
 export const isPoem = (poem: PoemEntry) => documentKind(poem) === 'poem';
 
+export function removeManuscriptPart(project: Project, id: string): boolean {
+  const sections = project.sections;
+  if (!sections) return false;
+  const index = sections.findIndex((section) => section.id === id);
+  if (index < 0) return false;
+  for (const poem of project.poems)
+    if (poem.sectionId === id) delete poem.sectionId;
+  // Keep the existing reactive array so a replacement array can't carry
+  // proxied entries into the raw workspace used for save and export.
+  sections.splice(index, 1);
+  return true;
+}
+
 /** Front matter, unsectioned writing, ordered parts, then the author page.
  * Every document appears once, including older projects with no sections. */
 export function manuscriptGroups(project: Project) {

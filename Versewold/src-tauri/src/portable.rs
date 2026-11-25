@@ -46,6 +46,8 @@ pub struct PoemMetadata {
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub tone: Option<String>,
     #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub tone_intensity: Option<u8>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
     pub planning_notes: Option<String>,
     /// Labels are portable across projects; project-local IDs are resolved on import.
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
@@ -220,7 +222,11 @@ pub fn load_project(manifest: &Path) -> Result<ProjectTransfer, String> {
 }
 
 fn check_metadata(metadata: &PoemMetadata) -> Result<(), String> {
-    crate::models::validate_poem_planning(metadata.tone.as_deref(), metadata.planning_notes.as_deref())?;
+    crate::models::validate_poem_planning(
+        metadata.tone.as_deref(),
+        metadata.planning_notes.as_deref(),
+        metadata.tone_intensity,
+    )?;
     Project { themes: metadata.themes.clone(), ..Project::default() }.validate_overview()?;
     crate::manuscript::validate_author(metadata.author.as_deref())?;
     crate::manuscript::validate_dates(

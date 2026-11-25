@@ -20,6 +20,11 @@ export const router = createRouter({
       name: 'word-explorer',
       component: () => import('../views/WordExplorerView.vue'),
     },
+    {
+      path: '/collection/progression',
+      name: 'collection-progression',
+      component: () => import('../views/CollectionProgressionView.vue'),
+    },
     { path: '/forms', name: 'forms', component: () => import('../views/FormLibraryView.vue') },
     { path: '/settings', name: 'settings', component: () => import('../views/SettingsView.vue') },
     {

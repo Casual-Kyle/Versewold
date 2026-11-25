@@ -1,0 +1,181 @@
+.progression {
+  width: 100%;
+  max-width: 1150px;
+  margin-inline: auto;
+}
+.progression-options {
+  margin-top: 0;
+}
+.progression-controls,
+.progression-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 10px 16px;
+}
+.progression-controls label,
+.progression-words label {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  color: var(--linen);
+  font-size: calc(12px * var(--ui-scale));
+}
+.progression-controls select,
+.progression-words select {
+  width: 100%;
+  min-width: 0;
+}
+.progression-words {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr));
+  align-items: end;
+  gap: 10px;
+  margin: 16px 0 8px;
+}
+.progression-words .collection-error {
+  grid-column: 1 / -1;
+}
+.progression-method {
+  margin: 8px 0 0;
+}
+.progression-part {
+  margin-top: 24px;
+}
+.progression-part > h2 {
+  margin-bottom: 8px;
+  font-size: calc(28px * var(--ui-scale));
+  overflow-wrap: anywhere;
+}
+.progression-part-total,
+.progression-poem-labels {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px 14px;
+  color: var(--linen);
+  font-size: calc(12px * var(--ui-scale));
+  overflow-wrap: anywhere;
+}
+.progression-timeline {
+  margin-top: 10px;
+  padding-left: 2.5em;
+}
+.progression-poem {
+  margin: 10px 0;
+  padding: 13px 16px;
+  border: 1px solid var(--bark);
+  border-left: 2px solid var(--sage);
+  border-radius: 8px;
+  background: var(--surface-deep);
+}
+.progression-poem::marker {
+  color: var(--sage);
+  font-variant-numeric: tabular-nums;
+}
+.progression-open {
+  color: var(--lavender);
+  padding: 2px;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+.progression-open:hover {
+  text-decoration: underline;
+}
+.progression-poem > .progression-open {
+  margin-bottom: 7px;
+  font-size: calc(17px * var(--ui-scale));
+  font-weight: 500;
+}
+.progression-intensity {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.progression-intensity meter {
+  width: 64px;
+}
+.progression-themes,
+.progression-bars {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.progression-themes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.progression-themes li {
+  padding: 2px 7px;
+  border: 1px solid var(--bark);
+  border-radius: 6px;
+  color: var(--parchment);
+  overflow-wrap: anywhere;
+}
+.progression-themes .highlighted {
+  border-color: var(--lavender);
+  background: color-mix(in srgb, var(--lavender) 20%, var(--earth));
+  font-weight: 600;
+}
+.progression-bars {
+  display: grid;
+  gap: 8px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--bark);
+  font-size: calc(11px * var(--ui-scale));
+  font-variant-numeric: tabular-nums;
+}
+.progression-bars li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 3fr) minmax(4ch, auto);
+  align-items: center;
+  gap: 9px;
+  overflow-wrap: anywhere;
+}
+.progression-bars li > span:last-child {
+  text-align: right;
+}
+.progression-bar {
+  height: 7px;
+  border-radius: 4px;
+  background: var(--bark);
+}
+.progression-bar > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--sage);
+}
+.progression-bars .second .progression-bar > span {
+  background: var(--lavender);
+}
+.progression-table-scroll {
+  overflow-x: auto;
+}
+.progression-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: calc(12px * var(--ui-scale));
+}
+.progression-table th,
+.progression-table td {
+  padding: 8px;
+  border-bottom: 1px solid var(--bark);
+  vertical-align: top;
+}
+.progression-table th {
+  min-width: 5ch;
+  overflow-wrap: anywhere;
+}
+.progression-table th small {
+  display: block;
+  color: var(--linen);
+  font-weight: 400;
+}
+.progression-table-part {
+  background: var(--earth);
+  color: var(--sage);
+}

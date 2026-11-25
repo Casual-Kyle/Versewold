@@ -114,6 +114,26 @@ test('replacement supports deletion and multiline text without normalizing unrel
   assert.equal(editor.body, initial);
 });
 
+test('Replace All deletion preserves separate CR and LF breaks through the next edit and undo', () => {
+  const initial = 'first\rremove\nmiddle\rremove\nlast';
+  const editor = draft(initial);
+  editor.search('remove');
+  editor.dispatch(replaceAllEditorSearchMatches(editor.state, ''));
+  const saved = 'first\r\n\nmiddle\r\n\nlast';
+  assert.equal(editor.body, saved);
+  assert.equal(editor.state.doc.toString(), normalizeNewlines(saved));
+
+  editor.dispatch({ changes: { from: editor.state.doc.length, insert: '!' } });
+  assert.equal(editor.body, saved + '!');
+  assert.equal(editor.state.doc.toString(), normalizeNewlines(editor.body));
+  assert.ok(undo(editor));
+  assert.equal(editor.body, saved);
+  assert.ok(undo(editor));
+  assert.equal(editor.body, initial);
+  assert.ok(redo(editor));
+  assert.equal(editor.body, saved);
+});
+
 test('identical replacements and no-result searches produce no editing transaction', () => {
   const initial = 'sea\r\nsea  ';
   const editor = draft(initial);

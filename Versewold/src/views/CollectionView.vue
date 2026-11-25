@@ -35,6 +35,9 @@ function openPoem(id: string) {
         <RouterLink v-if="activeProject" to="/collection/words" class="text-button">
           Word explorer
         </RouterLink>
+        <RouterLink v-if="activeProject" to="/collection/progression" class="text-button">
+          Progression
+        </RouterLink>
         <RouterLink to="/" class="text-button">Back to writing</RouterLink>
       </div>
     </header>

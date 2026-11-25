@@ -19,6 +19,10 @@ Open **Word explorer** from the overview toolbar to view counts for the whole co
 
 The explorer counts Markdown poem bodies, including words in links and code. Internal apostrophes and hyphens stay in words, with common punctuation variants and equivalent Unicode spellings grouped. Set the case toggle to count uppercase and lowercase separately. Rates per 1,000 words use the full word count of the scope or poem, including words hidden by filters.
 
+Open **Progression** to see tones and assigned themes in manuscript order. Switch between **Timeline** and **Table**, highlight a theme, or compare up to two words. Word comparisons ignore case and use the same word boundaries as Word Explorer. Both views show poem and part totals. A part’s rate uses all words in that part. Choose a poem’s title to open it in the writing desk.
+
+Use **Planning → Tone intensity** to give a poem an optional rating from 1 (subtle) to 5 (very strong). The rating is saved with the poem’s planning metadata and travels with project and poem copies.
+
 ## Persistence and compatibility
 
 Renaming changes the existing `title`, preserving project ID, poem IDs, file paths, ordering, and selection. Planning fields are optional version 1 manifest additions: `description`, `intendedTone`, and `themeDefinitions`. Older `themes` string arrays are accepted and migrate on the first successful theme edit or assignment. Older projects open with empty/default planning. Clearing a field removes its optional value. Native storage and portable project copies retain these fields; importing a canonical project copy allocates fresh theme identities alongside project/document identities and remaps assignments.

@@ -40,11 +40,13 @@ fn project_copies_retain_theme_links_and_reject_dangling_references() {
     }];
     transfer.project.poems[0].theme_ids = vec!["theme-home".into()];
     transfer.project.poems[0].tone = Some("Reflective".into());
+    transfer.project.poems[0].tone_intensity = Some(2);
     transfer.project.poems[0].planning_notes = Some("  Notes\r\n\tAn ending.\n".into());
     let saved = save_project(directory.path(), &transfer).unwrap();
     let loaded = load_project(&saved.join("project.json")).unwrap();
     assert_eq!(loaded.project.poems[0].theme_ids, vec!["theme-home"]);
     assert_eq!(loaded.project.poems[0].tone.as_deref(), Some("Reflective"));
+    assert_eq!(loaded.project.poems[0].tone_intensity, Some(2));
     assert_eq!(loaded.project.poems[0].planning_notes, transfer.project.poems[0].planning_notes);
     assert_eq!(loaded.documents, transfer.documents);
     transfer.project.poems[0].theme_ids = vec!["missing".into()];
@@ -57,18 +59,22 @@ fn poem_sidecars_roundtrip_tone_notes_and_theme_labels_with_exact_markdown() {
     let directory = tempfile::tempdir().unwrap();
     let mut transfer: PoemTransfer = serde_json::from_value(json!({
         "metadata": {"schemaVersion":1,"title":"A poem","formId":"free-verse",
-            "tone":"Tender","planningNotes":"  Notes\r\n\r\n\tAn ending.\n","themes":["Home","Seasons"]},
+            "tone":"Tender","toneIntensity":5,"planningNotes":"  Notes\r\n\r\n\tAn ending.\n","themes":["Home","Seasons"]},
         "body":"  🌙 café\r\n\r\nA line.  \n"
     })).unwrap();
     let saved = save_poem(directory.path(), &transfer).unwrap();
     let loaded = load_poem(&saved.join("poem.md")).unwrap();
     assert_eq!(loaded.body, transfer.body);
     assert_eq!(loaded.metadata.tone, transfer.metadata.tone);
+    assert_eq!(loaded.metadata.tone_intensity, Some(5));
     assert_eq!(loaded.metadata.planning_notes, transfer.metadata.planning_notes);
     assert_eq!(loaded.metadata.themes, transfer.metadata.themes);
     let metadata: serde_json::Value = serde_json::from_str(&fs::read_to_string(saved.join("poem.md.versewold.json")).unwrap()).unwrap();
     assert!(metadata.get("themeIds").is_none());
     transfer.metadata.themes = vec!["bad\ntheme".into()];
+    assert!(save_poem(directory.path(), &transfer).is_err());
+    transfer.metadata.themes = loaded.metadata.themes;
+    transfer.metadata.tone_intensity = Some(6);
     assert!(save_poem(directory.path(), &transfer).is_err());
     assert_eq!(fs::read_dir(directory.path()).unwrap().count(), 1);
 }

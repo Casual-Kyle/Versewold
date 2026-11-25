@@ -174,7 +174,7 @@ export interface SourceChange {
 }
 
 /** CodeMirror uses LF offsets. Translate only changed spans back to the exact
- * stored text, retaining untouched CRLF/CR/LF, whitespace, and trailing newlines. */
+ * stored text. Extend a bare CR at a new join if a following LF would merge two breaks. */
 export function applySourceChanges(source: string, changes: SourceChange[]): string {
   const offsets = [0];
   for (let raw = 0; raw < source.length;) {
@@ -182,14 +182,29 @@ export function applySourceChanges(source: string, changes: SourceChange[]): str
     offsets.push(raw);
   }
   const ending = source.match(/\r\n|\r|\n/)?.[0] ?? '\n';
-  let result = source;
-  for (const change of [...changes].sort((a, b) => b.from - a.from)) {
-    if (change.from < 0 || change.to < change.from || change.to >= offsets.length)
-      throw new Error('The editor change is outside the source document.');
-    result =
-      result.slice(0, offsets[change.from]) +
-      normalizeNewlines(change.insert).replace(/\n/g, ending) +
-      result.slice(offsets[change.to]);
+  const chunks: string[] = [];
+  let endsInCR = false;
+  function append(chunk: string) {
+    if (!chunk) return;
+    // Append LF to the bare CR before appending the next line break.
+    if (endsInCR && chunk.startsWith('\n')) chunks.push('\n');
+    chunks.push(chunk);
+    endsInCR = chunk.endsWith('\r');
   }
-  return result;
+  let cursor = 0;
+  for (const change of [...changes].sort((a, b) => a.from - b.from)) {
+    if (
+      !Number.isInteger(change.from) ||
+      !Number.isInteger(change.to) ||
+      change.from < cursor ||
+      change.to < change.from ||
+      change.to >= offsets.length
+    )
+      throw new Error('The editor change is outside the source document.');
+    append(source.slice(offsets[cursor], offsets[change.from]));
+    append(normalizeNewlines(change.insert).replace(/\n/g, ending));
+    cursor = change.to;
+  }
+  append(source.slice(offsets[cursor]));
+  return chunks.join('');
 }

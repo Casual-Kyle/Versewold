@@ -6,7 +6,7 @@ Updated 25 November 2026. This is the working backlog for the desktop app. Featu
 
 Reprioritized on 24 November 2026 following Kyle's direction: everyday writing tools first, then a richer way to design a poetry collection through descriptions, tone, themes, a graphical canvas, and recurring-word exploration. The tasks below are planned unless explicitly marked as source changes already made. The update sections group features; this table sets delivery order.
 
-**SEARCH-02, PROJECT-04 through PROJECT-06, and ANALYSIS-01 are implemented in source with full integration verification pending. ANALYSIS-02, the tone and motif progression view, is the next collection feature.** An in-app revision browser and cursor restoration remain lower priorities.
+**SEARCH-02, PROJECT-04 through PROJECT-06, and ANALYSIS-01 through ANALYSIS-02 are implemented in source. Full integration verification is pending.** An in-app revision browser and cursor restoration remain lower priorities.
 
 | Order | Work | Purpose | Completion target |
 | --- | --- | --- | --- |
@@ -15,7 +15,7 @@ Reprioritized on 24 November 2026 following Kyle's direction: everyday writing t
 | 3 | PROJECT-05: poem tone and theme labels | Source implemented; finish native/build/browser verification. | Assign reusable themes/motifs and a tone to poems; filter/group by those labels and preserve them through save/load/export of project copies. |
 | 4 | PROJECT-06: project theme canvas | Source implemented. Build and interactive verification pending. | Place poem, theme, and note cards; connect them with labeled relationships; pan/zoom; reopen a linked poem; save layout and connections with the project. |
 | 5 | ANALYSIS-01: word explorer and word cloud | Source implemented. Build and interactive verification pending. | Show a frequency table and word cloud for a project, part, or poem with editable filters and links to passages. |
-| 6 | ANALYSIS-02: tone and motif progression | See how a collection develops in manuscript order. | Plot the writer's declared tone/theme information across poems and parts, with optional comparisons of recurring words. Clicking an entry opens its poem. |
+| 6 | ANALYSIS-02: tone and motif progression | Source implemented. Build and interactive verification pending. | Show tones, assigned themes, and optional intensity in manuscript order. Compare recurring words and open poems from both views. |
 | Later | EDIT-01/02, SAFE-02, SOUND-04, OUTPUT-05 | Add convenience, deeper guidance, and printing polish after the project tools. | Restore the writing position when returning to a poem, browse the small backup history, check refrains/end words, and improve stanza page breaks as separate changes. |
 
 ### Backup and edit-date rules
@@ -46,7 +46,7 @@ Review follow-up (24 November): extending or shortening a search query could ski
 
 **Word explorer (ANALYSIS-01).** Pair the word cloud with an exact frequency table. Offer project/part/poem scope, case grouping, common-word filters that can be adjusted or disabled, and counts linked to source passages. Define Unicode, apostrophe, and hyphen handling; document any normalization. Account for different poem lengths when comparing frequencies. Word clouds show recurring vocabulary; tone and thematic relationships remain the writer's declared interpretation. Analysis is derived from the current writing and never writes findings into poem text or edit dates.
 
-**Progression view (ANALYSIS-02).** Use the existing part/poem order to display tone and motifs as the collection progresses. Allow optional manually assigned intensity and compare the distribution of selected words/themes. Preserve a readable ordered/table view alongside the graphic. A theme's assigned poems and its actual word occurrences are distinct data, so both remain inspectable.
+**Progression view (ANALYSIS-02).** Timeline and table use the same manuscript order, tone labels, theme assignments, and optional 1–5 intensity ratings. The view highlights a selected theme and compares up to two exact words by occurrences or per 1,000 words. Poem titles open the writing desk. Project and poem copies carry the intensity rating.
 
 ### Deferred work and verification
 
@@ -108,7 +108,7 @@ Keep pronunciation, rhyme, and meter in independent domain modules. Version thei
 | ID | Priority | Work | Status | Acceptance |
 | --- | --- | --- | --- | --- |
 | ANALYSIS-01 | P1 | Word frequency explorer and word cloud | Source implemented. Build and interactive verification pending. | Scope by project, part, or poem with exact counts, adjustable filters, Unicode handling, length-aware comparisons, and passage links. |
-| ANALYSIS-02 | P2 | Tone and motif progression through a collection | Planned; after PROJECT-05 and ANALYSIS-01 | Show manually assigned tone/theme data in manuscript order, optionally compare word recurrence, and open the related poem. Keep graphic and ordered/table representations in agreement. |
+| ANALYSIS-02 | P2 | Tone and motif progression through a collection | Source implemented. Build and interactive verification pending. | Use a timeline or table to see tone, themes, optional intensity, and word recurrence. Open poems from either view. |
 
 ## Update 4: finished work
 
