@@ -1,0 +1,173 @@
+.theme-manager-list {
+  padding: 0;
+  margin: 0 0 18px;
+  list-style: none;
+}
+.theme-manager-list > li,
+.theme-rename {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+.theme-manager-list > li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--bark);
+}
+.theme-name {
+  flex: 1 1 120px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: var(--parchment);
+}
+.theme-manager-list small {
+  color: var(--linen);
+  font-size: calc(10px * var(--ui-scale));
+}
+.theme-rename {
+  width: 100%;
+}
+.theme-rename input {
+  flex: 1 1 180px;
+}
+.theme-rename .collection-error {
+  flex-basis: 100%;
+}
+.collection-poem-filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.collection-poem-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  color: var(--linen);
+  font-size: calc(11px * var(--ui-scale));
+}
+.collection-poem-filters select {
+  width: 100%;
+  min-width: 0;
+}
+.collection-poem-group {
+  margin-top: 20px;
+}
+.collection-poem-group h3 {
+  color: var(--sage);
+  overflow-wrap: anywhere;
+}
+.collection-poem-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  width: 100%;
+  padding: 13px;
+  margin: 7px 0;
+  text-align: left;
+  border: 1px solid var(--bark);
+  border-radius: 8px;
+  background: var(--earth);
+  overflow-wrap: anywhere;
+}
+.collection-poem-row:hover {
+  border-color: var(--lavender);
+}
+.collection-poem-row strong {
+  font-weight: 500;
+  color: var(--parchment);
+}
+.collection-poem-row span,
+.collection-poem-row small {
+  color: var(--linen);
+  font-size: calc(11px * var(--ui-scale));
+}
+.poem-planning {
+  flex-shrink: 0;
+  margin: 8px 0;
+  border: 1px solid var(--bark);
+  border-radius: 7px;
+  background: var(--surface-deep);
+}
+.poem-planning summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 12px;
+  cursor: pointer;
+  color: var(--lavender);
+  font-size: calc(11px * var(--ui-scale));
+}
+.poem-planning summary span {
+  flex: 1;
+  min-width: 0;
+  text-align: right;
+  color: var(--linen);
+  font-size: calc(9px * var(--ui-scale));
+  overflow-wrap: anywhere;
+}
+.poem-planning summary > svg {
+  transition: transform 140ms;
+}
+.poem-planning[open] summary > svg {
+  transform: rotate(90deg);
+}
+.poem-planning-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  max-height: min(340px, 45vh);
+  overflow-y: auto;
+  padding: 12px;
+}
+.poem-planning-fields > label,
+.poem-planning legend {
+  color: var(--linen);
+  font-size: calc(11px * var(--ui-scale));
+}
+.poem-planning-fields > input,
+.poem-planning-fields textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--bark);
+  background: var(--earth);
+  font-size: calc(12px * var(--ui-scale));
+  line-height: 1.7;
+}
+.poem-planning-fields textarea {
+  min-height: 95px;
+  resize: vertical;
+}
+.poem-planning fieldset {
+  min-width: 0;
+  margin: 5px 0;
+  padding: 12px;
+  border: 1px solid var(--bark);
+  border-radius: 7px;
+}
+.poem-theme-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin-bottom: 12px;
+}
+.poem-theme-options label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  font-size: calc(11px * var(--ui-scale));
+  overflow-wrap: anywhere;
+}
+.poem-theme-options input {
+  flex-shrink: 0;
+  padding: 0;
+}
+.planning-link {
+  color: var(--lavender);
+  font-size: calc(11px * var(--ui-scale));
+  text-decoration: underline;
+}

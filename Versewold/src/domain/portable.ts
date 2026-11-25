@@ -3,6 +3,11 @@ import type { PoetryForm } from './forms/types.ts';
 import { createFormValidator } from './forms/validate.ts';
 import { validateProjectStructure, manuscriptGroups } from './manuscript/structure.ts';
 import { validateManuscript } from './manuscript/settings.ts';
+import { validateProjectOverview } from './projectOverview.ts';
+import type { ProjectTheme } from './workspace.ts';
+import { collectionThemes, validateProjectThemes } from './projectThemes.ts';
+import { validatePoemPlanning, validateProjectPlanning } from './poemPlanning.ts';
+import { remapThemeCanvas, validateThemeCanvas } from './themeCanvas.ts';
 
 export interface ProjectTransfer {
   project: Project;
@@ -18,12 +23,19 @@ export interface PoemTransfer {
     author?: string;
     composedOn?: string;
     updatedAt?: string;
+    tone?: string;
+    planningNotes?: string;
+    /** Theme labels, resolved into destination-local identities on import. */
+    themes?: string[];
   };
   body: string;
 }
 
 /** Form snapshots belong to their project, never overwrite the global library. */
 export function validateProjectTemplates(project: Project): PoetryForm[] {
+  validateProjectOverview(project);
+  validateProjectPlanning(project);
+  validateThemeCanvas(project);
   validateProjectStructure(project);
   if (project.manuscript) validateManuscript(project.manuscript);
   if (project.templates === undefined) return [];
@@ -63,7 +75,18 @@ export function projectCopy(
   return { project: copy, documents };
 }
 
-export function poemCopy(poem: PoemEntry, body: string, forms: PoetryForm[]): PoemTransfer {
+export function poemCopy(
+  poem: PoemEntry,
+  body: string,
+  forms: PoetryForm[],
+  project?: Project,
+): PoemTransfer {
+  validatePoemPlanning(poem);
+  const themes = (poem.themeIds ?? []).map((id) => {
+    const theme = project?.themeDefinitions?.find((entry) => entry.id === id);
+    if (!theme) throw new Error('The poem copy needs its collection theme vocabulary.');
+    return theme.label;
+  });
   const template = forms.find((form) => form.id === poem.formId);
   return {
     metadata: {
@@ -74,6 +97,9 @@ export function poemCopy(poem: PoemEntry, body: string, forms: PoetryForm[]): Po
       ...(poem.author !== undefined ? { author: poem.author } : {}),
       ...(poem.composedOn ? { composedOn: poem.composedOn } : {}),
       ...(poem.updatedAt ? { updatedAt: poem.updatedAt } : {}),
+      ...(poem.tone !== undefined ? { tone: poem.tone } : {}),
+      ...(poem.planningNotes !== undefined ? { planningNotes: poem.planningNotes } : {}),
+      ...(themes.length ? { themes } : {}),
       ...(template ? { template: structuredClone(template) } : {}),
     },
     body,
@@ -104,7 +130,15 @@ export function prepareProjectImport(
   const sectionIds = new Map(
     (transfer.project.sections ?? []).map((section) => [section.id, id()]),
   );
+  const themeIds = new Map(
+    (transfer.project.themeDefinitions ?? []).map((theme) => [theme.id, id()]),
+  );
+  const remappedThemes = transfer.project.themeDefinitions?.map((theme) => ({
+    ...theme, id: themeIds.get(theme.id)!,
+  }));
+  validateProjectThemes({ themeDefinitions: remappedThemes });
   const seen = new Set<string>();
+  const poemIds = new Map<string, string>();
   const documents: Record<string, string> = {};
   const poems = transfer.project.poems.map((poem) => {
     if (seen.has(poem.id)) throw new Error('Duplicate poem ID in imported project.');
@@ -112,21 +146,25 @@ export function prepareProjectImport(
     const body = transfer.documents[poem.id];
     if (typeof body !== 'string') throw new Error(`Missing text for ${poem.title}.`);
     const poemId = id();
+    poemIds.set(poem.id, poemId);
     documents[documentKey(projectId, poemId)] = body;
     return {
       ...poem,
       id: poemId,
       file: `poems/${poemId}.md`,
       ...(poem.sectionId ? { sectionId: sectionIds.get(poem.sectionId)! } : {}),
+      ...(poem.themeIds?.length ? { themeIds: poem.themeIds.map((themeId) => themeIds.get(themeId)!) } : {}),
     };
   });
-  return {
-    project: {
+  const imported: Project = {
       ...structuredClone(transfer.project),
       id: projectId,
       title: uniqueTitle(transfer.project.title, existing),
       poems,
       templates: structuredClone(templates),
+      ...(transfer.project.themeDefinitions ? {
+        themeDefinitions: remappedThemes,
+      } : {}),
       ...(transfer.project.sections
         ? {
             sections: transfer.project.sections.map((section) => ({
@@ -135,9 +173,11 @@ export function prepareProjectImport(
             })),
           }
         : {}),
-    },
-    documents,
   };
+  if (transfer.project.themeCanvas)
+    imported.themeCanvas = remapThemeCanvas(transfer.project.themeCanvas, poemIds, themeIds, id);
+  validateThemeCanvas(imported);
+  return { project: imported, documents };
 }
 
 export function preparePoemImports(
@@ -146,14 +186,20 @@ export function preparePoemImports(
   library: PoetryForm[],
   id: () => string,
 ) {
+  validateProjectPlanning(project);
+  validateProjectOverview(project);
   const templates = structuredClone(project.templates ?? []);
   const known = new Map(projectForms(library, project).map((form) => [form.id, form]));
   const validate = createFormValidator();
   const entries: PoemEntry[] = [];
   const documents: Record<string, string> = {};
+  const themeDefinitions: ProjectTheme[] = collectionThemes(project).map((theme) => ({ ...theme }));
+  let planningChanged = false;
   for (const poem of incoming) {
     if (poem.metadata.schemaVersion !== 1 || typeof poem.body !== 'string')
       throw new Error('Invalid poem copy.');
+    validatePoemPlanning(poem.metadata);
+    validateProjectThemes({ themes: poem.metadata.themes });
     let formId = poem.metadata.formId;
     if (poem.metadata.template) {
       let template = structuredClone(validate(poem.metadata.template));
@@ -169,7 +215,18 @@ export function preparePoemImports(
       known.set(formId, template);
     }
     const poemId = id();
-    const { kind, author, composedOn, updatedAt } = poem.metadata;
+    const { kind, author, composedOn, updatedAt, tone, planningNotes } = poem.metadata;
+    const assignedThemes: string[] = [];
+    for (const incomingLabel of poem.metadata.themes ?? []) {
+      const label = incomingLabel.trim();
+      let theme = themeDefinitions.find((entry) => entry.label.trim().toLowerCase() === label.toLowerCase());
+      if (!theme) {
+        theme = { id: id(), label };
+        themeDefinitions.push(theme);
+      }
+      if (!assignedThemes.includes(theme.id)) assignedThemes.push(theme.id);
+      planningChanged = true;
+    }
     entries.push({
       id: poemId,
       title: poem.metadata.title,
@@ -179,11 +236,19 @@ export function preparePoemImports(
       ...(author !== undefined ? { author } : {}),
       ...(composedOn ? { composedOn } : {}),
       ...(updatedAt ? { updatedAt } : {}),
+      ...(tone !== undefined ? { tone } : {}),
+      ...(planningNotes !== undefined ? { planningNotes } : {}),
+      ...(assignedThemes.length ? { themeIds: assignedThemes } : {}),
     });
     documents[documentKey(project.id, poemId)] = poem.body;
   }
-  validateProjectStructure({ ...project, poems: [...project.poems, ...entries] });
-  return { entries, documents, templates };
+  const stagedProject: Project = {
+    ...project, poems: [...project.poems, ...entries],
+    ...(planningChanged ? { themes: undefined, themeDefinitions } : {}),
+  };
+  validateProjectStructure(stagedProject);
+  validateProjectPlanning(stagedProject);
+  return { entries, documents, templates, themeDefinitions: planningChanged ? themeDefinitions : undefined };
 }
 
 // Rust's JSON maps can serialize keys in a different order. Compare definitions

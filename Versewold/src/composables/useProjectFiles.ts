@@ -77,7 +77,7 @@ export function useProjectFiles() {
         if (!poem) throw new Error('Choose a poem first.');
         path =
           action === 'save-poem'
-            ? await fileRepository.savePoem(poemCopy(toRaw(poem), store.body.value, forms))
+            ? await fileRepository.savePoem(poemCopy(toRaw(poem), store.body.value, forms, toRaw(project)))
             : await fileRepository.exportMarkdown(poem.title, store.body.value);
       }
       if (path) {

@@ -42,6 +42,77 @@ const ids = () => {
   return () => `fresh-${++next}`;
 };
 
+test('collection planning survives copies and import with independent metadata and unchanged poem dates', () => {
+  const workspace = fixture();
+  const project = workspace.projects[0];
+  project.description = '  Home — café\r\n\r\nA collection about return.\n';
+  project.intendedTone = 'Reflective';
+  project.themes = ['Home', 'Seasons'];
+  project.poems[0].updatedAt = '2026-11-24T12:00:00Z';
+  const before = structuredClone(workspace);
+  const transfer = projectCopy(workspace, project, []);
+  const imported = prepareProjectImport(transfer, workspace.projects, ids());
+  assert.equal(imported.project.description, project.description);
+  assert.equal(imported.project.intendedTone, project.intendedTone);
+  assert.deepEqual(imported.project.themes, project.themes);
+  assert.equal(imported.project.poems[0].updatedAt, project.poems[0].updatedAt);
+  assert.equal(imported.documents['fresh-1/fresh-2'], workspace.documents['project-1/poem-2']);
+  imported.project.themes![0] = 'Changed on the copy';
+  assert.deepEqual(transfer.project.themes, ['Home', 'Seasons']);
+  assert.deepEqual(workspace, before);
+  const broken = structuredClone(transfer);
+  broken.project.themes = [''];
+  assert.throws(() => prepareProjectImport(broken, workspace.projects, ids()), /themes/);
+  assert.deepEqual(workspace, before);
+});
+
+test('project import remaps theme identities and poem links together', () => {
+  const workspace = fixture(), project = workspace.projects[0];
+  project.themeDefinitions = [{ id: 'home', label: 'Home' }, { id: 'seasons', label: 'Seasons' }];
+  project.poems[0].themeIds = ['home', 'seasons'];
+  project.poems[0].tone = 'Reflective';
+  project.poems[0].planningNotes = '  🌙 Notes\r\n\tAn ending.\n';
+  const before = structuredClone(workspace);
+  const transfer = projectCopy(workspace, project, []);
+  const imported = prepareProjectImport(transfer, workspace.projects, ids());
+  const themeIds = imported.project.themeDefinitions!.map((theme) => theme.id);
+  assert.ok(themeIds.every((id) => !['home', 'seasons'].includes(id)));
+  assert.deepEqual(imported.project.poems[0].themeIds, themeIds);
+  assert.equal(imported.project.poems[0].planningNotes, project.poems[0].planningNotes);
+  assert.equal(imported.project.poems[0].tone, 'Reflective');
+  assert.equal(imported.documents[`${imported.project.id}/${imported.project.poems[0].id}`], workspace.documents['project-1/poem-2']);
+  transfer.project.poems[0].themeIds = ['missing'];
+  assert.throws(() => prepareProjectImport(transfer, workspace.projects, ids()), /missing collection theme/);
+  assert.deepEqual(workspace, before);
+});
+
+test('poem copies carry planning labels and merge them into destination-local identities atomically', () => {
+  const source = fixture(), project = source.projects[0];
+  project.themeDefinitions = [{ id: 'source-home', label: 'Home' }, { id: 'source-season', label: 'Seasons' }];
+  project.poems[0].themeIds = ['source-home', 'source-season'];
+  project.poems[0].tone = 'Tender';
+  project.poems[0].planningNotes = '  🌲 Notes\r\n\n';
+  const transfer = poemCopy(project.poems[0], source.documents['project-1/poem-2'], [], project);
+  assert.deepEqual(transfer.metadata.themes, ['Home', 'Seasons']);
+  assert.ok(!('themeIds' in transfer.metadata));
+  assert.throws(() => poemCopy(project.poems[0], 'A line', []), /theme vocabulary/);
+  const destination = fixture().projects[0];
+  destination.themes = ['home'];
+  const before = structuredClone(destination);
+  const staged = preparePoemImports([transfer], destination, [], ids());
+  assert.equal(staged.themeDefinitions!.length, 2);
+  assert.equal(staged.entries[0].themeIds![0], 'legacy-theme-1');
+  assert.ok(!staged.entries[0].themeIds!.includes('source-home'));
+  assert.equal(staged.entries[0].tone, 'Tender');
+  assert.equal(staged.entries[0].planningNotes, transfer.metadata.planningNotes);
+  assert.equal(staged.documents[`${destination.id}/${staged.entries[0].id}`], transfer.body);
+  assert.deepEqual(destination, before);
+  const bad = structuredClone(transfer);
+  bad.metadata.tone = 'invalid\ntone';
+  assert.throws(() => preparePoemImports([transfer, bad], destination, [], ids()));
+  assert.deepEqual(destination, before);
+});
+
 test('project copies carry exact bodies, ordering and only used form snapshots', () => {
   const workspace = fixture();
   const before = structuredClone(workspace);

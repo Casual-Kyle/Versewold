@@ -6,6 +6,10 @@ The application is in [Versewold/](Versewold/). Poetry research lives separately
 
 Upcoming work and known limitations are tracked in [planning and bugs](docs/planning-and-bugs.md).
 
+**Poem planning** adds tone, reusable collection themes, and notes beside the writing editor. Collection overview can filter/group poems by those labels and open a matching poem. Theme renames preserve assignments; project and poem copies retain planning metadata. See [poem planning](docs/poem-planning.md) for behavior and verification status.
+
+**Collection overview**, below the sidebar's project selector, adds project renaming, a collection description, intended tone, broad themes, and collection statistics. Planning details autosave and travel with project copies. See [collection overview](docs/collection-overview.md) for behavior and verification status.
+
 Automatic [saved-version backups](docs/backups.md) retain three readable snapshots per poem and project manifest. Access them from Preferences → Files & storage → Open backups folder; in-app revision comparison/restore remains planned. These snapshots use disk space and include the latest saved text.
 
 **Files & export** in the sidebar provides Save now, portable project/poem copies, project/Markdown loading, and Markdown poem/manuscript exports. Loaded copies receive fresh identities and autosave in the roaming library. See [save, load, and export](docs/save-load-export.md) for formats and behavior.

@@ -6,6 +6,7 @@ import { usePreferences } from '../../composables/usePreferences';
 import VerseEditor from './VerseEditor.vue';
 import GuidanceStatus from '../forms/GuidanceStatus.vue';
 import DocumentDetails from './DocumentDetails.vue';
+import PoemPlanning from './PoemPlanning.vue';
 import { isPoem } from '../../domain/manuscript/structure';
 const { activeProject, activePoem, activeForm, forms, body } = useWorkspace();
 const { preferences } = usePreferences();
@@ -36,6 +37,12 @@ defineExpose({
       maxlength="160"
     />
     <DocumentDetails :key="activePoem.id" />
+    <PoemPlanning
+      v-if="activeProject"
+      :key="`${activeProject.id}/${activePoem.id}`"
+      :project="activeProject"
+      :poem="activePoem"
+    />
     <div class="manuscript-rule"><span>✧</span></div>
     <div v-if="isPoem(activePoem)" class="editor-mode-bar">
       <div class="editor-mode" role="group" aria-label="Writing view">

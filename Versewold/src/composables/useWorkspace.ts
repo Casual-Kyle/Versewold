@@ -271,6 +271,10 @@ function importPoems(incoming: PoemTransfer[]) {
     crypto.randomUUID(),
   );
   if (existing) {
+    if (staged.themeDefinitions !== undefined) {
+      existing.themeDefinitions = staged.themeDefinitions;
+      delete existing.themes;
+    }
     existing.poems.push(...staged.entries);
     existing.templates = staged.templates;
   } else
@@ -278,6 +282,7 @@ function importPoems(incoming: PoemTransfer[]) {
       ...destination,
       poems: staged.entries,
       templates: staged.templates,
+      ...(staged.themeDefinitions !== undefined ? { themeDefinitions: staged.themeDefinitions } : {}),
     });
   Object.assign(workspace.value.documents, staged.documents);
   workspace.value.settings.activeProjectId = destination.id;

@@ -5,6 +5,11 @@ export const router = createRouter({
   history: createWebHashHistory(),
   routes: [
     { path: '/', name: 'desk', component: () => import('../views/WritingDeskView.vue') },
+    {
+      path: '/collection',
+      name: 'collection',
+      component: () => import('../views/CollectionView.vue'),
+    },
     { path: '/forms', name: 'forms', component: () => import('../views/FormLibraryView.vue') },
     { path: '/settings', name: 'settings', component: () => import('../views/SettingsView.vue') },
     {

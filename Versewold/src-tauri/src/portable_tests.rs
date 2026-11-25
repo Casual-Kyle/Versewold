@@ -12,6 +12,68 @@ fn project() -> ProjectTransfer {
 }
 
 #[test]
+fn collection_planning_survives_portable_project_copies() {
+    let directory = tempfile::tempdir().unwrap();
+    let mut transfer = project();
+    transfer.project.title = "Seasons & home".into();
+    transfer.project.description = Some("  Home — café\r\n\r\nA question.\n".into());
+    transfer.project.intended_tone = Some("Reflective".into());
+    transfer.project.themes = vec!["Home".into(), "Seasons".into()];
+    let saved = save_project(directory.path(), &transfer).unwrap();
+    let loaded = load_project(&saved.join("project.json")).unwrap();
+    assert_eq!(loaded.project.title, transfer.project.title);
+    assert_eq!(loaded.project.description, transfer.project.description);
+    assert_eq!(loaded.project.intended_tone, transfer.project.intended_tone);
+    assert_eq!(loaded.project.themes, transfer.project.themes);
+    assert_eq!(loaded.documents, transfer.documents);
+    transfer.project.intended_tone = Some("invalid\ntone".into());
+    assert!(save_project(directory.path(), &transfer).is_err());
+    assert_eq!(fs::read_dir(directory.path()).unwrap().count(), 1);
+}
+
+#[test]
+fn project_copies_retain_theme_links_and_reject_dangling_references() {
+    let directory = tempfile::tempdir().unwrap();
+    let mut transfer = project();
+    transfer.project.theme_definitions = vec![crate::models::ProjectTheme {
+        id: "theme-home".into(), label: "Home".into(),
+    }];
+    transfer.project.poems[0].theme_ids = vec!["theme-home".into()];
+    transfer.project.poems[0].tone = Some("Reflective".into());
+    transfer.project.poems[0].planning_notes = Some("  Notes\r\n\tAn ending.\n".into());
+    let saved = save_project(directory.path(), &transfer).unwrap();
+    let loaded = load_project(&saved.join("project.json")).unwrap();
+    assert_eq!(loaded.project.poems[0].theme_ids, vec!["theme-home"]);
+    assert_eq!(loaded.project.poems[0].tone.as_deref(), Some("Reflective"));
+    assert_eq!(loaded.project.poems[0].planning_notes, transfer.project.poems[0].planning_notes);
+    assert_eq!(loaded.documents, transfer.documents);
+    transfer.project.poems[0].theme_ids = vec!["missing".into()];
+    assert!(save_project(directory.path(), &transfer).is_err());
+    assert_eq!(fs::read_dir(directory.path()).unwrap().count(), 1);
+}
+
+#[test]
+fn poem_sidecars_roundtrip_tone_notes_and_theme_labels_with_exact_markdown() {
+    let directory = tempfile::tempdir().unwrap();
+    let mut transfer: PoemTransfer = serde_json::from_value(json!({
+        "metadata": {"schemaVersion":1,"title":"A poem","formId":"free-verse",
+            "tone":"Tender","planningNotes":"  Notes\r\n\r\n\tAn ending.\n","themes":["Home","Seasons"]},
+        "body":"  🌙 café\r\n\r\nA line.  \n"
+    })).unwrap();
+    let saved = save_poem(directory.path(), &transfer).unwrap();
+    let loaded = load_poem(&saved.join("poem.md")).unwrap();
+    assert_eq!(loaded.body, transfer.body);
+    assert_eq!(loaded.metadata.tone, transfer.metadata.tone);
+    assert_eq!(loaded.metadata.planning_notes, transfer.metadata.planning_notes);
+    assert_eq!(loaded.metadata.themes, transfer.metadata.themes);
+    let metadata: serde_json::Value = serde_json::from_str(&fs::read_to_string(saved.join("poem.md.versewold.json")).unwrap()).unwrap();
+    assert!(metadata.get("themeIds").is_none());
+    transfer.metadata.themes = vec!["bad\ntheme".into()];
+    assert!(save_poem(directory.path(), &transfer).is_err());
+    assert_eq!(fs::read_dir(directory.path()).unwrap().count(), 1);
+}
+
+#[test]
 fn project_roundtrip_preserves_order_metadata_forms_and_exact_markdown() {
     let directory = tempfile::tempdir().unwrap();
     let transfer = project();
@@ -65,6 +127,7 @@ fn poem_copy_keeps_sidecar_separate_and_plain_markdown_import_has_defaults() {
             author: Some("A. Writer".into()),
             composed_on: Some("2026-10-20".into()),
             updated_at: Some("2026-11-24T20:12:30.123Z".into()),
+            ..PoemMetadata::default()
         },
         body: "\u{feff}  Rain — café\r\n\nEnd  \n".into(),
     };

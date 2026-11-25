@@ -1,6 +1,12 @@
 import type { PoetryForm } from './forms/types.ts';
 import type { ManuscriptSettings } from './manuscript/types.ts';
+import type { ThemeCanvas } from './themeCanvas.ts';
 /** Disk manifests contain metadata and ordering; poem bodies live only in Markdown. */
+export interface ProjectTheme {
+  id: string;
+  label: string;
+}
+
 export interface PoemEntry {
   id: string;
   title: string;
@@ -11,6 +17,9 @@ export interface PoemEntry {
   author?: string;
   composedOn?: string;
   updatedAt?: string;
+  tone?: string;
+  planningNotes?: string;
+  themeIds?: string[];
 }
 
 export interface Project {
@@ -18,6 +27,13 @@ export interface Project {
   id: string;
   title: string;
   poems: PoemEntry[];
+  /** Optional collection planning; separate from manuscript text and poem dates. */
+  description?: string;
+  intendedTone?: string;
+  themes?: string[];
+  /** Stable theme identities; the older string list is migrated on its first edit. */
+  themeDefinitions?: ProjectTheme[];
+  themeCanvas?: ThemeCanvas;
   /** Optional version 1 addition: portable, project-scoped form definitions. */
   templates?: PoetryForm[];
   sections?: { id: string; title: string }[];

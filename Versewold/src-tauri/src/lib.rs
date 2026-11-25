@@ -9,6 +9,7 @@ mod pdf;
 mod portable;
 mod preferences;
 mod storage;
+mod theme_canvas;
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {

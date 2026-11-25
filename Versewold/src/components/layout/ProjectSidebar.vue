@@ -66,6 +66,10 @@ function openPoem(id: string) {
       Create a project
       <AppIcon name="plus" :size="15" />
     </button>
+    <RouterLink v-if="activeProject" to="/collection" class="collection-link">
+      <AppIcon name="folder" :size="17" />
+      <span>Collection overview<small>Rename &amp; plan</small></span>
+    </RouterLink>
     <div class="sidebar-section">
       <span>Manuscript</span>
       <span class="count">{{ activeProject?.poems.length ?? 0 }}</span>
