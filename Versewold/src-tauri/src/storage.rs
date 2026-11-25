@@ -165,7 +165,11 @@ impl Store {
         if let Some(canvas) = &project.theme_canvas {
             canvas.validate(project)?;
         }
-        let theme_ids: HashSet<_> = project.theme_definitions.iter().map(|theme| &theme.id).collect();
+        let theme_ids: HashSet<_> = project
+            .theme_definitions
+            .iter()
+            .map(|theme| &theme.id)
+            .collect();
         crate::manuscript::validate_author(project.author_name.as_deref())?;
         if let Some(layout) = &project.manuscript {
             layout.validate()?;
@@ -433,7 +437,9 @@ mod tests {
         store.save(&draft).unwrap();
         let original = draft.documents["book-1/poem-1"].clone();
         draft.projects[0].themes = vec!["".into()];
-        draft.documents.insert("book-1/poem-1".into(), "New draft".into());
+        draft
+            .documents
+            .insert("book-1/poem-1".into(), "New draft".into());
         assert!(store.save(&draft).is_err());
         assert_eq!(
             fs::read_to_string(store.root.join("projects/book-1/poems/poem-1.md")).unwrap(),
@@ -454,22 +460,33 @@ mod tests {
         let revisions = backup_versions(&store, "projects/book-1/poems/poem-1").len();
         draft.projects[0].themes.clear();
         draft.projects[0].theme_definitions = vec![crate::models::ProjectTheme {
-            id: "theme-home".into(), label: "Home".into(),
+            id: "theme-home".into(),
+            label: "Home".into(),
         }];
         draft.projects[0].poems[0].theme_ids = vec!["theme-home".into()];
         draft.projects[0].poems[0].tone = Some("Tender".into());
-        draft.projects[0].poems[0].planning_notes = Some("  🌙 Notes\r\n\r\n\tAn ending.  \n".into());
+        draft.projects[0].poems[0].planning_notes =
+            Some("  🌙 Notes\r\n\r\n\tAn ending.  \n".into());
         store.save(&draft).unwrap();
         draft.projects[0].theme_definitions[0].label = "Belonging".into();
         store.save(&draft).unwrap();
-        assert_eq!(backup_versions(&store, "projects/book-1/poems/poem-1").len(), revisions);
+        assert_eq!(
+            backup_versions(&store, "projects/book-1/poems/poem-1").len(),
+            revisions
+        );
         let loaded = Store::new(root).unwrap().load().unwrap().workspace;
         let project = &loaded.projects[0];
         assert_eq!(project.theme_definitions[0].label, "Belonging");
         assert_eq!(project.poems[0].theme_ids, vec!["theme-home"]);
         assert_eq!(project.poems[0].tone.as_deref(), Some("Tender"));
-        assert_eq!(project.poems[0].planning_notes, draft.projects[0].poems[0].planning_notes);
-        assert_eq!(project.poems[0].updated_at.as_deref(), Some("2026-11-24T12:00:00Z"));
+        assert_eq!(
+            project.poems[0].planning_notes,
+            draft.projects[0].poems[0].planning_notes
+        );
+        assert_eq!(
+            project.poems[0].updated_at.as_deref(),
+            Some("2026-11-24T12:00:00Z")
+        );
         assert_eq!(loaded.documents, bodies);
     }
 
@@ -479,15 +496,24 @@ mod tests {
         let mut store = Store::new(directory.path().join("data")).unwrap();
         let mut draft = workspace();
         draft.projects[0].theme_definitions = vec![crate::models::ProjectTheme {
-            id: "theme-home".into(), label: "Home".into(),
+            id: "theme-home".into(),
+            label: "Home".into(),
         }];
         draft.projects[0].poems[0].theme_ids = vec!["theme-home".into()];
         store.save(&draft).unwrap();
         let original = draft.documents["book-1/poem-1"].clone();
         draft.projects[0].theme_definitions.clear();
-        draft.documents.insert("book-1/poem-1".into(), "Changed draft".into());
-        assert!(store.save(&draft).unwrap_err().contains("missing collection theme"));
-        assert_eq!(fs::read_to_string(store.root.join("projects/book-1/poems/poem-1.md")).unwrap(), original);
+        draft
+            .documents
+            .insert("book-1/poem-1".into(), "Changed draft".into());
+        assert!(store
+            .save(&draft)
+            .unwrap_err()
+            .contains("missing collection theme"));
+        assert_eq!(
+            fs::read_to_string(store.root.join("projects/book-1/poems/poem-1.md")).unwrap(),
+            original
+        );
     }
 
     #[test]

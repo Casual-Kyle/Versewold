@@ -77,7 +77,8 @@ export function paginateManuscript(
     bottom = mmToPt(settings.margins.bottom);
   const contentWidth = width - left - right;
   const bottomEdge = height - Math.max(bottom, settings.pageNumbers ? 20 : 0);
-  const step = settings.fontSize * 1.2 * settings.lineSpacing;
+  const lineHeight = settings.fontSize * 1.2;
+  const step = lineHeight * settings.lineSpacing;
   const pages: ManuscriptPage[] = [];
   // Completed poems reserve footer space on their final page only. A shared
   // page can hold several signatures in the same order as its poems.
@@ -173,10 +174,6 @@ export function paginateManuscript(
           ),
         }
       : undefined;
-    if (signature && top + settings.fontSize * 1.2 > textBottom(undefined, signature))
-      throw new Error(
-        `The signature for "${poem.title}" does not fit. Increase the usable page area or shorten the author name.`,
-      );
     const logicalLines = body.replace(/\r\n?/g, '\n').replace(/\t/g, '    ').split('\n');
     // Trailing empty source positions need no extra blank PDF pages.
     while (logicalLines.length && !logicalLines.at(-1)!.trim()) logicalLines.pop();
@@ -184,6 +181,10 @@ export function paginateManuscript(
       wrapLine(logical, contentWidth, (text) => measure(text, settings.fontSize, 'normal')),
     );
     const firstPageSignature = bodyLines.length <= 1 ? signature : undefined;
+    if (signature && !firstPageSignature && top + lineHeight > textBottom(undefined, signature))
+      throw new Error(
+        `The signature for "${poem.title}" does not fit. Increase the usable page area or shorten the author name.`,
+      );
     const headingLines = wrapLine(poem.title, contentWidth, (text) =>
       measure(text, settings.titleSize, 'bold'),
     );
@@ -202,9 +203,13 @@ export function paginateManuscript(
     const metadataLines = metadata.flatMap((text) =>
       wrapLine(text, contentWidth, (value) => measure(value, 10, 'normal')),
     );
-    const headingHeight =
-      headingLines.length * settings.titleSize * 1.3 + metadataLines.length * 14 + step;
-    if (headingHeight + step > textBottom(undefined, firstPageSignature) - top)
+    const bodyGap = bodyLines.length ? step * 0.7 : 0;
+    const openingHeight =
+      headingLines.length * settings.titleSize * 1.3 +
+      metadataLines.length * 14 +
+      bodyGap +
+      (bodyLines.length ? lineHeight : 0);
+    if (top + openingHeight > textBottom(undefined, firstPageSignature))
       throw new Error(
         `The heading for “${poem.title}” does not fit. Reduce the title size or margins.`,
       );
@@ -213,7 +218,7 @@ export function paginateManuscript(
       (settings.poemNewPage && current.documentId) ||
       poem.kind === 'dedication' ||
       poem.kind === 'about' ||
-      cursor + headingHeight + step > textBottom(current, firstPageSignature)
+      cursor + step + openingHeight > textBottom(current, firstPageSignature)
     )
       newPage('text', poem.title, poem.id);
     else cursor += step;
@@ -226,12 +231,12 @@ export function paginateManuscript(
       line(text, cursor, 10, 'metadata');
       cursor += 14;
     });
-    cursor += step * 0.7;
+    cursor += bodyGap;
     for (const [index, text] of bodyLines.entries()) {
       // Keep the last written line with its signature. Earlier pages use their
       // full available height rather than reserving an unused signature band.
       const finalSignature = index === bodyLines.length - 1 ? signature : undefined;
-      if (cursor + settings.fontSize * 1.2 > textBottom(current, finalSignature)) {
+      if (cursor + lineHeight > textBottom(current, finalSignature)) {
         newPage('text', `${poem.title} (continued)`, poem.id);
         if (top >= 18) line(`${poem.title} (continued)`, top - 18, 9, 'metadata');
       }

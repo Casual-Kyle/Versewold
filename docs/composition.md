@@ -56,9 +56,7 @@ The panel shows a match count and highlights actual source text, excluding stanz
 
 Stanza headings are CodeMirror block widgets. Their vertical spacing must be padding inside the measured widget, with zero vertical margins; otherwise the visible lines and the editor's coordinate map can disagree. The 25 November correction moves the former 8px bottom margin into bottom padding. This follows [CodeMirror's block-widget layout rule](https://codemirror.net/docs/ref/#view.Decoration^widget). Up/Down and Home/End retain the standard editor commands, including wrapped-line navigation and Shift selection.
 
-The reported Up/Down/End jumps in a longer stanza-based poem have not yet been reproduced interactively. Verify the correction in Guided and Markdown views using at least 20 stanzas, several blank-line separators, and lines long enough to wrap. Check near the first and last line of each stanza, after scrolling into previously unseen text, and after changing the window width. Up/Down should traverse adjacent displayed text rows, Home/End should stay on the current displayed row, Shift should extend selection consistently, and Ctrl+Home/End should reach document boundaries. Navigation must leave the source and its revision timestamp unchanged. Repeat with soft wrap off and with larger writing/interface fonts.
-
-This is a source correction for a confirmed layout-rule violation, not a claim that the user's full report is resolved. Live navigation checks and build verification are pending because the Windows command sandbox fails during startup.
+A 24-stanza fixture passed browser and Windows desktop checks in Guided and Markdown views with soft wrap on and off. The checks covered Up/Down across stanza breaks and wrapped rows, End and Shift+Home within a row, and Ctrl+Home/End at document boundaries. Navigation preserved the exact Markdown and its revision timestamp. The original report's window size and typography are unknown.
 
 ## Editor and persistence boundary
 
@@ -70,7 +68,7 @@ Undo history remains scoped to the mounted poem editor. It survives display-mode
 
 ## Verification
 
-Find/replace adds six passing domain tests for literal/Unicode/case/whole-word matching, normalized offsets, empty results, and wrapped navigation. Eight additional CodeMirror regression tests cover read-only search, selected/all replacement, exact-source undo/redo, history isolation, mixed line endings, no-ops, refreshed matches after edits/display changes, and separate poem states. Those integration tests and interactive UI checks are pending: the required locked dependencies are unavailable locally and package downloads are blocked. They must pass before SEARCH-02 is marked fully verified.
+The domain and CodeMirror tests pass for Unicode and whole-word matching, normalized offsets, query changes, exact-source undo/redo, no-ops, history isolation, and separate poem states. Browser and Windows desktop checks exercised Ctrl+F/Ctrl+H, next/previous navigation, Replace all, undo, and redo. Native saves confirmed exact mixed line endings and a revision timestamp that advanced only on text changes.
 
 Domain/editor-state tests cover empty drafts, prospective lines, automatic blank-line stanza boundaries, repeating/fixed/open/continuous forms, distinct metrical units, scoped end words, actual refrain text, Unicode/raw-newline preservation, and grouped undo/redo. Browser checks cover typing, wrapped lines, form switching without text changes, single/double Enter behavior, refrain insertion/undo, and copy excluding visual annotations.
 

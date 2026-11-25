@@ -113,6 +113,32 @@ test('the final written line stays with its signature when the footer needs anot
   assert.ok(layout.pages[1].lines.some((line) => line.role === 'signature'));
 });
 
+test('a short poem fits with its signature on a compact page', () => {
+  const { project, documents } = fixture();
+  project.poems = [project.poems[0]];
+  delete project.poems[0].sectionId;
+  project.sections = [];
+  documents['book/snow'] = 'Snow falls.';
+  const settings = {
+    ...defaultManuscript(),
+    paper: 'custom' as const,
+    customWidthMm: 100,
+    customHeightMm: 100,
+    margins: { top: 20, bottom: 40, left: 10, right: 10 },
+    titlePage: false,
+    fontSize: 16,
+    lineSpacing: 1.75,
+  };
+
+  const { pages } = paginateManuscript(project, documents, settings, '', measure);
+  assert.equal(pages.length, 1);
+  const body = pages[0].lines.find((line) => line.role === 'body')!;
+  const signature = pages[0].lines.find((line) => line.role === 'signature')!;
+  assert.equal(body.text, 'Snow falls.');
+  assert.equal(signature.text, '- A. Writer, 10/20/2026');
+  assert.ok(body.y + body.size * 1.2 <= signature.y - 12);
+});
+
 test('shared pages and wrapped signatures reserve space for every completed poem', () => {
   const { project, documents } = fixture();
   project.poems = [project.poems[2], project.poems[0]];

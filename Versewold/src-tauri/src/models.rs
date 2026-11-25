@@ -40,7 +40,8 @@ pub fn validate_poem_planning(
     notes: Option<&str>,
     intensity: Option<u8>,
 ) -> Result<(), String> {
-    if tone.is_some_and(|value| value.chars().count() > 200 || value.chars().any(char::is_control)) {
+    if tone.is_some_and(|value| value.chars().count() > 200 || value.chars().any(char::is_control))
+    {
         return Err("Poem tone must be one line of up to 200 characters.".into());
     }
     if intensity.is_some_and(|value| !(1..=5).contains(&value)) {
@@ -48,7 +49,9 @@ pub fn validate_poem_planning(
     }
     if notes.is_some_and(|value| {
         value.chars().count() > 20_000
-            || value.chars().any(|c| c.is_control() && !['\n', '\r', '\t'].contains(&c))
+            || value
+                .chars()
+                .any(|c| c.is_control() && !['\n', '\r', '\t'].contains(&c))
     }) {
         return Err("Planning notes must be text of up to 20,000 characters.".into());
     }
@@ -115,9 +118,11 @@ impl Project {
         }) {
             return Err("Description must be text of up to 20,000 characters.".into());
         }
-        if self.intended_tone.as_ref().is_some_and(|value| {
-            value.chars().count() > 200 || value.chars().any(char::is_control)
-        }) {
+        if self
+            .intended_tone
+            .as_ref()
+            .is_some_and(|value| value.chars().count() > 200 || value.chars().any(char::is_control))
+        {
             return Err("Intended tone must be one line of up to 200 characters.".into());
         }
         if self.themes.len() > 50
@@ -216,7 +221,8 @@ mod overview_tests {
     fn older_poems_default_to_empty_planning_and_invalid_theme_links_are_rejected() {
         let mut poem: PoemEntry = serde_json::from_value(json!({
             "id":"poem", "title":"A poem", "file":"poems/poem.md", "formId":"free-verse"
-        })).unwrap();
+        }))
+        .unwrap();
         poem.validate_planning().unwrap();
         assert!(poem.tone.is_none() && poem.planning_notes.is_none() && poem.theme_ids.is_empty());
         let value = serde_json::to_value(&poem).unwrap();
@@ -228,11 +234,19 @@ mod overview_tests {
         poem.theme_ids.clear();
         poem.tone = Some("bad\ntone".into());
         assert!(poem.validate_planning().is_err());
-        let mut project = Project::default();
-        project.theme_definitions = vec![
-            ProjectTheme { id: "same".into(), label: "Home".into() },
-            ProjectTheme { id: "same".into(), label: "Seasons".into() },
-        ];
+        let project = Project {
+            theme_definitions: vec![
+                ProjectTheme {
+                    id: "same".into(),
+                    label: "Home".into(),
+                },
+                ProjectTheme {
+                    id: "same".into(),
+                    label: "Seasons".into(),
+                },
+            ],
+            ..Project::default()
+        };
         assert!(project.validate_overview().is_err());
     }
 
@@ -254,10 +268,12 @@ mod overview_tests {
 
     #[test]
     fn planning_limits_allow_paragraphs_and_count_unicode_characters() {
-        let mut project = Project::default();
-        project.description = Some("  Home — café\r\n\r\n\tA question.  \n".into());
-        project.intended_tone = Some("🌙".repeat(200));
-        project.themes = vec!["🌲".repeat(80)];
+        let mut project = Project {
+            description: Some("  Home — café\r\n\r\n\tA question.  \n".into()),
+            intended_tone: Some("🌙".repeat(200)),
+            themes: vec!["🌲".repeat(80)],
+            ..Project::default()
+        };
         project.validate_overview().unwrap();
         project.description = Some("🌲".repeat(20_000));
         project.validate_overview().unwrap();

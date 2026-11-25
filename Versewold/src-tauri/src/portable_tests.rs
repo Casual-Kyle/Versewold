@@ -36,7 +36,8 @@ fn project_copies_retain_theme_links_and_reject_dangling_references() {
     let directory = tempfile::tempdir().unwrap();
     let mut transfer = project();
     transfer.project.theme_definitions = vec![crate::models::ProjectTheme {
-        id: "theme-home".into(), label: "Home".into(),
+        id: "theme-home".into(),
+        label: "Home".into(),
     }];
     transfer.project.poems[0].theme_ids = vec!["theme-home".into()];
     transfer.project.poems[0].tone = Some("Reflective".into());
@@ -47,7 +48,10 @@ fn project_copies_retain_theme_links_and_reject_dangling_references() {
     assert_eq!(loaded.project.poems[0].theme_ids, vec!["theme-home"]);
     assert_eq!(loaded.project.poems[0].tone.as_deref(), Some("Reflective"));
     assert_eq!(loaded.project.poems[0].tone_intensity, Some(2));
-    assert_eq!(loaded.project.poems[0].planning_notes, transfer.project.poems[0].planning_notes);
+    assert_eq!(
+        loaded.project.poems[0].planning_notes,
+        transfer.project.poems[0].planning_notes
+    );
     assert_eq!(loaded.documents, transfer.documents);
     transfer.project.poems[0].theme_ids = vec!["missing".into()];
     assert!(save_project(directory.path(), &transfer).is_err());
@@ -67,9 +71,14 @@ fn poem_sidecars_roundtrip_tone_notes_and_theme_labels_with_exact_markdown() {
     assert_eq!(loaded.body, transfer.body);
     assert_eq!(loaded.metadata.tone, transfer.metadata.tone);
     assert_eq!(loaded.metadata.tone_intensity, Some(5));
-    assert_eq!(loaded.metadata.planning_notes, transfer.metadata.planning_notes);
+    assert_eq!(
+        loaded.metadata.planning_notes,
+        transfer.metadata.planning_notes
+    );
     assert_eq!(loaded.metadata.themes, transfer.metadata.themes);
-    let metadata: serde_json::Value = serde_json::from_str(&fs::read_to_string(saved.join("poem.md.versewold.json")).unwrap()).unwrap();
+    let metadata: serde_json::Value =
+        serde_json::from_str(&fs::read_to_string(saved.join("poem.md.versewold.json")).unwrap())
+            .unwrap();
     assert!(metadata.get("themeIds").is_none());
     transfer.metadata.themes = vec!["bad\ntheme".into()];
     assert!(save_poem(directory.path(), &transfer).is_err());
@@ -94,7 +103,10 @@ fn theme_canvas_round_trips_in_project_copies_and_rejects_broken_connections() {
     transfer.project.theme_canvas = Some(serde_json::from_value(value.clone()).unwrap());
     let saved = save_project(directory.path(), &transfer).unwrap();
     let loaded = load_project(&saved.join("project.json")).unwrap();
-    assert_eq!(serde_json::to_value(loaded.project.theme_canvas).unwrap(), value);
+    assert_eq!(
+        serde_json::to_value(loaded.project.theme_canvas).unwrap(),
+        value
+    );
     assert_eq!(loaded.documents, transfer.documents);
 
     let mut invalid = value;

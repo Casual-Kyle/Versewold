@@ -26,8 +26,4 @@ See [file format](file-format.md), [collection overview](collection-overview.md)
 
 ## Verification status
 
-Isolated checks of the applied domain source passed for read-only legacy access, theme migration, rename/link preservation, removal protection, exact notes, unchanged dates, filters/grouping in manuscript order, no-op edits, and failed-edit atomicity. These are separate from a full repository test or native/UI run.
-
-Six new domain tests, two frontend portability tests, and five native model/storage/portable-copy tests were added. Automated repository tests, TypeScript/Vite/native build, and interactive checks remain pending because the Windows command sandbox cannot start.
-
-Before release, exercise assignments and notes across poem switches; rename a used theme; verify removal protection; browse empty/unassigned and multiple-theme groups; open a listed poem; export/reimport project and poem copies; reopen the native app; and compare original poem bytes and dates. Include an older collection, Unicode labels, light/dark palettes, large fonts, and keyboard-only operation. Cross-view cursor/undo retention remains the separately tracked editor-state work.
+Frontend and native tests passed for legacy theme migration, stable links on rename, removal protection, exact notes, ordered filters and groups, and portable project and poem copies. In the browser and Windows desktop app, assigning a migrated theme and setting tone, intensity, and notes preserved the fixture's exact Markdown and revision timestamp.

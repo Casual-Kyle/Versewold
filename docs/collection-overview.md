@@ -33,8 +33,4 @@ The native model must be rebuilt alongside the frontend; a previously built desk
 
 ## Verification status
 
-Isolated checks of the applied metadata-helper source passed for renaming, invalid/duplicate names, description whitespace, theme changes, Unicode limits, and preservation of poem metadata. These checks do not constitute a repository build or UI/native test run.
-
-Six new frontend domain tests, a frontend portable-copy test, and five native model/storage/portable-copy tests have been added. Running them and checking the TypeScript/Vite/native build is pending: the Windows command sandbox currently fails during startup, and the alternate Node runtime is unavailable.
-
-Before marking the feature verified, exercise rename/cancel/invalid names, edit all planning fields, switch between two projects with the overview open, and reopen the native app. Export/load a project copy and compare its details. Check an older project and an empty collection, light/dark palettes, large interface text, and keyboard navigation. Confirm poem source bytes and revision dates remain unchanged.
+Frontend and native tests passed for project renaming, invalid names, legacy themes, metadata and canvas persistence, and portable copies. The browser and Windows desktop checks covered project switching, planning, canvas editing, word passage selection, and progression. A desktop restart preserved the renamed collection, its planning and canvas edits, and the exact fixture Markdown.

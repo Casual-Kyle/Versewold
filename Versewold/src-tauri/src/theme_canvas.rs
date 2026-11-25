@@ -84,7 +84,9 @@ impl ThemeCanvas {
             match (&card.kind, target, card.text.as_deref()) {
                 (CardKind::Note, None, Some(text))
                     if text.chars().count() <= 2_000
-                        && !text.chars().any(|c| c.is_control() && !['\n', '\r', '\t'].contains(&c)) => {}
+                        && !text
+                            .chars()
+                            .any(|c| c.is_control() && !['\n', '\r', '\t'].contains(&c)) => {}
                 (CardKind::Poem, Some(id), None) if poems.contains(id) => {
                     if !references.insert((&card.kind, id)) {
                         return Err("This poem is already on the canvas.".into());
@@ -95,7 +97,11 @@ impl ThemeCanvas {
                         return Err("This theme is already on the canvas.".into());
                     }
                 }
-                _ => return Err("A canvas card is invalid or refers to a missing poem or theme.".into()),
+                _ => {
+                    return Err(
+                        "A canvas card is invalid or refers to a missing poem or theme.".into(),
+                    )
+                }
             }
         }
 

@@ -167,8 +167,8 @@ function millimetres(event: Event) {
           </select>
         </label>
         <small>
-          Composition dates stay fixed. Revision dates update when you edit writing or its
-          title/byline. Older, undated documents stay undated until edited.
+          Set the composition date in each document’s Details. The revision date updates when the
+          document text changes.
         </small>
         <label class="setup-check">
           <input v-model="model.sectionPages" type="checkbox" />

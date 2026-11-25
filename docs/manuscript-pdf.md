@@ -33,7 +33,7 @@ Valid layout changes autosave in the project's `project.json`. Invalid partial i
 
 **Preferences → Author profile** stores a default name/pen name in roaming `user-settings.json`. New projects and poems capture the default. A project author overrides the profile fallback; a document author overrides the project fallback. Existing explicit bylines stay unchanged when the profile changes. Blank legacy bylines use the fallback at export.
 
-New documents record local `composedOn` and ISO/RFC3339 `updatedAt`. Editing text, title, author, or composition date advances `updatedAt`; unchanged saves, selections, forms/display, part assignment, and layout do not. Composition stays fixed and editable. **Last revised · automatic** prints the updating date. Clearing composition leaves it absent until a subsequent text edit. Older documents remain undated until edited or explicitly dated; historic dates are never guessed on load. Date-only values travel without timezone shifts; revision timestamps display in local time.
+New documents start with a local `composedOn` date. Only a change to the document text sets or advances the ISO/RFC3339 `updatedAt` timestamp. Edit the composition date in the document’s Details. If you clear it, the next text edit fills in the local date. **Last revised · automatic** prints the recorded revision date in local time. Date-only values travel without timezone shifts, and older dates are preserved on load.
 
 ## Fidelity and limits
 
@@ -50,5 +50,7 @@ Native Save confirmation governs replacement. WebView2 writes a temporary siblin
 `domain/manuscript/` owns shared validated settings, ordering/counting, and deterministic pagination. `ManuscriptPage.vue` renders sheets, `PageSetup.vue` owns controls, and `ManuscriptView.vue` coordinates measurement/autosave/printing. Native `manuscript.rs` validates layout/metadata; `pdf.rs` owns the dialog-scoped print bridge and atomic finalization. Comments document persistence and print boundaries.
 
 64 frontend tests and 32 native tests cover ordering, project counts, date/author output, invalid settings, Unicode wrapping, continuation, no source mutation, old formats, remapped section IDs, metadata/layout round trips, and preservation after PDF finalization failure. TypeScript/Vite, Clippy, and Windows builds pass. Real four-page Letter portrait and A4 landscape exports were rendered and visually checked, including a custom 1.25-inch left margin. Live Markdown remains byte-identical to earlier portable copies. Private writing is excluded from committed fixtures/artifacts.
+
+The 25 November run checked signature placement in the Windows desktop preview and rendered the browser print output for a compact, one-page fixture. The title, one-line poem, signature, and page number fit within the layout. The regression suite also checks multi-page and shared-page signatures.
 
 API references: [WebView2 PrintToPdf](https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_7) and [WebView2 printing](https://learn.microsoft.com/en-us/microsoft-edge/webview2/how-to/print).

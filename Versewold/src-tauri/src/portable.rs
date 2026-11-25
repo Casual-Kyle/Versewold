@@ -227,7 +227,11 @@ fn check_metadata(metadata: &PoemMetadata) -> Result<(), String> {
         metadata.planning_notes.as_deref(),
         metadata.tone_intensity,
     )?;
-    Project { themes: metadata.themes.clone(), ..Project::default() }.validate_overview()?;
+    Project {
+        themes: metadata.themes.clone(),
+        ..Project::default()
+    }
+    .validate_overview()?;
     crate::manuscript::validate_author(metadata.author.as_deref())?;
     crate::manuscript::validate_dates(
         metadata.composed_on.as_deref(),
