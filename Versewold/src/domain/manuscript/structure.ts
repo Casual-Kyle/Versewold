@@ -66,6 +66,18 @@ export function displayDate(value?: string) {
   }).format(new Date(`${date}T12:00:00Z`));
 }
 
+/** Composition is a calendar date, so a signature never shifts with timezone
+ * or substitutes the export/revision date for an unknown historical date. */
+export function poemSignature(poem: PoemEntry, fallbackAuthor: string) {
+  const author = poem.author?.trim() || fallbackAuthor.trim();
+  const date =
+    poem.composedOn && validDate(poem.composedOn)
+      ? `${poem.composedOn.slice(5, 7)}/${poem.composedOn.slice(8, 10)}/${poem.composedOn.slice(0, 4)}`
+      : '';
+  const parts = [author, date].filter(Boolean);
+  return parts.length ? `- ${parts.join(', ')}` : '';
+}
+
 export function validateProjectStructure(project: Project) {
   const sections = project.sections ?? [];
   if (!Array.isArray(sections) || sections.length > 500)

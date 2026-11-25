@@ -143,15 +143,23 @@ function millimetres(event: Event) {
         </label>
       </div>
     </details>
-    <details>
+    <details open>
       <summary>Bylines &amp; page flow</summary>
       <div class="setup-fields">
+        <label class="setup-check">
+          <input v-model="model.poemSignature" type="checkbox" />
+          Author &amp; composition date at bottom right
+        </label>
+        <small>
+          Prints “- Author Name, MM/DD/YYYY” on the final page of each poem. Missing author or date
+          information is omitted.
+        </small>
         <label class="setup-check">
           <input v-model="model.showPoemAuthor" type="checkbox" />
           Author below each title
         </label>
         <label>
-          Document date
+          Date below each title
           <select v-model="model.poemDate">
             <option value="none">No date</option>
             <option value="composed">Date composed</option>

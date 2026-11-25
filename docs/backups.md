@@ -16,7 +16,7 @@ The native app automatically snapshots changed poems and project manifests befor
 
 ## Behavior
 
-- Each poem and project manifest retains its newest **50** recognized revisions. The oldest revisions rotate automatically; rapid autosaves can turn over this recent history quickly. Sparse long-term retention is a planned extension.
+- Each poem and project manifest retains its newest **3** recognized snapshots, including the latest incoming text and up to two earlier versions. These are files on disk, not extra copies held in RAM. Older recognized snapshots rotate on that file's next changed save. Three snapshots is the current retention policy; longer-term history is deferred.
 - The first changed save snapshots any existing on-disk version, even when it predates this feature, then the incoming draft. New files receive an initial snapshot. Existing unchanged files are not copied just because the app opens.
 - Consecutive identical bytes are not duplicated. A no-op save or appearance-only change creates no manuscript snapshot. Markdown whitespace, Unicode, CRLF/LF, and trailing newlines remain exact.
 - Sequence numbers establish order across restarts and wall-clock changes. The timestamp is Unix milliseconds. The sequence restarts only if that document's entire recognized history has been removed externally.
@@ -39,4 +39,4 @@ The next safety steps are a revision browser with explicit restore/compare actio
 
 ## Verification
 
-Native tests cover exact-byte snapshots and manifests, restarts, deduplication, rotation beyond the 50-version limit, clearing a draft, importing an existing draft into history, preserving unrelated files, rejecting invalid backup entries, external conflicts, and keeping all primary files unchanged when a later backup fails.
+Native tests cover exact-byte snapshots and manifests, restarts, deduplication, rotation beyond the configured retention limit, clearing a draft, importing an existing draft into history, preserving unrelated files, rejecting invalid backup entries, external conflicts, and keeping all primary files unchanged when a later backup fails. The retention policy was reduced to three snapshots on 24 November 2026; tests have not been rerun for that change because local command execution is currently blocked.

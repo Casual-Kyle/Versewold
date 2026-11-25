@@ -76,6 +76,73 @@
   min-height: 160px;
   overflow: hidden;
 }
+.find-replace {
+  flex-shrink: 0;
+  margin-bottom: 18px;
+  padding: 12px;
+  border: 1px solid var(--bark);
+  border-radius: 8px;
+  background: var(--surface-deep);
+  font-size: calc(11px * var(--ui-scale));
+}
+.find-replace-heading,
+.find-replace-row,
+.find-replace-options {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.find-replace-heading {
+  justify-content: space-between;
+  margin-bottom: 8px;
+  color: var(--lavender);
+}
+.find-replace-heading small {
+  margin-left: 8px;
+  color: var(--text-faint);
+}
+.find-replace-row {
+  margin-top: 8px;
+}
+.find-replace-row > label {
+  flex: 1 1 150px;
+  min-width: 0;
+}
+.find-replace-row input {
+  width: 100%;
+  padding: 7px 9px;
+}
+.search-count {
+  color: var(--linen);
+  font-variant-numeric: tabular-nums;
+}
+.find-replace-options {
+  margin-top: 12px;
+  gap: 8px 16px;
+  color: var(--linen);
+}
+.find-replace-options label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.find-replace-options > span {
+  color: var(--text-faint);
+  font-size: calc(9px * var(--ui-scale));
+}
+.search-announcement {
+  margin: 9px 0 0;
+  color: var(--sage);
+}
+.verse-editor .cm-poem-search-match {
+  background: color-mix(in srgb, var(--ochre) 28%, transparent);
+  border-radius: 2px;
+}
+.verse-editor .cm-poem-search-current {
+  background: color-mix(in srgb, var(--lavender) 32%, transparent);
+  outline: 1px solid var(--lavender);
+}
 .verse-editor .cm-editor {
   height: 100%;
   background: transparent;
@@ -194,8 +261,10 @@
   justify-content: space-between;
   align-items: center;
   gap: 12px;
-  padding: 19px 5px 13px;
-  margin: 0 0 8px;
+  /* Block widgets must keep all vertical spacing inside their measured box.
+   * External margins throw off CodeMirror's cursor and line coordinates. */
+  padding: 19px 5px 21px;
+  margin: 0;
   border-bottom: 1px solid color-mix(in srgb, var(--heather) 35%, transparent);
   color: var(--linen);
   font: calc(9px * var(--ui-scale))/1.6 var(--font-ui);

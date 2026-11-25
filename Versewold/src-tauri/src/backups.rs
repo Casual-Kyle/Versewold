@@ -7,7 +7,7 @@ use std::{
     time::{SystemTime, UNIX_EPOCH},
 };
 
-pub const RETAIN_REVISIONS: usize = 50;
+pub const RETAIN_REVISIONS: usize = 3;
 
 struct Snapshot {
     sequence: u64,

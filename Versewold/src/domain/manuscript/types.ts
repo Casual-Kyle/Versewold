@@ -14,6 +14,7 @@ export interface ManuscriptSettings {
   titleDate: 'none' | 'today' | 'revised';
   showPoemAuthor: boolean;
   poemDate: 'none' | 'composed' | 'revised';
+  poemSignature: boolean;
   sectionPages: boolean;
   poemNewPage: boolean;
   pageNumbers: boolean;
@@ -27,7 +28,7 @@ export interface ManuscriptLine {
   size: number;
   weight: 'normal' | 'bold';
   align: 'left' | 'center' | 'right';
-  role: 'body' | 'heading' | 'metadata' | 'footer';
+  role: 'body' | 'heading' | 'metadata' | 'signature' | 'footer';
 }
 export interface ManuscriptPage {
   id: string;

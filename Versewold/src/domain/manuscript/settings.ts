@@ -22,7 +22,8 @@ export function paperSize(settings: ManuscriptSettings) {
 export function validateManuscript(input: unknown): ManuscriptSettings {
   if (!input || typeof input !== 'object' || Array.isArray(input))
     throw new Error('Invalid manuscript settings.');
-  const settings = input as ManuscriptSettings;
+  // Older version 1 layouts gain signatures without changing their other choices.
+  const settings = { poemSignature: true, ...input } as ManuscriptSettings;
   const base = defaultManuscript();
   if (
     Object.keys(settings).some((key) => !(key in base)) ||
@@ -41,6 +42,7 @@ export function validateManuscript(input: unknown): ManuscriptSettings {
     'titleWordCount',
     'countTitles',
     'showPoemAuthor',
+    'poemSignature',
     'sectionPages',
     'poemNewPage',
     'pageNumbers',

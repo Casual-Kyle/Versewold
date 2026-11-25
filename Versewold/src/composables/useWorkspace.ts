@@ -92,31 +92,14 @@ const body = computed({
   },
 });
 
-function touchPoem(setComposition = true) {
+// Only the body setter calls this: navigation, cursor movement, metadata, and
+// project planning must never make the poem appear newly edited.
+function touchPoem() {
   if (!activePoem.value) return;
   const now = new Date();
-  if (setComposition) activePoem.value.composedOn ??= localDate(now);
+  activePoem.value.composedOn ??= localDate(now);
   activePoem.value.updatedAt = now.toISOString();
 }
-// Selection, autosaves, form checks and display changes never advance revision dates.
-watch(
-  () => [
-    activeProject.value?.id,
-    activePoem.value?.id,
-    activePoem.value?.title,
-    activePoem.value?.author,
-    activePoem.value?.composedOn,
-  ],
-  (current, previous) => {
-    if (
-      current[0] === previous[0] &&
-      current[1] === previous[1] &&
-      current.slice(2).some((value, index) => value !== previous[index + 2])
-    )
-      touchPoem(false);
-  },
-  { flush: 'sync' },
-);
 
 function selectProject(id: string) {
   const project = workspace.value.projects.find((p) => p.id === id);
@@ -161,7 +144,6 @@ function createPoem(
     author:
       project.authorName?.trim() || userPreferences.preferences.value.profile.authorName.trim(),
     composedOn: localDate(),
-    updatedAt: new Date().toISOString(),
   });
   workspace.value.documents[documentKey(project.id, id)] = '';
   selectPoem(id);

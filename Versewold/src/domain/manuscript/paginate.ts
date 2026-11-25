@@ -4,6 +4,8 @@ import {
   displayDate,
   projectWordCount,
   localDate,
+  isPoem,
+  poemSignature,
   validateProjectStructure,
 } from './structure.ts';
 import { mmToPt, paperSize, validateManuscript } from './settings.ts';
@@ -64,7 +66,7 @@ export function paginateManuscript(
   measure: MeasureText,
   today = localDate(),
 ) {
-  validateManuscript(settings);
+  settings = validateManuscript(settings);
   validateProjectStructure(project);
   const dimensions = paperSize(settings);
   const width = mmToPt(dimensions.width),
@@ -77,6 +79,26 @@ export function paginateManuscript(
   const bottomEdge = height - Math.max(bottom, settings.pageNumbers ? 20 : 0);
   const step = settings.fontSize * 1.2 * settings.lineSpacing;
   const pages: ManuscriptPage[] = [];
+  // Completed poems reserve footer space on their final page only. A shared
+  // page can hold several signatures in the same order as its poems.
+  type Signature = { lines: string[] };
+  const signatures = new Map<ManuscriptPage, Signature[]>();
+  const signatureSize = 10,
+    signatureStep = 12,
+    signatureGap = 6;
+  function signatureHeight(entries: Signature[]) {
+    return (
+      entries.reduce((height, entry) => height + entry.lines.length * signatureStep, 0) +
+      Math.max(0, entries.length - 1) * signatureGap
+    );
+  }
+  function textBottom(page?: ManuscriptPage, incoming?: Signature) {
+    const entries = [
+      ...(page ? (signatures.get(page) ?? []) : []),
+      ...(incoming ? [incoming] : []),
+    ];
+    return bottomEdge - (entries.length ? signatureHeight(entries) + 12 : 0);
+  }
   const count = projectWordCount(project, documents, settings.countTitles);
   let current: ManuscriptPage | undefined;
   let cursor = top;
@@ -142,6 +164,26 @@ export function paginateManuscript(
   function addDocument(poem: PoemEntry) {
     const body = documents[documentKey(project.id, poem.id)];
     if (typeof body !== 'string') throw new Error(`Missing text for ${poem.title}.`);
+    const signatureText =
+      settings.poemSignature && isPoem(poem) ? poemSignature(poem, projectAuthor) : '';
+    const signature: Signature | undefined = signatureText
+      ? {
+          lines: wrapLine(signatureText, contentWidth, (text) =>
+            measure(text, signatureSize, 'normal'),
+          ),
+        }
+      : undefined;
+    if (signature && top + settings.fontSize * 1.2 > textBottom(undefined, signature))
+      throw new Error(
+        `The signature for "${poem.title}" does not fit. Increase the usable page area or shorten the author name.`,
+      );
+    const logicalLines = body.replace(/\r\n?/g, '\n').replace(/\t/g, '    ').split('\n');
+    // Trailing empty source positions need no extra blank PDF pages.
+    while (logicalLines.length && !logicalLines.at(-1)!.trim()) logicalLines.pop();
+    const bodyLines = logicalLines.flatMap((logical) =>
+      wrapLine(logical, contentWidth, (text) => measure(text, settings.fontSize, 'normal')),
+    );
+    const firstPageSignature = bodyLines.length <= 1 ? signature : undefined;
     const headingLines = wrapLine(poem.title, contentWidth, (text) =>
       measure(text, settings.titleSize, 'bold'),
     );
@@ -162,7 +204,7 @@ export function paginateManuscript(
     );
     const headingHeight =
       headingLines.length * settings.titleSize * 1.3 + metadataLines.length * 14 + step;
-    if (headingHeight + step > bottomEdge - top)
+    if (headingHeight + step > textBottom(undefined, firstPageSignature) - top)
       throw new Error(
         `The heading for “${poem.title}” does not fit. Reduce the title size or margins.`,
       );
@@ -171,7 +213,7 @@ export function paginateManuscript(
       (settings.poemNewPage && current.documentId) ||
       poem.kind === 'dedication' ||
       poem.kind === 'about' ||
-      cursor + headingHeight + step > bottomEdge
+      cursor + headingHeight + step > textBottom(current, firstPageSignature)
     )
       newPage('text', poem.title, poem.id);
     else cursor += step;
@@ -185,22 +227,18 @@ export function paginateManuscript(
       cursor += 14;
     });
     cursor += step * 0.7;
-    const logicalLines = body.replace(/\r\n?/g, '\n').replace(/\t/g, '    ').split('\n');
-    // Trailing empty source positions need no extra blank PDF pages.
-    while (logicalLines.length && !logicalLines.at(-1)!.trim()) logicalLines.pop();
-    for (const logical of logicalLines) {
-      const wrapped = wrapLine(logical, contentWidth, (text) =>
-        measure(text, settings.fontSize, 'normal'),
-      );
-      for (const text of wrapped) {
-        if (cursor + settings.fontSize * 1.2 > bottomEdge) {
-          newPage('text', `${poem.title} (continued)`, poem.id);
-          if (top >= 18) line(`${poem.title} (continued)`, top - 18, 9, 'metadata');
-        }
-        line(text, cursor, settings.fontSize, 'body');
-        cursor += step;
+    for (const [index, text] of bodyLines.entries()) {
+      // Keep the last written line with its signature. Earlier pages use their
+      // full available height rather than reserving an unused signature band.
+      const finalSignature = index === bodyLines.length - 1 ? signature : undefined;
+      if (cursor + settings.fontSize * 1.2 > textBottom(current, finalSignature)) {
+        newPage('text', `${poem.title} (continued)`, poem.id);
+        if (top >= 18) line(`${poem.title} (continued)`, top - 18, 9, 'metadata');
       }
+      line(text, cursor, settings.fontSize, 'body');
+      cursor += step;
     }
+    if (signature) signatures.set(current!, [...(signatures.get(current!) ?? []), signature]);
     if (poem.kind === 'dedication' || poem.kind === 'about') current = undefined;
   }
 
@@ -234,6 +272,24 @@ export function paginateManuscript(
   let number = 0;
   for (const page of pages) {
     if (page.kind === 'title') continue;
+    const entries = signatures.get(page) ?? [];
+    let signatureY = bottomEdge - signatureHeight(entries);
+    for (const entry of entries) {
+      for (const text of entry.lines) {
+        page.lines.push({
+          text,
+          x: left,
+          y: signatureY,
+          width: contentWidth,
+          size: signatureSize,
+          weight: 'normal',
+          align: 'right',
+          role: 'signature',
+        });
+        signatureY += signatureStep;
+      }
+      signatureY += signatureGap;
+    }
     number++;
     if (settings.pageNumbers)
       page.lines.push({

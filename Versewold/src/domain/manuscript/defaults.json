@@ -14,6 +14,7 @@
   "titleDate": "none",
   "showPoemAuthor": false,
   "poemDate": "none",
+  "poemSignature": true,
   "sectionPages": true,
   "poemNewPage": true,
   "pageNumbers": true

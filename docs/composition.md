@@ -44,6 +44,22 @@ Rhyme hints group existing end words by the template's rhyme letters and scope. 
 
 Syllable targets, stress counts, morae, quantitative weight, and word counts remain distinct. Accentual-syllabic forms display the base syllable target implied by the declared foot pattern. Strict adds explicitly approximate English syllable counts; no pronunciation/scansion match percentage is invented. Automatic scansion, dictionary rhyme suggestions, and pronunciation overrides remain planned work.
 
+## Find and replace
+
+**Find & replace** in the writing toolbar searches the current poem's Markdown source in either writing view. Ctrl+F (Command+F on macOS) opens the find field; Ctrl+H/Command+H focuses the replacement field. Opening from a single-line text selection uses that text as the query. Enter and Shift+Enter in the find field navigate next/previous; F3/Shift+F3 and Ctrl+G/Ctrl+Shift+G also navigate. Navigation wraps at either end. Escape closes search and returns focus to the editor; switching poems closes the panel so old selections cannot affect another document.
+
+The panel shows a match count and highlights actual source text, excluding stanza headings, rhyme letters, and target annotations. Search is literal, including punctuation and replacement characters such as `$&`; it does not interpret regular expressions. Match case is optional. Whole words treats Unicode letters, combining marks, numbers, and underscores as word characters; apostrophes and hyphens are separators. Case-insensitive matching follows Unicode case rules without removing accents or normalizing composed/decomposed spelling.
+
+**Replace** changes the selected match and selects the next occurrence. It is enabled only while an exact match is selected. **Replace all** changes all current matches as one undoable action. Return to the editor with Escape to use normal Ctrl+Z/Ctrl+Shift+Z undo/redo. Replacement uses the same source-preserving editor transaction as typing, retaining unrelated Unicode, indentation, stanza breaks, original line endings, and trailing whitespace. Identical replacements and empty/no-result searches produce no edit or undo entry. Opening, changing, navigating, or closing search never writes text or updates the poem's revision date; actual replacement and undo/redo of changed text do.
+
+## Cursor navigation layout
+
+Stanza headings are CodeMirror block widgets. Their vertical spacing must be padding inside the measured widget, with zero vertical margins; otherwise the visible lines and the editor's coordinate map can disagree. The 25 November correction moves the former 8px bottom margin into bottom padding. This follows [CodeMirror's block-widget layout rule](https://codemirror.net/docs/ref/#view.Decoration^widget). Up/Down and Home/End retain the standard editor commands, including wrapped-line navigation and Shift selection.
+
+The reported Up/Down/End jumps in a longer stanza-based poem have not yet been reproduced interactively. Verify the correction in Guided and Markdown views using at least 20 stanzas, several blank-line separators, and lines long enough to wrap. Check near the first and last line of each stanza, after scrolling into previously unseen text, and after changing the window width. Up/Down should traverse adjacent displayed text rows, Home/End should stay on the current displayed row, Shift should extend selection consistently, and Ctrl+Home/End should reach document boundaries. Navigation must leave the source and its revision timestamp unchanged. Repeat with soft wrap off and with larger writing/interface fonts.
+
+This is a source correction for a confirmed layout-rule violation, not a claim that the user's full report is resolved. Live navigation checks and build verification are pending because the Windows command sandbox fails during startup.
+
 ## Editor and persistence boundary
 
 `VerseEditor.vue` wraps CodeMirror's state/view/commands packages. `guidedEditor.ts` supplies measured gutter markers, block stanza headings, and inline decorations. `domain/forms/composition.ts` interprets data-driven form rules independently of Vue and native storage. `FormPicker.vue` uses pure search ranking in `domain/forms/picker.ts`; `FormMap.vue` uses source-position mapping in `domain/forms/lineMap.ts`. `LineInspector.vue` and `MeterPattern.vue` present the active rule. No form-specific branching or executable template scripts are introduced.
@@ -53,6 +69,8 @@ CodeMirror edits normalized LF positions; `services/editorSource.ts` retains the
 Undo history remains scoped to the mounted poem editor. It survives display-mode/form changes, but retaining it across poem/view switches is still EDIT-02. Font, size, line spacing, soft-wrap, and spellcheck preferences apply to this editor. The editor requires no online service; dependency licenses ship under `public/licenses/editor-dependencies.txt`.
 
 ## Verification
+
+Find/replace adds six passing domain tests for literal/Unicode/case/whole-word matching, normalized offsets, empty results, and wrapped navigation. Eight additional CodeMirror regression tests cover read-only search, selected/all replacement, exact-source undo/redo, history isolation, mixed line endings, no-ops, refreshed matches after edits/display changes, and separate poem states. Those integration tests and interactive UI checks are pending: the required locked dependencies are unavailable locally and package downloads are blocked. They must pass before SEARCH-02 is marked fully verified.
 
 Domain/editor-state tests cover empty drafts, prospective lines, automatic blank-line stanza boundaries, repeating/fixed/open/continuous forms, distinct metrical units, scoped end words, actual refrain text, Unicode/raw-newline preservation, and grouped undo/redo. Browser checks cover typing, wrapped lines, form switching without text changes, single/double Enter behavior, refrain insertion/undo, and copy excluding visual annotations.
 

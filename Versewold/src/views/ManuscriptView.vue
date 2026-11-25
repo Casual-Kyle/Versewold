@@ -31,7 +31,9 @@ watch(
   () => activeProject.value?.id,
   () => {
     loading = true;
-    draft.value = structuredClone(toRaw(activeProject.value?.manuscript ?? defaultManuscript()));
+    draft.value = validateManuscript(
+      structuredClone(toRaw(activeProject.value?.manuscript ?? defaultManuscript())),
+    );
     loading = false;
     savedPath.value = '';
     status.value = '';

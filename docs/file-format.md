@@ -45,6 +45,8 @@ All paths above are relative to `%APPDATA%\com.client.versewold\`, the shared Ta
 
 Optional project `authorName` supplies the collection byline, and `manuscript` stores validated page settings from the [shared defaults](../Versewold/src/domain/manuscript/defaults.json). All new version 1 fields are optional for older manifests. [Manuscript/PDF documentation](manuscript-pdf.md) describes page ordering, date semantics, author fallbacks, and layout validation. Portable project copies preserve these fields and remap section identities alongside document identities; poem sidecars preserve document kind/byline/dates, without copying a reference to another project's section.
 
+The optional manuscript `poemSignature` boolean defaults to `true` for older page settings. It controls the author/composition-date signature on the final printed page of each poem. Explicit `false` survives save/load and portable copies; signatures remain generated output and never enter the poem's Markdown.
+
 An optional version 1 `templates` array stores project-scoped form definitions, making portable copies independent of another machine's custom-form library. [Save/load/export](save-load-export.md) documents project copies, poem JSON sidecars, fresh import identities, exact Markdown exports, and combined manuscripts. Poem bodies remain separate `.md` files in every portable copy.
 
 `documents` exists only in the frontend/native transport object; it is never written as a JSON copy of the poems. Custom form files follow the separate poetry-form schema described in the research folder.

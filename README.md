@@ -6,11 +6,13 @@ The application is in [Versewold/](Versewold/). Poetry research lives separately
 
 Upcoming work and known limitations are tracked in [planning and bugs](docs/planning-and-bugs.md).
 
-Automatic [saved-version backups](docs/backups.md) retain 50 readable revisions per poem and project manifest. Access them from Preferences → Files & storage → Open backups folder; revision comparison/restore and unsaved-work recovery are next in the safety backlog.
+Automatic [saved-version backups](docs/backups.md) retain three readable snapshots per poem and project manifest. Access them from Preferences → Files & storage → Open backups folder; in-app revision comparison/restore remains planned. These snapshots use disk space and include the latest saved text.
 
 **Files & export** in the sidebar provides Save now, portable project/poem copies, project/Markdown loading, and Markdown poem/manuscript exports. Loaded copies receive fresh identities and autosave in the roaming library. See [save, load, and export](docs/save-load-export.md) for formats and behavior.
 
 **Manuscript** adds [PDF page setup and preview](docs/manuscript-pdf.md): paper sizes, margins, print fonts/spacing, optional title-page word count, author bylines/dates, and clean Windows PDF export. Organize the sidebar into parts with dedication and author pages; use each document's Details for ordering, author, and composition date. Preferences → Author profile sets a default byline. Layout and metadata travel in portable project copies.
+
+The writing desk's **Find & replace** searches the current poem in Guided or Markdown view. Use Ctrl+F to find, Ctrl+H to focus replacement, and Enter/Shift+Enter for next/previous matches. Case and whole-word options, match counts, replace one/all, and undo are included. Search navigation leaves text and edit dates unchanged; see [composition](docs/composition.md#find-and-replace).
 
 ```powershell
 cd Versewold

@@ -20,10 +20,17 @@ pub struct ManuscriptSettings {
     pub title_date: String,
     pub show_poem_author: bool,
     pub poem_date: String,
+    #[serde(default = "default_poem_signature")]
+    pub poem_signature: bool,
     pub section_pages: bool,
     pub poem_new_page: bool,
     pub page_numbers: bool,
 }
+
+fn default_poem_signature() -> bool {
+    true
+}
+
 #[derive(Clone, Debug, Deserialize, Serialize)]
 #[serde(deny_unknown_fields)]
 pub struct Margins {
@@ -178,6 +185,21 @@ fn valid_timestamp(value: &str) -> bool {
 #[cfg(test)]
 mod tests {
     use super::*;
+    #[test]
+    fn legacy_page_settings_enable_signatures_and_explicit_choices_roundtrip() {
+        let mut legacy = serde_json::to_value(ManuscriptSettings::default()).unwrap();
+        legacy.as_object_mut().unwrap().remove("poemSignature");
+        let loaded: ManuscriptSettings = serde_json::from_value(legacy.clone()).unwrap();
+        loaded.validate().unwrap();
+        assert!(loaded.poem_signature);
+        legacy["poemSignature"] = serde_json::json!(false);
+        let loaded: ManuscriptSettings = serde_json::from_value(legacy.clone()).unwrap();
+        assert!(!loaded.poem_signature);
+        assert_eq!(serde_json::to_value(loaded).unwrap(), legacy);
+        legacy["poemSignature"] = serde_json::json!("true");
+        assert!(serde_json::from_value::<ManuscriptSettings>(legacy).is_err());
+    }
+
     #[test]
     fn page_settings_reject_impossible_paper_and_margins() {
         let mut settings = ManuscriptSettings::default();

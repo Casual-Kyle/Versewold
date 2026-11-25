@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue';
+import { computed, onMounted, onBeforeUnmount, ref } from 'vue';
 import { useWorkspace } from '../composables/useWorkspace';
 import { structureIssues } from '../domain/forms/structure';
 import AppIcon from '../components/ui/AppIcon.vue';
@@ -11,6 +11,7 @@ import FormPicker from '../components/forms/FormPicker.vue';
 import FormMap from '../components/forms/FormMap.vue';
 import { usePreferences } from '../composables/usePreferences';
 import { isPoem } from '../domain/manuscript/structure';
+import { pdfPrinting } from '../services/pdfExport';
 const { preferences } = usePreferences();
 
 const { activeProject, activePoem, activeForm, forms, body, createProject, createPoem } =
@@ -27,6 +28,31 @@ function begin(title: string) {
   createPoem('Untitled poem');
   creating.value = false;
 }
+
+function searchShortcut(event: KeyboardEvent) {
+  if (
+    event.defaultPrevented ||
+    pdfPrinting.value ||
+    !activePoem.value ||
+    document.querySelector('dialog[open]')
+  )
+    return;
+  if ((event.ctrlKey || event.metaKey) && !event.altKey) {
+    const key = event.key.toLowerCase();
+    if (key === 'f' || key === 'h') {
+      event.preventDefault();
+      void editor.value?.openSearch(key === 'h');
+    } else if (key === 'g') {
+      event.preventDefault();
+      editor.value?.findNext(event.shiftKey ? -1 : 1);
+    }
+  } else if (event.key === 'F3' && !event.ctrlKey && !event.metaKey && !event.altKey) {
+    event.preventDefault();
+    editor.value?.findNext(event.shiftKey ? -1 : 1);
+  }
+}
+onMounted(() => globalThis.addEventListener('keydown', searchShortcut));
+onBeforeUnmount(() => globalThis.removeEventListener('keydown', searchShortcut));
 </script>
 
 <template>
@@ -38,8 +64,17 @@ function begin(title: string) {
         <AppIcon name="chevron" :size="12" />
         <strong>{{ activePoem?.title || 'A fresh page' }}</strong>
       </div>
-      <div v-if="activePoem && isPoem(activePoem)" class="toolbar-actions">
+      <div v-if="activePoem" class="toolbar-actions">
         <button
+          class="text-button"
+          title="Find and replace in current poem (Ctrl+F / Ctrl+H)"
+          @click="editor?.openSearch()"
+        >
+          <AppIcon name="search" :size="15" />
+          Find &amp; replace
+        </button>
+        <button
+          v-if="isPoem(activePoem)"
           class="icon-button"
           :aria-pressed="focus"
           :aria-label="focus ? 'Leave focus mode' : 'Focus on writing'"
@@ -49,6 +84,7 @@ function begin(title: string) {
           <AppIcon name="focus" />
         </button>
         <button
+          v-if="isPoem(activePoem)"
           class="text-button guidance-toggle"
           :aria-pressed="preferences.writing.showGuidance"
           @click="preferences.writing.showGuidance = !preferences.writing.showGuidance"
@@ -57,6 +93,7 @@ function begin(title: string) {
           <span class="toggle-dot" :class="{ on: preferences.writing.showGuidance }" />
         </button>
         <button
+          v-if="isPoem(activePoem)"
           class="text-button guidance-toggle strict-toggle"
           :aria-pressed="preferences.writing.strictFormatting"
           title="Highlight lines that miss count or line-layout targets. English syllables are estimates."
